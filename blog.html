@@ -360,7 +360,7 @@
  
     
     <!-- nav -->
-    <div class="container-fluid zen_nav_containter animated slideInDown">
+    <div class="container-fluid zen_nav_containter">
         <div class="row">
             <nav class="zen_nav">
                 <ul class="zen_nav_ul">
@@ -402,7 +402,7 @@
     <!-- nav -->
 
     <!-- sidebar -->
-    <div class="zen_sidebar animated slideInLeft">
+    <div class="zen_sidebar">
         <div class="zen_sidebar_wrapper">
             <ul class="zen_sidebar_ul">
                 <li><a href="#">Меню</a> <img src="https://d2yvv6a7kcdl71.cloudfront.net/57aaa205fb003dc5144303d4/assets/F539AFBD-0D82-487E-B8D9-BCD52A48CC2B.png" alt=""></li>
@@ -659,58 +659,13 @@
 
 <script>
 
-    $(document).ready(function () {
-        var checkbox_index = 0;
-        $('.checkbox').click(function () {
-            $(this).children('ul').slideToggle('fast');
-        });
+    $(function(){
+        $('.preloaderContainer').fadeOut(500);
+    })
+    document.querySelector('.btn-7i').addEventListener('click', function () {
+        classie.add(document.querySelector('#trash-effect'), 'trash-effect-active');
+    }, false);
 
-        $('.checkbox ul li').click(function () {
-            var li_html = $(this).html();
-            $(this).parents('.checkbox').children('.checkbox_result').html(li_html);
-            $(this).parents('.checkbox').children('.checkbox_arrow').css({
-                borderColor: 'green',
-                width: '15px'
-            });
-        });
-
-        $('.radio li').prepend('<div class="radio_circle"><div class="radio_circle_in"></div></div>');
-
-        $('.text_radio li').click(function () {
-
-            $(this).parents('ul').find('li').removeClass('li_active');
-            $(this).addClass('li_active');
-        });
-
-        $('.zen_nav_feedback').click(function () {
-            $('.zen_popup_nav').removeClass('animated slideOutRight');
-            $('.zen_popup_nav').css('display', 'block');
-            $('.zen_popup_nav').addClass('animated slideInRight');
-            $('.zen_popup_bg').fadeIn('fast');
-        });
-        $('.zen_popup_bg, .zclose').click(function () {
-            $('.zen_popup_bg').fadeOut('fast');
-            
-            $('.zen_popup_nav').removeClass('animated slideInRight');
-            $('.zen_popup_nav').addClass('animated slideOutRight');
-            setTimeout(function () {
-                $('.zen_popup_nav').css('display', 'none');
-            }, 1000);
-        });
-
-        $('.zen_call_form button').click(function () {
-            $('.zen_call_form').addClass('animated slideOutRight');
-            setTimeout(function () {
-                $('.zen_call_timer').css('display', 'block');
-                $('.zen_call_form').css('display', 'none');
-                $('.zen_call_timer').addClass('animated slideInUp');
-            }, 1000);
-        });
-    });
-    $('body').on('click', '.radio_circle', function () {
-        $(this).parents('ul').find('.radio_circle_in').removeClass('radio_circle_in_active');
-        $(this).children('.radio_circle_in').addClass('radio_circle_in_active');
-    });
 </script>
 
 
