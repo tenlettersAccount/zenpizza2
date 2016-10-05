@@ -556,8 +556,12 @@ $('#ch2').click(function () {
 
     $('.zen_nav_feedback li:last-child').click(function(){
         if($('.zen_popup_nav2').css('display') == 'block'){
-            $('.zen_popup_nav2').css({display: 'none'});
-            $('.zen_popup_bg').fadeOut(400);
+            $('.zen_popup_nav2').addClass('animated fadeOutRight');
+            setTimeout(function(){
+                $('.zen_popup_nav2').css({display: 'none'});
+                $('.zen_popup_nav2').removeClass('animated fadeOutRight');
+            }, 500);
+            $('.zen_popup_bg').fadeOut(500);
         }else{
             $('.nodecor').css('display', 'none');
             $('.zen_popup_nav').addClass('animated fadeOutRight');
