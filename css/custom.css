@@ -3241,7 +3241,7 @@ a:focus {
 .razmestit {
     font-family: 'RobotoSlab';
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     font-stretch: normal;
     color: #ffffff;
@@ -3253,6 +3253,7 @@ a:focus {
     border: none;
     outline: none;
     float: left;
+    text-shadow: 0 0 1px #fff;
 }
 
 .razmestit:hover {
