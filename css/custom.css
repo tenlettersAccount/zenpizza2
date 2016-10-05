@@ -6192,8 +6192,8 @@ input[type="submit"] {
 ul{
     display: block;
     list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
@@ -6204,8 +6204,71 @@ ul{
 
 
 .bbbbbbb{
-    border-bottom: 1px solid #d2d2d2;
+    border-top: 1px solid #d2d2d2;
 }
+.bbbbbbb .halfpr{
+    padding:10px 0;
+}
+.higherheight{
+    height:624px;
+}
+.orderredb{
+    width: 126px;
+    height: 34px;
+    border-radius: 4px;
+    background-color: #e73f3e;
+    outline: none;
+    border: none;
+    float: right;
+    font-family: 'PTSans';
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    color: #ffffff;
+    position: relative;
+    margin-top: 7px;
+}
+
+.typespm{
+    width: 126px;
+    height: 34px;
+    position: relative;
+}
+.typespm .plusts{
+    width: 34px;
+    height: 34px;
+    border-radius: 4px 0 0 4px;
+    background-color: #e73f3e;
+    display: inline-block;
+}
+.typespm .minusts{
+    width: 34px;
+    height: 34px;
+    border-radius: 0 4px 4px 0;
+    background-color: #e73f3e;
+    display: inline-block;
+}
+.typespm input{
+    display: inline-block;
+    width: 58px;
+    height: 34px;
+    background-color: #f8f3f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
