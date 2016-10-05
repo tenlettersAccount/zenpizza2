@@ -1,5 +1,8 @@
 $(function () {
+    // 1
     // 15
+    // 1
+    // *
     /* add top slider swiper if not desktop */
 
         if(window.innerWidth <= 780){
