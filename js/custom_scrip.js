@@ -24,7 +24,7 @@ $(function () {
     console.log(w);
 
     $('.carousel').carousel({
-        interval: 8000
+         interval: scaleDelayInterval
     });
 
 //************************************************************************************************
