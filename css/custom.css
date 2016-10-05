@@ -1614,13 +1614,27 @@ xmp {
 .mainb2 {
     width: 50%;
 }
-
+.mainb2:hover{
+    background-color: rgba(95, 50, 58, 0.91);
+    transition: 0.25s;
+}
+.mainb2:active{
+    background-color: #4d262b;
+    transition: 0.25s;
+}
 .mainb1 {
     border-right: 1px solid #885661;
     float: left;
     width: 50%;
 }
-
+.mainb1:hover{
+    background-color: rgba(95, 50, 58, 0.91);
+    transition: 0.25s;
+}
+.mainb1:active{
+    background-color: #4d262b;
+    transition: 0.25s;
+}
 .decor {
     width: 100%;
     height: 100%;
@@ -3222,7 +3236,12 @@ a:focus {
 }
 
 .razmestit:hover {
-    background-color: red;
+    background-color: rgba(231, 63, 62, 0.75);
+    transition: 0.25s;
+}
+.razmestit:active {
+    transition: 0.25s;
+    background-color: #fe4443;
 }
 
 .icons2 {
@@ -5792,11 +5811,11 @@ input[type="submit"] {
     color: white;
 }
 .btn-7b:hover{
-    background-color: #DC5453;
+    background-color: rgba(231, 63, 62, 0.83);
     transition: 0.25s;
 }
 .btn-7b:active{
-    background-color: #D62927;
+    background-color: #d63f3e;
     transition: 0.25s;
 }
 
