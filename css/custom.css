@@ -6254,26 +6254,45 @@ ul{
     width: 126px;
     height: 34px;
     position: relative;
+    float: right;
+    margin-top: 7px;
+    display: none;
 }
 .typespm .plusts{
     width: 34px;
     height: 34px;
     border-radius: 4px 0 0 4px;
     background-color: #e73f3e;
-    display: inline-block;
+    background-image: url(../images/pp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
 }
 .typespm .minusts{
     width: 34px;
     height: 34px;
     border-radius: 0 4px 4px 0;
     background-color: #e73f3e;
-    display: inline-block;
+    background-image: url(../images/mm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
 }
 .typespm input{
     display: inline-block;
-    width: 58px;
+    width: 56px;
     height: 34px;
     background-color: #f8f3f1;
+    border:none;
+    float: left;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: RobotoSlab;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    color: #050517;
 }
 
 

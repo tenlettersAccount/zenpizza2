@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    //new card type order button
+    $('.orderredb').click(function () {
+        $(this).css({display:'none'});
+        $('.typespm').css({display:'block'});
+        $('.typespm').addClass('animated fadeIn');
+
+    });
 
     $('.questions li').click(function () {
         $('.acc').slideUp(400);
