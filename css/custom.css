@@ -793,6 +793,7 @@ xmp {
     padding-top: 10px !important;
     margin-right: -50px;
     margin-left: -50px;
+    padding-left: 50px;
 }
 
 .ul-menu-switch li {
@@ -1893,6 +1894,7 @@ xmp {
 .fleft {
     display: inline-block;
     margin-right: 20px;
+    float: left;
 }
 
 .flast {
@@ -5932,7 +5934,6 @@ input[type="submit"] {
     top: 49px;
     left: 210px;
     width: 100%;
-    background-color: #f8f3f1;
     z-index: 99;
 }
 
