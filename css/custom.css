@@ -525,8 +525,8 @@ footer span {
 
 .zen_nav_feedback li a {
     text-decoration: none;
-    color: #bcbcbc;
-    border-bottom: 1px dashed #bcbcbc;
+    color: #5f323a;
+    border-bottom: 1px dotted #5f323a;
 }
 
 .zen_nav_feedback li:first-child {
