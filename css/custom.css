@@ -3493,8 +3493,8 @@ a:focus {
 .pagenation {
     display: block;
     list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
