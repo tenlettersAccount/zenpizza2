@@ -767,7 +767,7 @@ $(function () {
         }
     });
 
-
+    // animation menu in about us
     $('.menusecond #menuihh').css({
         '-moz-transform': 'rotate(15deg)',
         '-ms-transform': 'rotate(15deg)',
