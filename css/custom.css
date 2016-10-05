@@ -953,8 +953,7 @@ xmp {
     border: none;
     outline: none;
     float: left;
-    font-weight: 700;
-
+    background-image: url(../images/mm.png);
 }
 
 .bplus {
@@ -966,9 +965,12 @@ xmp {
     height: 41px;
     float: left;
     background-color: #B62C2B;
-    font-weight: 700;
+    background-image: url(../images/pp.png);
 }
-
+.bcommon{
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .bcommon:hover {
     background-color: #5F323A;
 }
@@ -5885,10 +5887,10 @@ input[type="submit"] {
 }
 .fixed{
     position: fixed;
-    top: 60px;
+    top: 49px;
     left: 210px;
     width: 100%;
-    background-color: white;
+    background-color: #f8f3f1;
     z-index: 99;
 }
 
