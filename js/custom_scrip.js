@@ -1,8 +1,5 @@
 $(function () {
-    // 1
-    // 15
-    // 1
-    // *
+
     /* add top slider swiper if not desktop */
 
         if(window.innerWidth <= 780){
@@ -778,62 +775,62 @@ $(function () {
         $('.tx_for_order_block').css({display: 'block'});
         
         $('.order_waiting_for_answer').css({display: 'block'});
-        $('.order_waiting_for_answer').removeClass('animated fadeInUp');
-        $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
-        $('.order_waiting_for_answer').addClass('animated fadeInUp');
-        $('.order-last-block-qwas').css({marginBottom: '100px'});
-        $('.tx_for_order_block').css({bottom: '-50px'});
+        $('.order_waiting_for_answer').removeClass('animated fadeInRight');
+        $('.order_waiting_for_answer').removeClass('animated fadeOutRight');
+        $('.order_waiting_for_answer').addClass('animated fadeInRight');
+        $('.order-last-block-qwas').css({marginBottom: '120px'});
+        $('.tx_for_order_block').css({bottom: '-80px'});
         $('.fastorder').animate({
             scrollTop: $(".tx_for_order_block").offset().top
         }, 2000);
         
         setTimeout(function(){
-            $('.order_trouble_with_connection').addClass('animated fadeOutDown');
-            $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
-            $('.order_waiting_for_answer').removeClass('animated fadeInUp');
+            $('.order_trouble_with_connection').addClass('animated fadeOutRight');
+            $('.order_waiting_for_answer').removeClass('animated fadeOutRight');
+            $('.order_waiting_for_answer').removeClass('animated fadeInRight');
             
             setTimeout(function(){
-                $('.order_waiting_for_answer').addClass('animated fadeOutDown');
+                $('.order_waiting_for_answer').addClass('animated fadeOutRight');
                 $('.order_waiting_for_answer').css({display: 'none'});
-                $('.order_trouble_with_connection').removeClass('animated fadeOutDown');
-                $('.order_trouble_with_connection').removeClass('animated fadeInUp');
+                $('.order_trouble_with_connection').removeClass('animated fadeOutRight');
+                $('.order_trouble_with_connection').removeClass('animated fadeInRight');
                 $('.order_trouble_with_connection').css({display: 'block'});
-                $('.order_trouble_with_connection').addClass('animated fadeInUp');
+                $('.order_trouble_with_connection').addClass('animated fadeInRight');
             }, 500);
-        }, 100000);
+        }, 2500);
     });
 
     $('.order_trouble_with_connection button').click(function(){
-        $('.order_trouble_with_connection').removeClass('animated fadeOutDown');
-        $('.order_trouble_with_connection').removeClass('animated fadeInUp');
+        $('.order_trouble_with_connection').removeClass('animated fadeOutRight');
+        $('.order_trouble_with_connection').removeClass('animated fadeInRight');
         $('.order_trouble_with_connection').css({display: 'block'});
-        $('.order_trouble_with_connection').addClass('animated fadeOutDown');
+        $('.order_trouble_with_connection').addClass('animated fadeOutRight');
         $('.order_trouble_with_connection').css({display: 'none'});
-        $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
-        $('.order_waiting_for_answer').removeClass('animated fadeInUp');
+        $('.order_waiting_for_answer').removeClass('animated fadeOutRight');
+        $('.order_waiting_for_answer').removeClass('animated fadeInRight');
         $('.order_waiting_for_answer').css({display: 'block'});
-        $('.order_waiting_for_answer').addClass('animated fadeInUp');
+        $('.order_waiting_for_answer').addClass('animated fadeInRight');
         setTimeout(function(){
-            $('.order_trouble_with_connection').addClass('animated fadeOutDown');
-            $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
-            $('.order_waiting_for_answer').removeClass('animated fadeInUp');
+            $('.order_trouble_with_connection').addClass('animated fadeOutRight');
+            $('.order_waiting_for_answer').removeClass('animated fadeOutRight');
+            $('.order_waiting_for_answer').removeClass('animated fadeInRight');
             
             setTimeout(function(){
-                $('.order_waiting_for_answer').addClass('animated fadeOutDown');
-                $('.order_trouble_with_connection').removeClass('animated fadeOutDown');
-                $('.order_trouble_with_connection').removeClass('animated fadeInUp');
+                $('.order_waiting_for_answer').addClass('animated fadeOutRight');
+                $('.order_trouble_with_connection').removeClass('animated fadeOutRight');
+                $('.order_trouble_with_connection').removeClass('animated fadeInRight');
                 $('.order_trouble_with_connection').css({display: 'block'});
-                $('.order_trouble_with_connection').addClass('animated fadeInUp');
+                $('.order_trouble_with_connection').addClass('animated fadeInRight');
                  $('.order_waiting_for_answer').css({display: 'none'});
             }, 500);
-        }, 100000);
+        }, 2500);
     });
 
     $('.order_waiting_for_answer_close_btn').click(function(){
-        $('.order_trouble_with_connection').removeClass('animated fadeOutDown');
-        $('.order_trouble_with_connection').removeClass('animated fadeInUp');
-        $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
-        $('.order_waiting_for_answer').removeClass('animated fadeInUp');
+        $('.order_trouble_with_connection').removeClass('animated fadeOutRight');
+        $('.order_trouble_with_connection').removeClass('animated fadeInRight');
+        $('.order_waiting_for_answer').removeClass('animated fadeOutRight');
+        $('.order_waiting_for_answer').removeClass('animated fadeInRight');
         $(this).parent().fadeOut();
         $('.order-last-block-qwas').css({marginBottom: '0px'});
         $('.orderred').fadeIn(500);
@@ -842,7 +839,7 @@ $(function () {
             $('.order_trouble_with_connection').css({display: 'none'});
         }, 500);
     });
-    
+    // l
 
 
 

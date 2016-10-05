@@ -92,14 +92,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased !important;
     font-smooth: always;
-}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    text-shadow: rgb(255, 255, 255) 0 0 2px;
 }
 /* preloader */
 .preloaderContainer {
@@ -1117,7 +1114,6 @@ xmp {
     display: inline-block;
     vertical-align: top;
     min-width: 80px;
-    float: left;
 }
 
 .asd .price {
@@ -3300,18 +3296,9 @@ a:focus {
 }
 
 .karatext {
-    
+    color: #000 !important;
 }
-.menulia a:hover{
-    color: #e73f3e;
-    border-bottom: 3px solid #e73f3e;
-    padding-bottom: 13px;
-}
-.m_active a{
-    color: #e73f3e !important;
-    border-bottom: 3px solid #e73f3e;
-    padding-bottom: 13px;
-}
+
 .leftblog {
     width: 620px;
     height: auto;
@@ -4090,9 +4077,9 @@ a:focus {
 
 .leftblog3 p {
 
-    font-family: 'OpenSansLight';
+    font-family: 'OpenSans';
     font-size: 17px;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.41;
@@ -5896,7 +5883,7 @@ input[type="submit"] {
 }
 .fixed{
     position: fixed;
-    top: 49px;
+    top: 60px;
     left: 210px;
     width: 100%;
     background-color: white;
@@ -5978,6 +5965,7 @@ input[type="submit"] {
     padding-left: 30px;
     position: absolute;
     color: #454545;
+    display: none;
 }
 .tx_for_order_block .order_trouble_with_connection img{
     display: inline-block;

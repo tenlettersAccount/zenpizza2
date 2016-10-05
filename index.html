@@ -25,7 +25,9 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <!-- fonts -->
- 
+    <!--Swiper-->
+    <link href='./swiper/swiper.css' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
@@ -251,8 +253,6 @@
                 </div>
 
                 <div class="footorder">
-
-
                     <div class="fforder ">
                         <button class="ffootclose"></button>
                         <h1>Быстрый заказ </h1>
@@ -274,6 +274,7 @@
                         </div>
                         <div class="clearfix"></div>
                     </div>
+                    
                 </div>
 
 
@@ -591,10 +592,10 @@
                 <div class="col-md-12 col-xs-12 mt">
                     <p class="intext karta">Бонусная карта</p>
                     <input type="text" name="" class="ffin wthn" placeholder="00000">
-                    <p class="senatext">Итого: <span class="senasena"></span></p>
+                    <p class="senatext">Итого: <span class="senasena">0 руб.</span></p>
                     <div class="clearfix"></div>
                 </div>
-                <div class="col-md-12 col-xs-12">
+                <div class="col-md-12 col-xs-12 order-last-block-qwas">
                     <p class="bonus">Бонусов 200 руб</p>
                     <div class="clearfix"></div>
                 </div>
@@ -603,7 +604,24 @@
                     <div class="clearfix"></div>
                 </div>
 
+                       <div class="tx_for_order_block">
+                    <div class="order_waiting_for_answer">
+                        <div class="order_waiting_for_answer_close_btn"></div>
+                        <img src="images/marina.png" alt="">
+                        <h3>В течении <span>100</span> секунд</h3>
+                        <h5>Ждем пока оператор поднимет трубку,<br>
+                        чтобы соеденить с вами</h5>
+                    </div>
+                    <div class="order_trouble_with_connection">
+                        <div class="order_waiting_for_answer_close_btn"></div>
+                        <img src="images/marina.png" alt="">
+                        <h5>Возникли проблемы со связью, попробуйте еще раз</h5>
+                        <button>Соединить еще раз</button>
+                    </div>
+                </div>    
+
             </div>
+ 
             <!--decor-->
         </div>
         <!--fastorder-->
@@ -631,11 +649,11 @@
                             <input type="submit" />
                         </form>
                     </li>
-                    <li class="menulia m_active"><a href="aboutus.html">О нас</a></li>
-                    <li class="menulia"><a href="delivery.html">Доставка и оплата</a></li>
-                    <li class="menulia"><a href="discount.html">Акции и бонусы</a></li>
-                    <li class="menulia"><a href="faq.html">FAQ</a></li>
-                    <li class="menulia"><a href="blog.html">Блог</a></li>
+                    <li><a href="aboutus.html">О нас</a></li>
+                    <li><a href="delivery.html">Доставка и оплата</a></li>
+                    <li><a href="discount.html">Акции и бонусы</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="blog.html">Блог</a></li>
                 </ul>
 
                 <ul class="zen_nav_feedback">
@@ -704,7 +722,6 @@
 
     <div class="zen_content_wrapper block_1 animated fadeIn">
         <div class="zen_slider">
-
             <div id="myCarousel2" class="carousel slide">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
@@ -1017,7 +1034,7 @@
     </style>
     <div class="zen_content_wrapper blocktps  animated fadeIn">
         <h2>МЕНЮ - <span>Пицца</span></h2>
-        
+
         <ul class="ul-menu-switch">
             <li class="nepokornyi nepokornyi1"><img src="images/fire.png" alt=""> Острое</li>
             <li class="nepokornyi nepokornyi2"><img src="images/star.png" alt=""> Рекомендуемое</li>
@@ -1588,6 +1605,8 @@
 
 <script src="js/jquery/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./swiper/swiper.js"></script>
+<script src="js/config.js"></script>
 <script src="js/custom_scrip.js"></script>
 <script src="js/ucustom.js"></script>
 <script src="js/mask.js"></script>
