@@ -304,6 +304,22 @@ $(function () {
             // instance of cart html collection
             var cartHtml = $('.nodecort .absh');
             cartHtml.html('');
+            cartHtml.append(
+                "<div class='widthjuz'>"+
+                    "<div class='tovary1'>"+
+                    "<p class='tovhead'>Товары</p>"+
+                    "</div>"+
+                    "<div class='kolichestvo1'>"+
+                    "<p class='tovhead'>Количество</p>"+
+                    "</div>"+
+                    "<div class='sena1'>"+
+                    "<p class='tovhead'>Цена</p>"+
+                    "</div>"+
+                    "<div class='owiru1'>"+
+                    "</div>"+
+                    "<div class='clearfix'></div>"+
+                "</div>"
+            );
             // add products to user cart
             for (var j in cart.productsObj) {
                 cartHtml.append(
@@ -380,8 +396,9 @@ $(function () {
         }
     };
 
+
     // click event | add new product
-    $(".bplus").click(function () {
+    $(".bplus, .zen_button").click(function () {
         var productsName = $(this).parents('.big_zen_card').find('h4').html();
         var productsPrise = $(this).parents('.big_zen_card').find('.price').html();
         productsPrise = productsPrise.replace('P', '');
@@ -430,9 +447,8 @@ $(function () {
             // change cart products num
             $(".kyzyluved p").html(Object.keys(cart.theAmountOfProduct).length);
             // change product count
-            $(this).parents('.zencardfooter').find('.zenval').html(cart.theAmountOfProduct[productsName]);
-            $(this).parents('.zencardfooter').find('.zeneq').html(cart.theAmountOfProduct[productsName]);
-
+            $(this).parents('.big_zen_card').find('.zenval').html(cart.theAmountOfProduct[productsName]);
+            $(this).parents('.big_zen_card').find('.zeneq').html(cart.theAmountOfProduct[productsName]);
         } else {
             // add new product to cart
             cart.addProduct(productsName, productsPrise);
