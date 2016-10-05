@@ -244,6 +244,7 @@ input {
     z-index: 97;
     left: 0;
     top: 0;
+    bottom: 0;
     cursor: pointer;
 }
 
@@ -1163,7 +1164,10 @@ xmp {
     background-color: rgba(82, 43, 50, 0.2) !important;
     position: fixed;
     overflow: hidden;
-
+    bottom: 0;
+    top:0;
+    left: 0;
+    right: 0;
     z-index: 99;
 }
 
