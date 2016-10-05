@@ -3272,10 +3272,11 @@ a:focus {
     font-family: 'OpenSans' !important;
     float: left !important;
     font-size: 13px !important;
-    font-weight: 600 !important;
+    font-weight: 200 !important;
     font-style: normal !important;
     font-stretch: normal !important;
     color: #262626 !important;
+    text-shadow: 0px 0px 0.3px #000;
 }
 
 .icons2 .fa {
