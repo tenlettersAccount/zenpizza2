@@ -337,6 +337,7 @@ input {
     width: 200px;
     background-color: transparent;
     box-shadow: 0 0 10px #8f8f8f;
+    margin-top: 20px;
 }
 .zen_call_form h3{
     font-size: 18px;
