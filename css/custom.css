@@ -3119,7 +3119,7 @@ a:focus {
     background-color: #fff;
     width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 30px 50px 50px 50px;
 }
 
 .questions {
