@@ -54,13 +54,13 @@ $(function () {
     }
 
 
-    if (w > 1578 && w <= 1860) {
+    if (w >= 1467 && w <= 1860) {
         sliderCardsChanger(4);
-        $(".carousel-control.right").css({right: '-110px'});
-        $(".carousel-control.left").css({left: '-90px'});
+        //$(".carousel-control.right").css({right: '-110px'});
+        //$(".carousel-control.left").css({left: '-90px'});
     }
 
-    if (w > 1136 && w <= 1578) {
+    if (w > 1136 && w < 1467) {
         sliderCardsChanger(3);
     }
 
