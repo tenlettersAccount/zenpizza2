@@ -672,9 +672,11 @@ $('#ch2').click(function () {
     $(window).scroll(function(){
         winPoss = $(window).scrollTop();
         if(winPoss>=navPoss){
-            $('.ul-menu-switch').addClass('fixed shadow');
+            $('.ul-menu-switch').addClass('fixed ');
+            $('.ul-menu-switch').css({border:'none'});
         }else{
-            $('.ul-menu-switch').removeClass('fixed shadow');
+            $('.ul-menu-switch').removeClass('fixed ');
+            $('.ul-menu-switch').css({border:'1px solid #cfc3b3'});
         }
     });
 
