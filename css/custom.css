@@ -3087,11 +3087,12 @@ a:focus {
 .saletext h3 {
     font-family: 'RobotoSlab';
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 200;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.38;
     color: #534e4e;
+    text-shadow: 0px 0px 0.4px;
 }
 
 .saletext p {
