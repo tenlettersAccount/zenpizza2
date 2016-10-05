@@ -6156,9 +6156,21 @@ input[type="submit"] {
 .halfpr{
     display: inline-block;
     width: 49%;
+    vertical-align: top;
 }
 
-
+ul{
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+    -ms-padding-start: 0px;
+    -o-padding-start: 0px;
+}
 
 
 
