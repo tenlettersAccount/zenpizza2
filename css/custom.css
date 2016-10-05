@@ -109,12 +109,12 @@ body {
 .menulia a:hover{
     color: #e73f3e;
     border-bottom: 3px solid #e73f3e;
-    padding-bottom: 14px;
+    padding-bottom: 13px;
 }
 .m_active a{
     color: #e73f3e !important;
     border-bottom: 3px solid #e73f3e;
-    padding-bottom: 14px;
+    padding-bottom: 13px;
 }
 .loader {
     position: relative;
@@ -5103,7 +5103,7 @@ input[type="submit"] {
     right: -3px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .after:before {
@@ -5119,9 +5119,7 @@ input[type="submit"] {
 .search-container .after:before,
 .search-container .after:after {
     animation-duration: 1.1s;
-    -webkit-animation-duration: 1.1s;
     animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
 }
 
 .search-container.in {
