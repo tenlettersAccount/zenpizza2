@@ -1104,6 +1104,7 @@ xmp {
     right: 10px;
     top: 10px;
     transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     transition: 0.3s;
 }
 
@@ -5101,12 +5102,15 @@ input[type="submit"] {
     bottom: -3px;
     right: -3px;
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .after:before {
     top: -3px;
     right: -3px;
     transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     opacity: 0;
 }
 
