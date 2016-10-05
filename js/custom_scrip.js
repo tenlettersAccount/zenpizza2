@@ -778,8 +778,8 @@ $(function () {
         $('.order_waiting_for_answer').removeClass('animated fadeInRight');
         $('.order_waiting_for_answer').removeClass('animated fadeOutRight');
         $('.order_waiting_for_answer').addClass('animated fadeInRight');
-        $('.order-last-block-qwas').css({marginBottom: '50px'});
-        $('.tx_for_order_block').css({bottom: '-50px'});
+        $('.order-last-block-qwas').css({marginBottom: '100px'});
+        $('.tx_for_order_block').css({bottom: '-80px'});
         $('.fastorder').animate({
             scrollTop: $(".tx_for_order_block").offset().top
         }, 2000);
@@ -797,7 +797,7 @@ $(function () {
                 $('.order_trouble_with_connection').css({display: 'block'});
                 $('.order_trouble_with_connection').addClass('animated fadeInRight');
             }, 500);
-        }, 2500);
+        }, 100000);
     });
 
     $('.order_trouble_with_connection button').click(function(){
@@ -823,7 +823,7 @@ $(function () {
                 $('.order_trouble_with_connection').addClass('animated fadeInRight');
                  $('.order_waiting_for_answer').css({display: 'none'});
             }, 500);
-        }, 2500);
+        }, 100000);
     });
 
     $('.order_waiting_for_answer_close_btn').click(function(){
@@ -839,7 +839,7 @@ $(function () {
             $('.order_trouble_with_connection').css({display: 'none'});
         }, 500);
     });
-    // l
+    // l2
 
 
 
