@@ -3324,7 +3324,7 @@ a:focus {
     font-style: normal;
     font-stretch: normal;
     color: #262626;
-    text-shadow: 0 0 0.4px;
+    text-shadow: 0 0 0.4px #262626;
 }
 
 .fin p {
