@@ -1127,7 +1127,18 @@ xmp {
     font-size: 18px;
     color: #050517;
 }
-
+.price {
+    font-family: 'RobotoSlab';
+    font-weight: 600;
+    font-size: 18px;
+    color: #050517;
+}
+.old_price {
+    color: #666666;
+    text-decoration: line-through;
+    font-family: 'OpenSans';
+    font-size: 12px;
+}
 .asd .old_price {
     color: #666666;
     text-decoration: line-through;
@@ -6152,8 +6163,18 @@ input[type="submit"] {
 }
 .halfpr .radio_circle {
     border: 1px solid transparent !important;
+    text-align: left;
+}
+.halfpr .radio li {
+    text-align: left;
+    color: #050517 !important;
+    font-family: "PTSans" !important;
+    font-size: 13px;  font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
 }
 .halfpr{
+    text-align: left;
     display: inline-block;
     width: 49%;
     vertical-align: top;
@@ -6173,7 +6194,9 @@ ul{
 }
 
 
-
+.bbbbbbb{
+    border-bottom: 1px solid #d2d2d2;
+}
 
 
 
