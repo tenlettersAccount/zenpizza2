@@ -95,7 +95,6 @@ body {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: antialiased !important;
     font-smooth: always;
 }
 /* preloader */
@@ -876,6 +875,9 @@ xmp {
 .checkbox ul li{
     text-align: left;
     padding-left: 8px !important;
+}
+.checkbox ul li:hover{
+    background-color: #F8F3F1;
 }
 .big_zen_card .padding {
     padding: 17px;
