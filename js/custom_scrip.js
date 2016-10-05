@@ -778,8 +778,8 @@ $(function () {
         $('.order_waiting_for_answer').removeClass('animated fadeInRight');
         $('.order_waiting_for_answer').removeClass('animated fadeOutRight');
         $('.order_waiting_for_answer').addClass('animated fadeInRight');
-        $('.order-last-block-qwas').css({marginBottom: '120px'});
-        $('.tx_for_order_block').css({bottom: '-80px'});
+        $('.order-last-block-qwas').css({marginBottom: '50px'});
+        $('.tx_for_order_block').css({bottom: '-50px'});
         $('.fastorder').animate({
             scrollTop: $(".tx_for_order_block").offset().top
         }, 2000);
