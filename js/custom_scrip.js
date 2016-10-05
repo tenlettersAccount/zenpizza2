@@ -663,7 +663,7 @@ $(function () {
 
     /* Кнопка заказать анимация */
     $(document.body).on('click', '.orderred', function(){
-        $(this).css({display: 'none'});
+        //$(this).css({display: 'none'});
         $('.tx_for_order_block').css({display: 'block'});
         
         $('.order_waiting_for_answer').css({display: 'block'});
@@ -672,9 +672,9 @@ $(function () {
         $('.order_waiting_for_answer').addClass('animated fadeInRight');
        // $('.order-last-block-qwas').css({marginBottom: '100px'});
         $('.tx_for_order_block').css({bottom: '15px'});
-        $('.fastorder').animate({
-            scrollTop: $(".tx_for_order_block").offset().top
-        }, 2000);
+        /*$('.fastorder').animate({
+            scrollTop: $(".backto").offset().top
+        }, 2000);*/
         
         setTimeout(function(){
             $('.order_trouble_with_connection').addClass('animated fadeOutRight');
