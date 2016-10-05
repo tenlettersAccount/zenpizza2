@@ -1118,6 +1118,7 @@ xmp {
     display: inline-block;
     vertical-align: top;
     min-width: 80px;
+    float: left;
 }
 
 .asd .price {
@@ -1576,7 +1577,7 @@ xmp {
     width: 100%;
     left: 0px;
     bottom: 0;
-    position: relative;
+    position: absolute;
     margin-left: -30px;
     display: block;
 }
@@ -6147,8 +6148,13 @@ input[type="submit"] {
 .spicy p{
     color: #0c0c1e;
 }
-
-
+.halfpr .radio_circle {
+    border: 1px solid transparent !important;
+}
+.halfpr{
+    display: inline-block;
+    width: 49%;
+}
 
 
 
