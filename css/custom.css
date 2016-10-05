@@ -551,6 +551,12 @@ footer span {
     color: #221c26;
     text-decoration: none;
     border: none;
+    font-family: 'RobotoSlab';
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    color: #221c26;
 }
 
 footer {
