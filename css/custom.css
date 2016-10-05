@@ -109,12 +109,17 @@ body {
 .menulia a:hover{
     color: #e73f3e;
     border-bottom: 3px solid #e73f3e;
-    padding-bottom: 13px;
+    padding-bottom: 14px;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
 }
 .m_active a{
     color: #e73f3e !important;
     border-bottom: 3px solid #e73f3e;
-    padding-bottom: 13px;
+    padding-bottom: 14px;
 }
 .loader {
     position: relative;
@@ -720,9 +725,7 @@ nav li a i {
     /*alert!*/
 }
 
-.zen_nav {
-    padding: 9.5px;
-}
+
 
 .zen_nav_ul {
     margin-left: 0;
