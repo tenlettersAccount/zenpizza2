@@ -1,0 +1,7 @@
+logo - http://category.natyajnyepotolki.kz/images/logo.png
+slider - http://category.natyajnyepotolki.kz/images/top_slider/1_slider.jpg
+block 1 bg - http://category.natyajnyepotolki.kz/images/1bg.jpg
+block 2 ico - http://category.natyajnyepotolki.kz/images/ico/1.png
+		http://category.natyajnyepotolki.kz/images/ico/2.png
+		http://category.natyajnyepotolki.kz/images/ico/3.png
+		http://category.natyajnyepotolki.kz/images/ico/4.png
