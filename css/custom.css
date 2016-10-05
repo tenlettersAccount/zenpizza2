@@ -3320,10 +3320,11 @@ a:focus {
 .fin h3 {
     font-family: 'OpenSans';
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 200;
     font-style: normal;
     font-stretch: normal;
     color: #262626;
+    text-shadow: 0 0 0.4px;
 }
 
 .fin p {
