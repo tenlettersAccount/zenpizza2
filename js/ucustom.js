@@ -321,6 +321,7 @@ $('#ch2').click(function () {
         $('.fclose').css('display', 'none');
         setTimeout(function () {
             //$('.mainfastorder').css('display', 'none');
+            $('.decor2').css({ 'display': 'none' });
             $('.fastorder').removeClass('animated fadeOutRight');
             $('.nodecor').css('display', 'nodecor');
             $('.nodecor').css('display', 'none');
