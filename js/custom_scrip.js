@@ -748,10 +748,10 @@ $(function () {
 
     /* Анимация сворачивания меню в левом сайдбаре */
     $('.zen_sidebar_ul li:first-child>img').css({
-        '-moz-transform': 'rotate(15deg)',
-        '-ms-transform': 'rotate(15deg)',
-        '-webkit-transform': 'rotate(15deg)',
-        '-o-transform': 'rotate(15deg)',
+        '-moz-transform': 'rotate(180deg)',
+        '-ms-transform': 'rotate(180deg)',
+        '-webkit-transform': 'rotate(180deg)',
+        '-o-transform': 'rotate(180deg)',
         'transform': 'rotate(180deg)',
     });
     $('.m-f-e').click(function(){
@@ -769,10 +769,10 @@ $(function () {
             $('.zen_sidebar_ul ul').slideUp(600);
 
             $('.m-f-e img').css({
-                '-moz-transform': 'rotate(15deg)',
-                '-ms-transform': 'rotate(15deg)',
-                '-webkit-transform': 'rotate(15deg)',
-                '-o-transform': 'rotate(15deg)',
+                '-moz-transform': 'rotate(0deg)',
+                '-ms-transform': 'rotate(0deg)',
+                '-webkit-transform': 'rotate(0deg)',
+                '-o-transform': 'rotate(0deg)',
                 'transform': 'rotate(0deg)',
                 transition: '0.80s'
             });
@@ -781,11 +781,11 @@ $(function () {
 
     // animation menu in about us
     $('.menusecond #menuihh').css({
-        '-moz-transform': 'rotate(15deg)',
-        '-ms-transform': 'rotate(15deg)',
-        '-webkit-transform': 'rotate(15deg)',
-        '-o-transform': 'rotate(15deg)',
-        'transform': 'rotate(180deg)'
+        '-moz-transform': 'rotate(0deg)',
+        '-ms-transform': 'rotate(0deg)',
+        '-webkit-transform': 'rotate(0deg)',
+        '-o-transform': 'rotate(0deg)',
+        'transform': 'rotate(0deg)'
     });
     $('.menusecond').click(function(){
         if( $('.zen_sidebar_ul ul ul').css('display') == 'none' ){
@@ -801,10 +801,10 @@ $(function () {
         }else{
             $('.zen_sidebar_ul ul ul').slideUp(500);
             $('.menusecond #menuihh').css({
-                '-moz-transform': 'rotate(15deg)',
-                '-ms-transform': 'rotate(15deg)',
-                '-webkit-transform': 'rotate(15deg)',
-                '-o-transform': 'rotate(15deg)',
+                '-moz-transform': 'rotate(180deg)',
+                '-ms-transform': 'rotate(180deg)',
+                '-webkit-transform': 'rotate(180deg)',
+                '-o-transform': 'rotate(180deg)',
                 'transform': 'rotate(180deg)',
                 transition: '0.50s'
             });

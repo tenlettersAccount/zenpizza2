@@ -474,21 +474,20 @@ footer span {
 }
 
 .zen_sidebar_ul li:first-child {
-    padding-top: 16px;
+    padding-top: 7px;
 }
-
+/*
 .zen_sidebar_ul li:hover:first-child {
     list-style-type: none;
     padding: 6px;
-    padding-top: 16px;
+    padding-top: 7px;
     padding-left: 16px;
     padding-right: 16px;
     cursor: pointer;
     background-color: #5F323A;
     border-left: none;
-
 }
-
+*/
 .menusecond:hover {
     background-color: #5F323A !important;
     border-left: none !important;
@@ -6492,7 +6491,7 @@ ul{
 .left_menu_active_item{
     background-color: #4c282e;
     border-left: 4px solid #e73f3e;
-    padding-left: 12px;
+    padding-left: 12px !important;
 }
 
 
