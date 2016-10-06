@@ -615,11 +615,11 @@ $('#ch2').click(function () {
     });
 
     $('.zen_call_form button').click(function () {
-        $('.zen_call_form').addClass('animated slideOutRight');
+        $('.zen_call_form').addClass('animated fadeOut');
         setTimeout(function () {
             $('.zen_call_timer').css('display', 'block');
             $('.zen_call_form').css('display', 'none');
-            $('.zen_call_timer').addClass('animated slideInUp');
+            $('.zen_call_timer').addClass('animated fadeIn');
         }, 1000);
     });
 
