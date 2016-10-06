@@ -260,12 +260,7 @@ $('#ch2').click(function () {
     });
     $('.mainb1').click(function () {
         $('.fforder').removeClass('animated fadeOutDown');
-        $('.absh2').css({
-            marginBottom: '200px'
-        });
         $('.fforder').slideDown();
-        $('.getpresent').css({ 'display': 'none' });
-        //$('.ffordermain').css({ 'display': 'none' });
     });
 
     $('.ffootclose').click(function () {

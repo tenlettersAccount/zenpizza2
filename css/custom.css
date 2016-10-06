@@ -992,9 +992,11 @@ xmp {
 }
 .bminus:hover{
     background-color: rgba(227, 55, 54, 0.87);
+    transition: 0.25s;
 }
 .bminus:active{
-     background-color: #d13434;
+    background-color: #d13434;
+    transition: 0.25s;
 }
 
 .bplus {
@@ -1395,9 +1397,11 @@ xmp {
 }
 .nbutton:hover {
     background-color: rgba(252, 247, 245, 0.56);
+    transition: 0.25s;
 }
 .nbutton:active {
     background-color: #e8e3e1;
+    transition: 0.25s;
 }
 
 
@@ -1490,7 +1494,12 @@ xmp {
 }
 
 .chbutton:hover {
-    background-color: #f2e6e1;
+    background-color: rgba(248, 243, 241, 0.73);
+    transition: 0.25s;
+}
+.chbutton:active {
+    background-color: #ebe6e4;
+    transition: 0.25s;
 }
 
 .fastorder h1 {
@@ -2782,6 +2791,13 @@ a:focus {
 
 .carousel-control.right:hover {
     opacity: 0.8;
+}
+.carousel-control.left:active {
+    color: #292929;
+}
+
+.carousel-control.right:active {
+    color: #292929;
 }
 
 .block2-increasd {
@@ -6331,6 +6347,7 @@ ul{
 }
 .orderredb:hover{
     background-color: rgba(231, 63, 62, 0.9);
+    transition: 0.25s;
 }
 .typespm{
     width: 126px;
@@ -6352,9 +6369,11 @@ ul{
 }
 .typespm .plusts:hover{
     background-color: rgba(231, 63, 62, 0.86);
+    transition: 0.25s;
 }
 .typespm .plusts:active{
     background-color: #cb3837;
+    transition: 0.25s;
 }
 .typespm .minusts{
     width: 34px;
@@ -6368,9 +6387,11 @@ ul{
 }
 .typespm .minusts:hover{
     background-color: rgba(231, 63, 62, 0.86);
+    transition: 0.25s;
 }
 .typespm .minusts:active{
     background-color: #cb3837;
+    transition: 0.25s;
 }
 .typespm input{
     display: inline-block;
