@@ -632,7 +632,9 @@ $(function () {
      ==========================================*/
 
     /* Анимация цифры количества товара в корзине */
-    $(document.body).on('click', '.nminus', function () {
+    var newCardInput = $('.typespm input');
+    var newCardInputVal = 0;
+    $(document.body).on('click', '.nminus, .minusts', function () {
          var input = $(this).siblings('input');
         input.animate({
             paddingTop: '20px',
@@ -640,14 +642,17 @@ $(function () {
         }, 150, function(){
                 input.css({paddingTop: 0, paddingBottom: '20px'});
             });
-            
+        // delete then
+        newCardInputVal--;
+        newCardInput.val(newCardInputVal);
+        //  / delete then
         input.animate({
             paddingBottom: '0px',
             color: '#454545'
         }, 150);
     });
 
-    $(document.body).on('click', '.nplus', function () {
+    $(document.body).on('click', '.nplus, .plusts', function () {
         var input = $(this).siblings('input');
         input.animate({
             paddingBottom: '23px',
@@ -655,6 +660,10 @@ $(function () {
         }, 150, function(){
                 input.css({paddingBottom: 0, paddingTop: '20px'});
             });
+        // delete then
+        newCardInputVal++;
+        newCardInput.val(newCardInputVal);
+        //  / delete then
         input.animate({
             paddingTop: '0px',
             color: '#454545'
