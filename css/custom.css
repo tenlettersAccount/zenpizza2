@@ -3763,6 +3763,7 @@ a:focus {
     color: #454545;
     display: flex;
     position: relative;
+    padding-left: 30px;
 }
 
 .blogtext2 ul li::before {
