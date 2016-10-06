@@ -1760,7 +1760,7 @@ xmp {
 .dechead {
     background-color: #fff;
     width: 100%;
-    padding: 70px 0 15px 30px;
+    padding: 90px 0 15px 30px;
 }
 
 .decbody {
@@ -4470,6 +4470,7 @@ a:focus {
     font-style: normal;
     font-stretch: normal;
     color: #454545;
+    margin-top: 40px;
 }
 
 .interer .carousel-indicators li {
@@ -4488,6 +4489,7 @@ a:focus {
 .interer .carousel-indicators {
     position: absolute;
     bottom: -37px;
+    left:47%;
 }
 
 .decbody2 h5 {
