@@ -1757,7 +1757,7 @@ xmp {
 .dechead {
     background-color: #fff;
     width: 100%;
-    padding: 60px 0 30px 30px;
+    padding: 70px 0 15px 30px;
 }
 
 .decbody {
@@ -1796,10 +1796,9 @@ xmp {
 }
 
 .decdec h4 {
-    font-family: 'OpenSansItalic';
+    font-family: 'OpenSansLightItalic';
     font-size: 12px;
     font-weight: 200;
-    font-style: italic;
     font-stretch: normal;
     color: #5f323a;
     text-align: center;
