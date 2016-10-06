@@ -1772,7 +1772,7 @@ xmp {
 
 .decbody2 {
     width: 100%;
-    padding: 30px 70px;
+    padding: 30px 55px 0 55px;
     height: auto;
     background-color: transparent;
 }
@@ -1792,10 +1792,10 @@ xmp {
 
 .decdec {
     display: inline-block;
-    width: 120px;
+    width: 134px;
     float: left;
     margin-right: 5px;
-    height: 180px;
+    height: 141px;
 }
 
 .decdec h4 {
