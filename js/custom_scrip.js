@@ -681,6 +681,10 @@ $(function () {
         $('.order_waiting_for_answer').addClass('animated fadeInUp');
        // $('.order-last-block-qwas').css({marginBottom: '100px'});
 
+       	$(".fastorder").animate({
+               scrollTop: 125
+        }, 500);
+
         /*$('.fastorder').animate({
             scrollTop: $(".decortype").offset().top
         }, 2000);*/
@@ -731,6 +735,7 @@ $(function () {
     });
 
     $('.order_waiting_for_answer_close_btn').click(function(){
+       
         $('.order_trouble_with_connection').removeClass('animated fadeOutDown');
         $('.order_trouble_with_connection').removeClass('animated fadeInUp');
         $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
