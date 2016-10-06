@@ -446,7 +446,7 @@ footer span {
     margin-left: 0;
     width: 100%;
     text-align: center;
-    padding-bottom: 12px;
+    padding-bottom: 18px;
     padding-top: 8px;
 }
 
@@ -1764,14 +1764,14 @@ xmp {
 
 .decbody {
     width: 100%;
-    padding: 30px 55px 0;
+    padding: 30px 45px 0;
     height: auto;
     background-color: #f8f3f1;
 }
 
 .decbody2 {
     width: 100%;
-    padding: 15px 55px 0 55px;
+    padding: 15px 45px 0 45px;
     height: auto;
     background-color: transparent;
 }
