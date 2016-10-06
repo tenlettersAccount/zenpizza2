@@ -2020,8 +2020,14 @@ xmp {
 }
 
 .orderred:hover {
-    background-color: #5F323A;
+    background-color: rgba(231, 63, 62, 0.81);
+    transition: 0.25s;
 }
+.orderred:active {
+    background-color: #cb3837;
+    transition: 0.25s;
+}
+
 
 .divv {
     display: block;
@@ -3064,9 +3070,13 @@ a:focus {
     color: #ffffff;
     margin-top: 20px;
 }
-
 .level5 button:hover {
-    background-color: red;
+    background-color: #f84241;
+    transition: 0.25s;
+}
+.level5 button:active {
+    background-color: #bc3433;
+    transition: 0.25s;
 }
 
 /* sales and discount page*/
@@ -3991,7 +4001,10 @@ a:focus {
 }
 
 .bonusin button:hover {
-    background-color: red;
+    background-color: rgba(231, 63, 62, 0.82);
+}
+.bonusin button:active {
+    background-color: #cd3837;
 }
 
 .bonusgrad p {
@@ -4324,6 +4337,15 @@ a:focus {
     font-stretch: normal;
     color: #ffffff;
     margin-top: 40px;
+    transition: 0.90s;
+}
+.vaclevel3 button:hover{
+    background-image: linear-gradient(to bottom, rgba(228, 104, 103, 0.82), rgba(221, 66, 65, 0.8));
+    transition: 0.90s;
+}
+.vaclevel3 button:active{
+    background-image: linear-gradient(to bottom, #c86362, #bf3a39);
+    transition: 0.90s;
 }
 
 .anketaotkr {
@@ -4433,7 +4455,12 @@ a:focus {
 }
 
 .aktort button:hover {
-    background-color: red;
+    background-color: rgba(221, 66, 65, 0.83);
+    transition: 0.25s;
+}
+.aktort button:active {
+    background-color: #c13b3a;
+    transition: 0.25s;
 }
 
 .icons2 a {
@@ -6099,7 +6126,7 @@ input[type="submit"] {
 .tx_for_order_block .order_waiting_for_answer h3{
     float: right;
     margin: 25px 70px 0px 0px;
-    font-family: 'RobotoSlab-Regular';
+    font-family: RobotoSlab;
     font-size: 24px;
 }
 .tx_for_order_block .order_waiting_for_answer h5{

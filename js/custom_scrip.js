@@ -274,10 +274,10 @@ $(function () {
 
 
     // click event | add new product
-    $(".bplus, .zen_button").click(function () {
+    $(".bplus, .big_zen_card .zen_button").click(function () {
         var productsName = $(this).parents('.big_zen_card').find('h4').html();
         var productsPrise = $(this).parents('.big_zen_card').find('.price').html();
-        productsPrise = productsPrise.replace('P', '');
+        productsPrise = productsPrise.replace('Р', '');
         productsPrise = productsPrise.replace(' ', '');
         productsPrise = parseInt(productsPrise);
 
@@ -672,6 +672,10 @@ $(function () {
         $('.order_waiting_for_answer').addClass('animated fadeInUp');
        // $('.order-last-block-qwas').css({marginBottom: '100px'});
 
+        $('.fastorder').animate({
+            scrollTop: $(".decortype").offset().top
+        }, 2000);
+
         setTimeout(function(){
             $('.order_trouble_with_connection').addClass('animated fadeOutDown');
             $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
@@ -739,7 +743,6 @@ $(function () {
         '-webkit-transform': 'rotate(15deg)',
         '-o-transform': 'rotate(15deg)',
         'transform': 'rotate(180deg)',
-        transition: '0.50s'
     });
     $('.m-f-e').click(function(){
         if( $('.zen_sidebar_ul ul').css('display') == 'none' ){
@@ -772,7 +775,7 @@ $(function () {
         '-ms-transform': 'rotate(15deg)',
         '-webkit-transform': 'rotate(15deg)',
         '-o-transform': 'rotate(15deg)',
-        'transform': 'rotate(0deg)',
+        'transform': 'rotate(180deg)'
     });
     $('.menusecond').click(function(){
         if( $('.zen_sidebar_ul ul ul').css('display') == 'none' ){
