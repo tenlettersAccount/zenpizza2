@@ -1216,10 +1216,13 @@ xmp {
     right: 0;
     width: 530px;
     height: 100%;
-    background-color: white;
+    background-color: #f8f9fa;
     box-shadow: -2px 0 4px 0 rgba(0, 0, 0, 0.08);
     padding: 30px;
     padding-bottom: 0;
+}
+.fastorder2{
+    background-color: white;
 }
 
 .fastorder h2 {
