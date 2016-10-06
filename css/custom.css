@@ -4498,7 +4498,9 @@ a:focus {
     bottom: -37px;
     left: 47%;
 }
-
+.rectangle2 span {
+    margin-right: 10px;
+}
 .decbody2 h5 {
     font-family: 'OpenSans';
     font-size: 15px;
