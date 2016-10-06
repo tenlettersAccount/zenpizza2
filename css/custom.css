@@ -1765,7 +1765,7 @@ xmp {
 
 .decbody {
     width: 100%;
-    padding: 30px 70px;
+    padding: 30px 55px 0;
     height: auto;
     background-color: #f8f3f1;
 }
@@ -1796,6 +1796,9 @@ xmp {
     float: left;
     margin-right: 5px;
     height: 141px;
+}
+.ddd2{
+    height: 180px;
 }
 
 .decdec h4 {
@@ -4480,7 +4483,7 @@ a:focus {
     width: 13px !important;
     height: 13px !important;
     border: solid 1px #5f323a;
-    left: 47%;
+
 
 }
 
@@ -4493,6 +4496,7 @@ a:focus {
 .interer .carousel-indicators {
     position: absolute;
     bottom: -37px;
+    left: 47%;
 }
 
 .decbody2 h5 {
