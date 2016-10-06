@@ -316,6 +316,8 @@ $('#ch2').click(function () {
                 backgroundColor: 'black'
             }, 1000);
         }
+
+        $('.decor2').css('display', 'none');
     });
 
     $('.fclose, .modalfastorder').click(function () {
