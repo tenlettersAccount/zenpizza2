@@ -209,41 +209,29 @@ $('#ch2').click(function () {
 
     });
 
-    /*$('.img').click(function () {
-        $('.fastorder').removeClass('animated fadeOutRight');
-        $('.nodecor').css({ display: 'none' });
-        $('.decor').css({ display: 'none' });
-        $('.decor3').css({ display: 'block' });
-
-        $('.mainfastorder').css('display', 'block');
-        $('.fastorder').addClass('animated fadeInRight');
-        $('.mainfastorder').fadeIn('fast');
-        setTimeout(function () {
-            $('.fclose').fadeIn('slow');
-            $('.commentr').fadeIn();
-        }, 1000);
-    });*/
-
 
     $('.big_zen_card h4, .img').click(function () {
+
         $('.fastorder').removeClass('animated fadeOutRight');
         $('.nodecor').css({ display: 'none' });
         $('.decor').css({ display: 'none' });
         $('.decor3').css({ display: 'block' });
+
         $('.mainfastorder').css('display', 'block');
-        
+        $('.modalfastorder').css('display', 'block');
+
         $('.fastorder').addClass('animated fadeInRight');
-        $('.mainfastorder').fadeIn(800);
+
         setTimeout(function () {
-            $('.modalfastorder').css('display', 'block');
             $('.commentr').fadeIn();
         }, 500);
         setTimeout(function(){
             $('.fclose').fadeIn('slow');
         }, 1000);
         $('.modalfastorder').animate({
-            backgroundColor: 'black'
+            backgroundColor: 'rgba(82, 43, 50, 0.3)'
         }, 500);
+
     });
 
     /*$('.fclose, .modalfastorder').click(function () {
@@ -297,24 +285,25 @@ $('#ch2').click(function () {
             $('.zen_popup_nav2').removeClass('animated fadeInRight');
             $('.zen_popup_nav2').addClass('animated fadeOutRight');
             $('.zen_popup_bg').fadeOut(300);
+            $('.mainfastorder').css('display', 'block');
+            $('.modalfastorder').css('display', 'block');
             setTimeout(function () {
                 $('.fastorder').css('display', 'block');
                 $('.zen_popup_nav').css('display', 'none');
                 $('.zen_popup_nav2').css('display', 'none');
                 $('.decor3').css('display', 'none');
                 $('.decor').css('display', 'none');
-                $('.mainfastorder').css('display', 'block');
                 $('.nodecor').css('display', 'block');
-                $('.modalfastorder').css('display', 'block');
                 $('.fastorder').addClass('animated fadeInRight');
                 $('.zen_popup_bg').css('display', 'none');
+            }, 100);
+            $('.modalfastorder').animate({
+                backgroundColor: 'rgba(82, 43, 50, 0.3)'
             }, 500);
             setTimeout(function () {
                 $('.fclose').fadeIn(600);
             }, 1300);
-            $('.modalfastorder').animate({
-                backgroundColor: 'black'
-            }, 1000);
+
         }
 
         $('.decor2').css('display', 'none');

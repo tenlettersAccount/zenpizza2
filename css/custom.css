@@ -1206,7 +1206,7 @@ xmp {
 .modalfastorder {
     width: 100%;
     height: 100%;
-    background-color: rgba(82, 43, 50, 0.2) !important;
+    /*background-color: rgba(82, 43, 50, 0.2) !important;*/
     position: fixed;
     overflow: hidden;
     bottom: 0;
