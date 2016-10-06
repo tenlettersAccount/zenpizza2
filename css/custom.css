@@ -1216,7 +1216,7 @@ xmp {
     right: 0;
     width: 530px;
     height: 100%;
-    background-color: #f8f9fa;
+    background-color: white;
     box-shadow: -2px 0 4px 0 rgba(0, 0, 0, 0.08);
     padding: 30px;
     padding-bottom: 0;
@@ -4500,6 +4500,8 @@ a:focus {
 
 .decfoot {
     padding: 5px 30px;
+    background-color: #FBF8F7;
+    height: 67px;
 }
 
 .decfoot h4 {
@@ -4512,6 +4514,7 @@ a:focus {
     color: #454545;
     float: left;
     margin-right: 24px;
+    margin-top: 20px;
 }
 
 .decfoot p {
@@ -4525,6 +4528,7 @@ a:focus {
     text-align: center;
     color: #454545;
     margin-right: 20px;
+    margin-top: 13px;
 }
 
 .decfoot span {
@@ -4913,7 +4917,7 @@ button:focus{
     font-style: normal !important;
     font-stretch: normal !important;
     color: #000000 !important;
-    margin-top: 0 !important;
+    margin-top: 16px !important;
 }
 
 .dbody41 {
@@ -6413,7 +6417,9 @@ ul{
     font-stretch: normal;
     color: #050517;
 }
-
+.d3body3 .numberpm .nminus{
+    background-position: center;
+}
 
 
 
