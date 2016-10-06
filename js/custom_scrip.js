@@ -732,17 +732,6 @@ $(function () {
     });
 
 
-
-
-
-
-
-
-
-
-
-
-
     /* Анимация сворачивания меню в левом сайдбаре */
     $('.zen_sidebar_ul li:first-child>img').css({
         '-moz-transform': 'rotate(15deg)',
@@ -812,7 +801,9 @@ $(function () {
 
 
 
-
+    $('.altyburyw button').click(function(){
+        $(this).html('В корзине');
+    });
 
 
 

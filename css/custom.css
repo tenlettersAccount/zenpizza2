@@ -1760,7 +1760,7 @@ xmp {
 .dechead {
     background-color: #fff;
     width: 100%;
-    padding: 90px 0 15px 30px;
+    padding: 70px 0 15px 30px;
 }
 
 .decbody {
@@ -1772,7 +1772,7 @@ xmp {
 
 .decbody2 {
     width: 100%;
-    padding: 30px 55px 0 55px;
+    padding: 30px 70px;
     height: auto;
     background-color: transparent;
 }
@@ -1792,10 +1792,10 @@ xmp {
 
 .decdec {
     display: inline-block;
-    width: 133px;
+    width: 120px;
     float: left;
     margin-right: 5px;
-    height: 145px;
+    height: 180px;
 }
 
 .decdec h4 {
@@ -4147,12 +4147,14 @@ a:focus {
     color: #e73f3e;
     margin-top: 36px;
     outline: none;
+    transition: 0.60s;
 }
 
 .altyburyw button:hover {
     background-color: #e73f3e;
     border: solid 1px #e73f3e;
     color: #ffffff;
+    transition: 0.60s;
 }
 
 .altyburyw button:focus {
@@ -4470,7 +4472,6 @@ a:focus {
     font-style: normal;
     font-stretch: normal;
     color: #454545;
-    margin-top: 40px;
 }
 
 .interer .carousel-indicators li {
@@ -4489,7 +4490,6 @@ a:focus {
 .interer .carousel-indicators {
     position: absolute;
     bottom: -37px;
-    left:47%;
 }
 
 .decbody2 h5 {
