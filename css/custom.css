@@ -6025,8 +6025,10 @@ input[type="submit"] {
     position: fixed;
     top: 49px;
     left: 210px;
-    width: 100%;
+    width: 310px;
     z-index: 99;
+    background-color: #F8F3F1;
+    border-bottom: 1px solid #cfc3b3 !important;
 }
 
 
