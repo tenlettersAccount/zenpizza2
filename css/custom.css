@@ -107,18 +107,22 @@ body {
     padding-top: 18%;
 }
 .menulia{
-
+    height: 37px;
+    margin-bottom: 0;
+    height: 36px;
 }
+.menulia:hover{
+    border-bottom: 3px solid rgba(231, 63, 62, 0.6);
+    transition: 0.10s;
+    -webkit-transition: 0.10s;
+    -moz-transition: 0.10s;
+    -ms-transition: 0.10s;
+    -o-transition: 0.10s;
+    cursor: pointer;
+}
+
 .menulia a:hover{
     color: #e73f3e;
-    border-bottom: 3px solid #e73f3e;
-    padding-bottom: 14px;
-    transition: 0.25s;
-    -webkit-transition: 0.25s;
-    -moz-transition: 0.25s;
-    -ms-transition: 0.25s;
-    -o-transition: 0.23s;
-
 }
 
 .m_active a{
@@ -635,7 +639,7 @@ h3 {
 }
 
 .zen_nav {
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     background-color: white;
     box-shadow: 0 0 10px grey;
 }

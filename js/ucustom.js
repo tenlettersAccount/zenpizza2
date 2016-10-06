@@ -355,7 +355,6 @@ $('#ch2').click(function () {
     $('.bplus').click(function () {
 
         var counter = $(this).parents('.zencardfooter').find('.zenval').val();
-        console.log(counter);
         counter++;
         $(this).parents('.zencardfooter').find('.zenval').val(counter);
         $(this).parents('.zencardfooter').find('.zenval').html(counter);
@@ -363,7 +362,6 @@ $('#ch2').click(function () {
 
     $('.bminus').click(function () {
         var counter = $(this).parents('.zencardfooter').find('.zenval').val();
-        console.log(counter);
         if (counter == 0) {
             $(this).parents('.zencardfooter').find('.zenval').html(0);
         } else {
@@ -387,37 +385,32 @@ $('#ch2').click(function () {
         });
 
     });
-    $(".bminus, .bplus").click(function () {
-        $(this).parents('.zencardfooter').find(".zeneq")
-            .animate({
-                'opacity': '1',
-                'width': '55px',
-                'height': '55px',
-                'top': '-18px',
-                'right': '13px'
-            }, 300, function () {
-                $(this).parents('.zencardfooter').find('.zeneq').animate({
-                    'opacity': '1',
-                    'width': '50px',
-                    'height': '50px',
-                    'top': '-15px',
-                    'right': '15px'
+    $(".bminus").click(function () {
+        var circle = $(this).parents('.zencardfooter').find(".zeneq");
+        circle.animate({
+            paddingTop: '30px',
+            color: '#5F323A'
+        }, 220, function(){
+            circle.css({paddingTop: '0px'});
+            circle.animate({
+                paddingTop: '10px',
+                color: 'white'
+            }, 220);
+        });
+    });
 
-
-                })
-            });
-
-        $(this).parents('.zencardfooter').find(".zeneq p")
-            .animate({
-                'font-size': '18px',
-                'opacity': '0'
-            }, 300, function () {
-                $(this).parents('.zencardfooter').find('.zeneq p').animate({
-                    'font-size': '16px',
-                    'opacity': '1'
-
-                })
-            });
+    $(".bplus").click(function () {
+        var circle = $(this).parents('.zencardfooter').find(".zeneq");
+        circle.animate({
+            paddingTop: '0',
+            color: '#5F323A',
+        }, 220, function(){
+            circle.css({paddingTop: '30px'});
+            circle.animate({
+                paddingTop: '10px',
+                color: 'white'
+            }, 220);
+        });
     });
     /*animation*/
 

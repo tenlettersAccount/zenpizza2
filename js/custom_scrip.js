@@ -1,5 +1,16 @@
 $(function () {
 
+    /*$('.menulia').mouseenter(function(){
+        $(this).find('a').animate({
+           color: '#e73f3e'
+        }, 20);
+    });
+    $('.menulia').mouseleave(function(){
+        $(this).find('a').animate({
+            color: '#5f323a'
+        }, 20);
+    });*/
+
     /* add top slider swiper if not desktop */
 
         if(window.innerWidth <= 780){
