@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+        $('.after').css({top:'-22px', right:'20px'});
+    }
     //new card type order button
     $('.orderredb').click(function () {
         $(this).css({display:'none'});

@@ -5071,7 +5071,7 @@ button:focus{
 
 .search-container {
     width: 36px;
-    height: 36px;
+    height: 27px;
     margin: 0 auto;
     display: block;
     box-sizing: border-box;
@@ -5087,10 +5087,7 @@ input[type="submit"] {
     width: 100%;
 }
 
-.search-container {
-    height: 27px;
 
-}
 
 .search-container input {
     cursor: pointer;
