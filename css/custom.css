@@ -5987,9 +5987,9 @@ input[type="submit"] {
 }
 
 .tothercindi ol li.active {
-    box-shadow: inset 0 0 0 8px white;
-    width: 16px;
-    height: 16px;
+    box-shadow: inset 0 0 0 8px white !important;
+    width: 16px !important;
+    height: 16px !important;
     position: relative;
     top: 3px;
 }
