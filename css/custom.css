@@ -106,11 +106,14 @@ body {
     z-index: 9999999999;
     padding-top: 18%;
 }
+
+
 .menulia{
     height: 37px;
-    margin-bottom: 0;
-    height: 36px;
 }
+
+/*
+
 .menulia:hover{
     border-bottom: 3px solid rgba(231, 63, 62, 0.6);
     transition: 0.10s;
@@ -124,10 +127,11 @@ body {
 .menulia a:hover{
     color: #e73f3e;
 }
+*/
 
 .m_active a{
     color: #e73f3e !important;
-    border-bottom: 3px solid #e73f3e;
+    border-bottom: 3px solid #e73f3e !important;
     padding-bottom: 14px;
 }
 .loader {
@@ -694,11 +698,22 @@ h3 {
 
 .zen_nav_ul li a {
     color: #5f323a;
+    padding-bottom: 15px;
+    border-bottom: 3px solid transparent;
+    transition: 0.30s;
+    -webkit-transition: 0.30s;
+    -moz-transition: 0.30s;
+    -ms-transition: 0.30s;
+    -o-transition: 0.30s;
+
+}
+.zen_nav_ul li a:hover {
+    color: rgba(231, 63, 62, 1);
+    text-decoration: none;
+    border-bottom: 3px solid rgba(231, 63, 62, 1);
+
 }
 
-.zen_nav_ul li a:hover {
-    text-decoration: none;
-}
 
 nav li a i {
     color: #993a34;
