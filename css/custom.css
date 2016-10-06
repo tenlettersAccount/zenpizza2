@@ -2348,6 +2348,8 @@ a:focus {
     font-stretch: normal;
     text-align: left;
     color: #454545;
+    display: inline-block;
+    border-bottom: solid 1px #cccccc;
 }
 
 .llb {
