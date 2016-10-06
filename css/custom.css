@@ -5942,7 +5942,7 @@ input[type="submit"] {
 }
 .btn-7b:hover{
     background-color: rgba(231, 63, 62, 0.76);
-    transition: 0.25s;
+    transition: 0.15s;
 }
 .btn-7b:active{
     background-color: #d63f3e;

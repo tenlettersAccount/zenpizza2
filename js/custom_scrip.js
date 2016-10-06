@@ -681,9 +681,9 @@ $(function () {
         $('.order_waiting_for_answer').addClass('animated fadeInUp');
        // $('.order-last-block-qwas').css({marginBottom: '100px'});
 
-        $('.fastorder').animate({
+        /*$('.fastorder').animate({
             scrollTop: $(".decortype").offset().top
-        }, 2000);
+        }, 2000);*/
 
         setTimeout(function(){
             $('.order_trouble_with_connection').addClass('animated fadeOutDown');
@@ -701,6 +701,7 @@ $(function () {
             }, 500);
         }, 100000);
     });
+
 
     $('.order_trouble_with_connection button').click(function(){
         $('.order_trouble_with_connection').removeClass('animated fadeOutDown');
@@ -809,6 +810,7 @@ $(function () {
             });
         }
     });
+
 
 
 
