@@ -5995,6 +5995,7 @@ input[type="submit"] {
 }
 .carindib ol li.active {
     background-color:#5f323a !important;
+    box-shadow: inset 0 0 0 8px #5f323a !important;
 }
 
 
