@@ -3729,7 +3729,7 @@ a:focus {
 }
 
 .blogtext2 p {
-    font-family: 'OpenSans' ;
+    font-family: 'OpenSansLight' ;
     font-size: 16px ;
     font-weight: lighter;
     font-style: normal ;
@@ -4009,7 +4009,7 @@ a:focus {
 
 .bonusgrad p {
     float: left;
-    font-family: 'OpenSansItalic';
+    font-family: 'OpenSansLightItalic';
     font-size: 14px;
     font-weight: 200;
     font-style: italic;
