@@ -944,6 +944,9 @@ xmp {
     padding-bottom: 10px;
     z-index: 2;
 }
+.big_zen_card .zen_button:hover{
+    background-color: rgba(227, 55, 54, 0.87);
+}
 
 .big_zen_card .zencardfooter {
     z-index: 1;
@@ -987,6 +990,12 @@ xmp {
     float: left;
     background-image: url(../images/mm.png);
 }
+.bminus:hover{
+    background-color: rgba(227, 55, 54, 0.87);
+}
+.bminus:active{
+     background-color: #d13434;
+}
 
 .bplus {
     position: relative;
@@ -999,12 +1008,15 @@ xmp {
     background-color: #B62C2B;
     background-image: url(../images/pp.png);
 }
+.bplus:hover{
+    background-color: rgba(182, 44, 43, 0.87);
+}
+.bplus:active{
+    background-color: #a32a29;
+}
 .bcommon{
     background-position: center;
     background-repeat: no-repeat;
-}
-.bcommon:hover {
-    background-color: #5F323A;
 }
 
 .zeneq {
@@ -1381,10 +1393,13 @@ xmp {
     float: left;
     cursor: pointer;
 }
-
 .nbutton:hover {
-    background-color: #f2e6e1;
+    background-color: rgba(252, 247, 245, 0.56);
 }
+.nbutton:active {
+    background-color: #e8e3e1;
+}
+
 
 .numberpm .nminus {
     border-radius: 4px 0 0 4px;
@@ -5513,6 +5528,9 @@ input[type="submit"] {
 .cbutton:hover{
     background-color: #f8f3f1;
 }
+.cbutton:active{
+    background-color: #ebe6e4;
+}
 .cbutton.cbutton--click,
 .cbutton:focus {
     outline: none;
@@ -6017,6 +6035,7 @@ input[type="submit"] {
     padding-bottom: 30px;
     width: 100%;
     left: 0px;
+    bottom: -120px;
     padding-left: 30px;
     position: absolute;
     color: #454545;
@@ -6032,7 +6051,7 @@ input[type="submit"] {
 .tx_for_order_block .order_waiting_for_answer h3{
     float: right;
     margin: 25px 70px 0px 0px;
-    font-size: 'RobotoSlab-Regular';
+    font-family: 'RobotoSlab-Regular';
     font-size: 24px;
 }
 .tx_for_order_block .order_waiting_for_answer h5{
@@ -6067,6 +6086,7 @@ input[type="submit"] {
     padding-bottom: 30px;
     width: 100%;
     left: 0px;
+    bottom: -120px;
     padding-left: 30px;
     position: absolute;
     color: #454545;
@@ -6309,7 +6329,9 @@ ul{
     position: relative;
     margin-top: 7px;
 }
-
+.orderredb:hover{
+    background-color: rgba(231, 63, 62, 0.9);
+}
 .typespm{
     width: 126px;
     height: 34px;
@@ -6328,6 +6350,12 @@ ul{
     background-position: center;
     float: left;
 }
+.typespm .plusts:hover{
+    background-color: rgba(231, 63, 62, 0.86);
+}
+.typespm .plusts:active{
+    background-color: #cb3837;
+}
 .typespm .minusts{
     width: 34px;
     height: 34px;
@@ -6337,6 +6365,12 @@ ul{
     background-repeat: no-repeat;
     background-position: center;
     float: left;
+}
+.typespm .minusts:hover{
+    background-color: rgba(231, 63, 62, 0.86);
+}
+.typespm .minusts:active{
+    background-color: #cb3837;
 }
 .typespm input{
     display: inline-block;

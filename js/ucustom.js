@@ -588,7 +588,7 @@ $('#ch2').click(function () {
                 $('.zen_popup_bg').fadeIn('fast');
                 $('.zclose2').fadeIn(400);
 
-            },500);
+            },10);
         }
     });
     /*Жду звонка*/
