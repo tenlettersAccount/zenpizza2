@@ -6428,7 +6428,11 @@ ul{
     background-position: center;
 }
 
-
+.left_menu_active_item{
+    background-color: #4c282e;
+    border-left: 4px solid #e73f3e;
+    padding-left: 12px;
+}
 
 
 
