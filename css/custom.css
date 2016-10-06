@@ -5061,10 +5061,12 @@ button:focus{
 
 .search-container {
     transition: all 0.15s;
+    -webkit-transition: all 0.15s;
 }
 
 .search-container.explode {
     transform: scale(1.4);
+    -webkit-transform: scale(1.4);
     opacity: 0;
 }
 
@@ -5074,6 +5076,7 @@ button:focus{
     margin: 0 auto;
     display: block;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     position: relative;
 }
 
@@ -5096,6 +5099,7 @@ input[type="submit"] {
     border: 2px solid #993A34;
     border-radius: 26px;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     padding: 5px;
     font-size: 14px;
     color: #993A34;
@@ -5150,6 +5154,7 @@ input[type="submit"] {
     border: 2px solid #993A34;
     border-radius: 26px;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     padding: 5px 0px 5px 15px;
     font-size: 14px;
     color: #993A34;
@@ -5164,6 +5169,7 @@ input[type="submit"] {
     border: 2px solid #993A34;
     border-radius: 26px;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     padding: 5px 30px 5px 15px;
     font-size: 14px;
     color: #993A34;
@@ -5198,6 +5204,7 @@ input[type="submit"] {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     opacity: 0;
+    -webkit-opacity: 0;
 }
 
 .search-container,
@@ -5205,19 +5212,24 @@ input[type="submit"] {
 .search-container .after:before,
 .search-container .after:after {
     animation-duration: 1.1s;
+    -webkit-animation-duration: 1.1s;
     animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .search-container.in {
     animation-name: expand;
+    -webkit-animation-name: expand;
 }
 
 .search-container.in .after:before {
     animation-name: beforemagic;
+    -webkit-animation-name: beforemagic;
 }
 
 .search-container.in .after:after {
     animation-name: aftermagic;
+    -webkit-animation-name: aftermagic;
 }
 
 .search-container.close,
@@ -5225,18 +5237,22 @@ input[type="submit"] {
 .search-container.close .after:before,
 .search-container.close .after:after {
     animation-direction: reverse;
+    -webkit-animation-direction: reverse;
 }
 
 .search-container.close {
     animation-name: expand;
+    -webkit-animation-name: expand;
 }
 
 .search-container.close .after:before {
     animation-name: beforemagic;
+    -webkit-animation-name: beforemagic;
 }
 
 .search-container.close .after:after {
     animation-name: aftermagic;
+    -webkit-animation-name: aftermagic;
 }
 
 /* Hold final focused state
@@ -5255,6 +5271,7 @@ input[type="submit"] {
     top: 9px;
     right: 13px;
     opacity: 1;
+    -webkit-opacity: 1;
 }
 
 .search-container.open .after:after {
