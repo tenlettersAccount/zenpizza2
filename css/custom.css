@@ -2324,11 +2324,14 @@ a:focus {
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.16);
     padding: 16px;
 }
-
+.ontmif iframe{
+    position: absolute;
+    height: 100%;
+}
 .rectangle2 {
-    position: relative;
+    position: absolute;
     margin-left: 50px;
-    margin-top: -150px;
+    bottom: 210px;
     cursor: pointer;
     width: 302px;
     height: 100px;
@@ -4222,6 +4225,7 @@ a:focus {
     height:550px;
     top:550px;
     margin-top:-550px;
+    z-index: 80;
 }
 .overlayul2 {
     background:transparent;
