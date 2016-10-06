@@ -5941,12 +5941,12 @@ input[type="submit"] {
     color: white;
 }
 .btn-7b:hover{
-    background-color: rgba(231, 63, 62, 0.83);
+    background-color: rgba(231, 63, 62, 0.76);
     transition: 0.25s;
 }
 .btn-7b:active{
     background-color: #d63f3e;
-    transition: 0.25s;
+    transition: 0.15s;
 }
 
 .btn-7b.btn-activated:before {
