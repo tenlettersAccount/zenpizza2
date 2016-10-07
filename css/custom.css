@@ -859,9 +859,7 @@ xmp {
     left: -7px;
 }
 
-.ul-menu-switch li:last-child {
-    left: 10px;
-}
+
 
 .ul-menu-switch li img {
     width: 19px;
@@ -6589,7 +6587,17 @@ ul{
     text-align: center;
     color: #222222;
 }
-
+.delchoose{
+    list-style: none;
+    float: right;
+    cursor: pointer;
+    right: 50px;
+    position: relative;
+}
+.delchoose:hover{
+    border-bottom: 3px solid transparent !important;
+    color: #222222 !important;
+}
 
 
 

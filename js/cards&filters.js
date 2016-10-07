@@ -138,9 +138,12 @@ $(window).scroll(function(){
     if(winPoss>=navPoss){
         $('.ul-menu-switch').addClass('fixed ');
         $('.ul-menu-switch').css({border:'none'});
+        $('.delchoose').css({right:'210px'});
+
     }else{
         $('.ul-menu-switch').removeClass('fixed ');
         $('.ul-menu-switch').css({border:'1px solid #cfc3b3'});
+        $('.delchoose').css({right:'50px'});
     }
 });
 
