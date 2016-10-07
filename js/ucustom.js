@@ -1,7 +1,9 @@
 $(document).ready(function () {
     if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-        $('.search-container input').css({top:'0px', left:'-3px'});
-
+        $('.search-container input').css({top:'0px', left:'-4px'});
+        $('.search-container form').css({top:'15px'});
+        $('.in form').css({top:'-10px'});
+        $('.open form').css({top:'-10px'});
     }
     //new card type order button
     $('.orderredb').click(function () {
@@ -14,7 +16,7 @@ $(document).ready(function () {
     $('.questions li').click(function () {
         $('.acc').slideUp(400);
         if ($(this).next('.acc').css('display') != 'block') {
-            $(this).next('.acc').slideDown(400);
+            $(this).next('  .acc').slideDown(400);
         }
         $('.questions li').removeClass('semibold');
         $(this).addClass('semibold');

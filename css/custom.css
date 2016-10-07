@@ -5094,11 +5094,19 @@ button:focus{
     transition: all 0.15s;
     -webkit-transition: all 0.15s;
 }
-
+.search-container form{
+    position: relative;
+}
 .search-container.explode {
     transform: scale(1.4);
     -webkit-transform: scale(1.4);
     opacity: 0;
+}
+.open{
+    position: relative;
+}
+.in{
+    position: relative;
 }
 
 .search-container {
@@ -6523,14 +6531,64 @@ ul{
 }
 
 
+.errorpagehead{
+    background-color: #fff;
+    z-index: 10;
+    position: relative;
+    height: 50px;
+}
 
 
+.akart{
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    padding-right: 160px;
+}
+.errorbody{
+    position: relative;
+    background-color: #fff;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+    background-color:#fff;
+    -webkit-background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+    -moz-background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+    -ms-background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+    -o-background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+}
+.errorbody img{
+    width: 240px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+}
 
+.errorbody h1{
+    font-family: 'RobotoSlab';
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #222222;
+    text-align: center;
+    margin-top: 25px;
+}
 
-
-
-
-
+.errorbody p{
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    color: #222222;
+}
 
 
 

@@ -23,6 +23,9 @@
   @media only screen and (min-width: 480px) {}
   
   @media only screen and (max-width: 480px) {
+      .errorbody p{
+          width: 90%;
+      }
       .dblock1 ol li::before {
           counter-increment: list;
           content: counter(list) "";
@@ -715,8 +718,24 @@
           margin-top: 20px;
           width: 90% !important;
       }
+      .absfootertps{
+          position: relative;
+      }
+      .akart{
+          padding-right: 0;
+          position: relative;
+          padding-top: 100px;
+          padding-bottom: 50px;
+      }
+      .menulia{
+          height: 24px;
+      }
+      .zen_nav_ul li a{
+          padding-bottom: 5px;
+      }
       .mt {
           margin-top: 20px !important;
+
       }
       .wthn {
           width: 90px;
@@ -2866,6 +2885,9 @@
           padding-top: 10px;
           height: 130px;
           margin-top: 0px;
+      }
+      .absfootertps{
+          position: relative;
       }
       .ktomy {
           width: 120px;
