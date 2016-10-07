@@ -229,7 +229,7 @@ $('#ch2').click(function () {
             $('.fclose').fadeIn('slow');
         }, 1000);
         $('.modalfastorder').animate({
-            backgroundColor: 'rgba(82, 43, 50, 0.3)'
+            backgroundColor: 'rgba(0, 0, 0, 0.14)'
         }, 500);
 
     });
@@ -298,11 +298,11 @@ $('#ch2').click(function () {
                 $('.zen_popup_bg').css('display', 'none');
             }, 100);
             $('.modalfastorder').animate({
-                backgroundColor: 'rgba(82, 43, 50, 0.3)'
+                backgroundColor: 'rgba(0, 0, 0, 0.14)'
             }, 500);
             setTimeout(function () {
                 $('.fclose').fadeIn(600);
-            }, 1300);
+            }, 1100);
 
         }
 
@@ -326,7 +326,7 @@ $('#ch2').click(function () {
 
         }, 1000);
         $('.modalfastorder').animate({
-            backgroundColor: 'rgba(80,80,80,0.1)'
+            backgroundColor: 'transparent'
         }, 500, 'swing', function(){
             setTimeout(function(){
                 $('.mainfastorder').css('display', 'none');

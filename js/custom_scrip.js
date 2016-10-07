@@ -692,9 +692,9 @@ $(function () {
         $('.order_waiting_for_answer').addClass('animated fadeInUp');
        // $('.order-last-block-qwas').css({marginBottom: '100px'});
 
-       	$(".fastorder").animate({
+       /*	$(".fastorder").animate({
                scrollTop: 120
-        }, 500);
+        }, 500);*/
 
         /*$('.fastorder').animate({
             scrollTop: $(".decortype").offset().top
@@ -747,9 +747,9 @@ $(function () {
 
     $('.order_waiting_for_answer_close_btn').click(function(){
        
-       $(".fastorder").animate({
+       /*$(".fastorder").animate({
                scrollTop: 110
-        }, 900);
+        }, 900);*/
 
         $('.order_trouble_with_connection').removeClass('animated fadeOutDown');
         $('.order_trouble_with_connection').removeClass('animated fadeInUp');

@@ -133,6 +133,7 @@ body {
     color: #e73f3e !important;
     border-bottom: 3px solid #e73f3e !important;
     padding-bottom: 14px;
+    transition: 0.50s !important;
 }
 .loader {
     position: relative;
@@ -710,8 +711,8 @@ h3 {
 .zen_nav_ul li a:hover {
     color: rgba(231, 63, 62, 1);
     text-decoration: none;
-    border-bottom: 3px solid rgba(231, 63, 62, 1);
-
+    border-bottom: 3px solid rgba(231, 63, 62, 0.5);
+    transition: 0.50s;
 }
 
 
