@@ -683,82 +683,36 @@ $(function () {
 
     /* Кнопка заказать анимация */
     $(document.body).on('click', '.orderred', function(){
-        //$(this).css({display: 'none'});
         $('.tx_for_order_block').css({display: 'block'});
-        
-        $('.order_waiting_for_answer').css({display: 'block'});
-        $('.order_waiting_for_answer').removeClass('animated fadeInUp');
-        $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
-        $('.order_waiting_for_answer').addClass('animated fadeInUp');
-       // $('.order-last-block-qwas').css({marginBottom: '100px'});
-
-       /*	$(".fastorder").animate({
-               scrollTop: 120
-        }, 500);*/
-
-        /*$('.fastorder').animate({
-            scrollTop: $(".decortype").offset().top
-        }, 2000);*/
+        $( ".order_waiting_for_answer").show( "slide", { direction: "down" }, 500);
 
         setTimeout(function(){
-            $('.order_trouble_with_connection').addClass('animated fadeOutDown');
-            $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
-            $('.order_waiting_for_answer').removeClass('animated fadeInUp');
-            $('.order_waiting_for_answer').addClass('animated fadeOutDown');
+            $( ".order_waiting_for_answer").hide( "slide", { direction: "down" }, 500);
 
             setTimeout(function(){
-                $('.order_waiting_for_answer').addClass('animated fadeOutDown');
-                $('.order_waiting_for_answer').css({display: 'none'});
-                $('.order_trouble_with_connection').removeClass('animated fadeOutDown');
-                $('.order_trouble_with_connection').removeClass('animated fadeInUp');
-                $('.order_trouble_with_connection').css({display: 'block'});
-                $('.order_trouble_with_connection').addClass('animated fadeInUp');
+                $( ".order_trouble_with_connection").show( "slide", { direction: "down" }, 500);
             }, 500);
-        }, 100000);
+        }, 2500);
     });
 
 
     $('.order_trouble_with_connection button').click(function(){
-        $('.order_trouble_with_connection').removeClass('animated fadeOutDown');
-        $('.order_trouble_with_connection').removeClass('animated fadeInUp');
-        $('.order_trouble_with_connection').css({display: 'block'});
-        $('.order_trouble_with_connection').addClass('animated fadeOutDown');
-        $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
-        $('.order_waiting_for_answer').removeClass('animated fadeInUp');
-        $('.order_waiting_for_answer').css({display: 'block'});
-        $('.order_waiting_for_answer').addClass('animated fadeInUp');
-        $('.order_trouble_with_connection').css({display: 'none'});
-        setTimeout(function(){
-            $('.order_trouble_with_connection').addClass('animated fadeOutDown');
-            $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
-            $('.order_waiting_for_answer').removeClass('animated fadeInUp');
+        $( ".order_trouble_with_connection").hide( "slide", { direction: "down" }, 500);
 
+        $( ".order_waiting_for_answer").show( "slide", { direction: "down" }, 500);
+        setTimeout(function(){
+            $( ".order_waiting_for_answer").hide( "slide", { direction: "down" }, 500);
             setTimeout(function(){
-                $('.order_trouble_with_connection').css({display: 'none'});
-                $('.order_waiting_for_answer').addClass('animated fadeOutDown');
-                $('.order_trouble_with_connection').removeClass('animated fadeOutDown');
-                $('.order_trouble_with_connection').removeClass('animated fadeInUp');
-                $('.order_trouble_with_connection').css({display: 'block'});
-                $('.order_trouble_with_connection').addClass('animated fadeInUp');
-                $('.order_waiting_for_answer').css({display: 'none'});
+                $( ".order_trouble_with_connection").show( "slide", { direction: "down" }, 500);
             }, 500);
-        }, 100000);
+        }, 2500);
     });
 
     $('.order_waiting_for_answer_close_btn').click(function(){
-       
-       /*$(".fastorder").animate({
-               scrollTop: 110
-        }, 900);*/
+    
+        $( ".order_waiting_for_answer").hide( "slide", { direction: "down" }, 500);
+        $( ".order_trouble_with_connection").hide( "slide", { direction: "down" }, 500);
 
-        $('.order_trouble_with_connection').removeClass('animated fadeOutDown');
-        $('.order_trouble_with_connection').removeClass('animated fadeInUp');
-        $('.order_waiting_for_answer').removeClass('animated fadeOutDown');
-        $('.order_waiting_for_answer').removeClass('animated fadeInUp');
-        $('.order_waiting_for_answer').addClass('animated fadeOutDown');
-        $('.order_trouble_with_connection').addClass('animated fadeOutDown');
-       // $('.order-last-block-qwas').css({marginBottom: '0px'});
-        $('.orderred').fadeIn(500);
         setTimeout(function(){
             $('.order_waiting_for_answer').css({display: 'none'});
             $('.order_trouble_with_connection').css({display: 'none'});

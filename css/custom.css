@@ -1220,7 +1220,7 @@ xmp {
 .modalfastorder {
     width: 100%;
     height: 100%;
-    /*background-color: rgba(82, 43, 50, 0.2) !important;*/
+    /*background-color: rgba(0, 0, 0, 0.14) !important;*/
     position: fixed;
     overflow: hidden;
     bottom: 0;
@@ -1228,6 +1228,7 @@ xmp {
     left: 0;
     right: 0;
     z-index: 99;
+    transition: 1;
 }
 
 .fastorder {
@@ -1243,6 +1244,7 @@ xmp {
     box-shadow: -2px 0 4px 0 rgba(0, 0, 0, 0.08);
     padding: 30px;
     padding-bottom: 0;
+    display: none;
 }
 .fastorder2{
     background-color: white;
@@ -1340,6 +1342,7 @@ xmp {
     cursor: pointer;
     /* background-image: url(../images/close.png);*/
     z-index: 100000;
+    display: none;
 }
 .zclose img:hover{
     -webkit-transform: rotate(270deg);
@@ -1749,6 +1752,7 @@ xmp {
     bottom: 0;
     left: 0;
     z-index: 9999;
+    display: none;
 }
 .background {
   background-size: cover;
@@ -2011,6 +2015,8 @@ xmp {
     font-stretch: normal;
     text-align: right;
     margin-right: 20px;
+    display: block;
+    float: right;
 }
 
 .senasena {
@@ -2023,7 +2029,7 @@ xmp {
 
 .karta {
     float: left;
-    margin-left: 115px;
+    margin-left: 101px;
     margin-right: 10px;
     margin-top: 5px;
 }
@@ -5639,6 +5645,7 @@ input[type="submit"] {
 }
 .cbutton:hover{
     background-color: #f8f3f1;
+    padding-bottom: 15px;
 }
 .cbutton:active{
     background-color: #ebe6e4;
