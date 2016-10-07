@@ -109,8 +109,8 @@ $(function () {
      Девайдеры для фильтра меню
      ===============================*/
 
-    var ostroe = $(".ul-menu-switch li:first-child");
-    var recomenduemoe = $(".ul-menu-switch li:last-child");
+    var ostroe = $(".ul-menu-switch .nepokornyi1");
+    var recomenduemoe = $(".ul-menu-switch .nepokornyi2");
 
     ostroe.click(function () {
         $(this).css({color: '#E73F3E', borderBottom: '3px solid #E73F3E', transition: '0.2s'});
