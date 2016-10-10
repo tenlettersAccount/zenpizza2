@@ -692,7 +692,7 @@ $(function () {
             setTimeout(function(){
                 $( ".order_trouble_with_connection").show( "slide", { direction: "down" }, 500);
             }, 500);
-        }, 2500);
+        }, 100000);
     });
 
 
@@ -705,7 +705,7 @@ $(function () {
             setTimeout(function(){
                 $( ".order_trouble_with_connection").show( "slide", { direction: "down" }, 500);
             }, 500);
-        }, 2500);
+        }, 100000);
     });
 
     $('.order_waiting_for_answer_close_btn').click(function(){

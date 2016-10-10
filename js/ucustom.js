@@ -208,8 +208,33 @@ $('#ch2').click(function () {
 
 
     $('.rectangle2').click(function () {
-       
-         $('.fastorder').removeClass('animated slideOutRight');
+
+
+        $('.mainfastorder').css('display', 'block');
+        $('.modalfastorder').css('display', 'block');
+        $('.modalfastorder').animate({
+            backgroundColor: 'rgba(0, 0, 0, 0.14)'
+        }, 200);
+
+        //$('.fastorder').removeClass('animated slideOutRight');
+        $(".fastorder").toggle( "slide", { direction: "right" }, 500);
+        $('.nodecor').css({ 'display': 'none' });
+        $('.decor2').css({ 'display': 'block' });
+        setTimeout(function () {
+            $('.fclose').fadeIn('slow');
+        }, 500);
+
+        /*$('.mainfastorder').css('display', 'block');
+        $('.fastorder').addClass('animated slideInRight');
+        $('.mainfastorder').fadeIn('fast');
+        setTimeout(function () {
+            $('.fclose').fadeIn('slow');
+        }, 500);
+
+        $('.mainfastorder').css('display', 'block');
+        $('.modalfastorder').css('display', 'block');
+
+       //$('.fastorder').removeClass('animated slideOutRight');
         $('.nodecor').css({ 'display': 'none' });
         $('.decor2').css({ 'display': 'block' });
 
@@ -219,8 +244,12 @@ $('#ch2').click(function () {
         $('.mainfastorder').fadeIn('fast');
         setTimeout(function () {
             $('.fclose').fadeIn('slow');
-        }, 1000);
-
+        }, 500);
+        $('.modalfastorder').animate({
+            backgroundColor: 'rgba(0, 0, 0, 0.14)'
+        }, 200);
+*/
+        
 
     });
 
@@ -301,7 +330,11 @@ $('#ch2').click(function () {
 
      $('.fa-shopping-basket').parents('li').click(function () {
         if ( $('.nodecor').css('display') == 'block' ){
-            
+            console.log(1);
+            $('.mainfastorder').css({display: 'block'});
+            $('.modalfastorder').css({display: 'block'});
+            $('.nodecor').show(300);
+             
             $( ".fclose").toggle( "fade", 10);
             $( ".fastorder").toggle( "slide", { direction: "right" }, 500);
             $(".nodecor").fadeOut(400);
@@ -312,26 +345,31 @@ $('#ch2').click(function () {
         
          }else{
              if ( $('.decor3').css('display') == 'block' ){
+                 console.log(2);
                  $('.decor3').fadeOut(500);
                  $('.decor').css('display', 'none');
                  $('.nodecor').css('display', 'block');
                  
                  $('.mainfastorder').css('display', 'block');
                  $('.modalfastorder').css('display', 'block');
+                  $(".zen_popup_nav2").hide( "slide", { direction: "right"  }, 500 );
+                    $(".zen_popup_nav").hide( "slide", { direction: "right"  }, 500 );
                   $(".fclose").show();
 
                   $(".fastorder").hide( "slide", { direction: "right" }, 500);
                   setTimeout(function(){
                       $(".nodecor").fadeIn(400);
                       $(".fastorder").show( "slide", { direction: "right" }, 500);
-                  }, 500);
+                  }, 100);
                   $('.modalfastorder').animate({
                         backgroundColor: 'rgba(0, 0, 0, 0.14)'
                     }, 200);
              }else{
+                 console.log(3);
                     $('.decor3').css('display', 'none');
                     $('.decor').css('display', 'none');
                     $('.nodecor').css('display', 'block');
+                    $('.modalfastorder').css('display', 'block');
                     $('.mainfastorder').css('display', 'block');
                     $(".fastorder").toggle( "slide", { direction: "right" }, 500);
                     $(".zen_popup_nav2").hide( "slide", { direction: "right"  }, 500 );
@@ -401,6 +439,7 @@ $('#ch2').click(function () {
         $('.zen_popup_bg').fadeOut(100);
         $(".fastorder").hide( "slide", { direction: "right"  }, 500 );
         $('.fclose').hide();
+        $('.nodecor').fadeOut(200);
 
         setTimeout(function () {
             //$('.decor3').css({ display: 'none'});
@@ -601,15 +640,16 @@ $('#ch2').click(function () {
             $(".zen_popup_nav").toggle( "slide", { direction: "right" }, 500);
             $(".zclose").toggle( "fade", 400);
          }else{
-             $('.fclose').hide();
-             $('.modalfastorder').hide(400); 
-             $('.mainfastorder').hide(400);
-             $(".fastorder").hide( "slide", { direction: "right" }, 400 );
             $('.nodecor').css('display', 'none');
             $('.zen_popup_bg').fadeIn('fast');
             $(".zen_popup_nav").toggle( "slide", { direction: "right" }, 500);
             $(".zen_popup_nav2").hide( "slide", { direction: "right" }, 500 );
-            
+            $(".fastorder").hide( "slide", { direction: "right" }, 400 );
+             setTimeout(function(){
+                $('.mainfastorder').hide();
+                $('.modalfastorder').hide();
+            }, 500);
+            $('.fclose').hide();
             $(".zclose").fadeIn();
          }
 
@@ -652,7 +692,6 @@ $('#ch2').click(function () {
             setTimeout(function(){
                 $('.mainfastorder').hide();
                 $('.modalfastorder').hide();
-                
             }, 500);
             $('.fclose').hide();
             $('.marina_img2').fadeIn(500);
