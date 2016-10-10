@@ -269,8 +269,6 @@ $('#ch2').click(function () {
     });
 
 
-
-
     $('.rectangle2').click(function () {
 
 
@@ -287,33 +285,6 @@ $('#ch2').click(function () {
         setTimeout(function () {
             $('.fclose').fadeIn('slow');
         }, 500);
-
-        /*$('.mainfastorder').css('display', 'block');
-        $('.fastorder').addClass('animated slideInRight');
-        $('.mainfastorder').fadeIn('fast');
-        setTimeout(function () {
-            $('.fclose').fadeIn('slow');
-        }, 500);
-
-        $('.mainfastorder').css('display', 'block');
-        $('.modalfastorder').css('display', 'block');
-
-       //$('.fastorder').removeClass('animated slideOutRight');
-        $('.nodecor').css({ 'display': 'none' });
-        $('.decor2').css({ 'display': 'block' });
-
-
-        $('.mainfastorder').css('display', 'block');
-        $('.fastorder').addClass('animated slideInRight');
-        $('.mainfastorder').fadeIn('fast');
-        setTimeout(function () {
-            $('.fclose').fadeIn('slow');
-        }, 500);
-        $('.modalfastorder').animate({
-            backgroundColor: 'rgba(0, 0, 0, 0.14)'
-        }, 200);
-*/
-        
 
     });
 
@@ -333,41 +304,8 @@ $('#ch2').click(function () {
             backgroundColor: 'rgba(0, 0, 0, 0.14)'
         }, 500);
 
-
-
-        /*$('.fastorder').removeClass('animated fadeOutRight');
-        $('.nodecor').css({ display: 'none' });
-        $('.decor').css({ display: 'none' });
-        $('.decor3').css({ display: 'block' });
-
-        $('.mainfastorder').css('display', 'block');
-        $('.modalfastorder').css('display', 'block');
-
-        $('.fastorder').addClass('animated fadeInRight');
-
-        setTimeout(function () {
-            $('.commentr').fadeIn();
-        }, 500);
-        setTimeout(function(){
-            $('.fclose').fadeIn('slow');
-        }, 1000);
-        $('.modalfastorder').animate({
-            backgroundColor: 'rgba(0, 0, 0, 0.14)'
-        }, 500);*/
-
     });
 
-    /*$('.fclose, .modalfastorder').click(function () {
-        $('.fastorder').removeClass('animated fadeInRight');
-        $('.fastorder').addClass('animated fadeOutRight');
-
-        $('.fclose').css('display', 'none');
-        setTimeout(function () {
-            $('.nodecor').css('display', 'block');
-            $('.mainfastorder').css('display', 'none');
-        }, 1000);
-    });
-*/
 
     $('.backto').click(function () {
         $('.decor').css({ 'display': 'none' });
