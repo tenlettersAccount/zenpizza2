@@ -1,4 +1,64 @@
 $(document).ready(function () {
+
+
+    $('.ufa-search').click(function () {
+        $('.asdfghjk').removeClass('animated fadeInRight');
+        $('.asdfghjk').addClass('animated fadeOut');
+        $('.usin').css({ border:'2px solid  #dddddd',width:'460px', padding: '8px 30px 8px 8px'});
+        $('.usearch').css({width:'485px'});
+
+
+        $('.fa-search').css({opacity:'0'});
+            $('.asdfghjk').css({display:'none'});
+
+        setTimeout(function (){
+            $('.rotateclose').css({display:'inherit'});
+            $('.rotateclose').removeClass('animated fadeOut');
+            $('.rotateclose').addClass('animated fadeIn');
+        }, 500);
+
+    });
+    $('.rotateclose').click(function () {
+        $('.darkback').css({display:'none'});
+        $('.darkback').css({display:'none'});
+
+        $('.selectblog').removeClass('animated fadeIn');
+        $('.selectblog').addClass('animated fadeOut');
+
+
+        $('.fa-search').css({opacity:'1'});
+        $('.rotateclose').css({display:'none'});
+
+        $('.rotateclose').removeClass('animated fadeIn');
+        $('.rotateclose').addClass('animated fadeOut');
+
+
+        $('.usin').css({ border:'none',width:'0px', padding: '0'});
+
+
+
+        setTimeout(function (){
+            $('.selectblog').css({display:'none'});
+            $('.usearch').css({width:'30px'});
+            $('.asdfghjk').removeClass('animated fadeOut');
+            $('.asdfghjk').addClass('animated fadeInRight');
+            $('.asdfghjk').css({display:'inline-block'});
+        }, 600);
+    });
+
+    $('.usin').click(function () {
+        $('.darkback').css({display:'block'});
+        $('.selectblog').css({display:'block'});
+        $('.selectblog').removeClass('animated fadeOut');
+        $('.selectblog').addClass('animated fadeIn');
+
+        setTimeout(function (){
+
+        }, 500);
+    });
+
+
+    //search for safari browser
     if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
         $('.search-container input').css({top:'0px', left:'-4px'});
         $('.search-container form').css({top:'15px'});
@@ -25,6 +85,10 @@ $(document).ready(function () {
 
     $('footer').parents('.zen_content_wrapper').css('overflow', 'hidden');
 
+
+
+
+/*
     var s = $('.search-container input'),
         f = $('.search-container'),
         a = $('.after'),
@@ -59,7 +123,7 @@ $(document).ready(function () {
         }, 3000);
     })
 
-
+*/
     var image = document.getElementById('myImage');
     image.src = "images/nevybronnyi.png";
 
