@@ -271,7 +271,6 @@ $('#ch2').click(function () {
 
     $('.rectangle2').click(function () {
 
-
         $('.mainfastorder').css('display', 'block');
         $('.modalfastorder').css('display', 'block');
         $('.modalfastorder').animate({
@@ -279,7 +278,7 @@ $('#ch2').click(function () {
         }, 200);
 
         //$('.fastorder').removeClass('animated slideOutRight');
-        $(".fastorder").toggle( "slide", { direction: "right" }, 500);
+        $(".fastorder").show( "slide", { direction: "right" }, 500);
         $('.nodecor').css({ 'display': 'none' });
         $('.decor2').css({ 'display': 'block' });
         setTimeout(function () {
@@ -367,22 +366,48 @@ $('#ch2').click(function () {
                         backgroundColor: 'rgba(0, 0, 0, 0.14)'
                     }, 200);
              }else{
-                 console.log(3);
-                    $('.decor3').css('display', 'none');
-                    $('.decor').css('display', 'none');
-                    $('.nodecor').css('display', 'block');
-                    $('.modalfastorder').css('display', 'block');
-                    $('.mainfastorder').css('display', 'block');
-                    $(".fastorder").toggle( "slide", { direction: "right" }, 500);
-                    $(".zen_popup_nav2").hide( "slide", { direction: "right"  }, 500 );
-                    $(".zen_popup_nav").hide( "slide", { direction: "right"  }, 500 );
+                 if($('.decor2').css('display') == 'block'){
 
-                    $(".fclose").toggle( "fade", 900);
+                     $('.modalfastorder').css('display', 'block');
+                     $('.mainfastorder ').css('display', 'block');
+                     $('.fclose').fadeIn(1200);
+                     console.log(88);
+                     $('.decor2').fadeOut(500);
+                     $(".fastorder").hide( "slide", { direction: "right" }, 500);
+                     setTimeout(function(){
+                         $(".fastorder").show( "slide", { direction: "right" }, 500);
+                     }, 500);
 
-                    $('.modalfastorder').animate({
-                        backgroundColor: 'rgba(0, 0, 0, 0.14)'
-                    }, 200);
-                    $('.decor2').css('display', 'none');
+                     $('.decor3').css('display', 'none');
+                     $('.decor').css('display', 'none');
+                     $('.nodecor').fadeIn(500);
+
+                     $(".zen_popup_nav2").hide( "slide", { direction: "right"  }, 500 );
+                     $(".zen_popup_nav").hide( "slide", { direction: "right"  }, 500 );
+
+                     $('.modalfastorder').animate({
+                         backgroundColor: 'rgba(0, 0, 0, 0.14)'
+                     }, 200);
+
+                 }else{
+                     console.log(3);
+                     $('.decor3').css('display', 'none');
+                     $('.decor').css('display', 'none');
+                     $('.nodecor').css('display', 'block');
+                     $('.modalfastorder').css('display', 'block');
+                     $('.mainfastorder').css('display', 'block');
+                     $(".fastorder").toggle( "slide", { direction: "right" }, 500);
+                     $(".zen_popup_nav2").hide( "slide", { direction: "right"  }, 500 );
+                     $(".zen_popup_nav").hide( "slide", { direction: "right"  }, 500 );
+
+                     $(".fclose").toggle( "fade", 900);
+
+                     $('.modalfastorder').animate({
+                         backgroundColor: 'rgba(0, 0, 0, 0.14)'
+                     }, 200);
+                     $('.decor2').css('display', 'none');
+                 }
+
              }
          }
 
