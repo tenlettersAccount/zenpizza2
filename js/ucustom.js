@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     $('.ufa-search').click(function () {
         $('.asdfghjk').removeClass('animated fadeInRight');
         $('.asdfghjk').addClass('animated fadeOut');
@@ -25,17 +24,13 @@ $(document).ready(function () {
         $('.selectblog').removeClass('animated fadeIn');
         $('.selectblog').addClass('animated fadeOut');
 
-
         $('.fa-search').css({opacity:'1'});
         $('.rotateclose').css({display:'none'});
 
         $('.rotateclose').removeClass('animated fadeIn');
         $('.rotateclose').addClass('animated fadeOut');
 
-
         $('.usin').css({ border:'none',width:'0px', padding: '0'});
-
-
 
         setTimeout(function (){
             $('.selectblog').css({display:'none'});
@@ -56,7 +51,6 @@ $(document).ready(function () {
 
         }, 500);
     });
-
 
     //search for safari browser
     if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
@@ -85,49 +79,10 @@ $(document).ready(function () {
 
     $('footer').parents('.zen_content_wrapper').css('overflow', 'hidden');
 
-
-
-
-/*
-    var s = $('.search-container input'),
-        f = $('.search-container'),
-        a = $('.after'),
-        m = $('h4');
-
-    s.focus(function () {
-        if (f.hasClass('open')) return;
-        f.addClass('in');
-        setTimeout(function () {
-            f.addClass('open');
-            f.removeClass('in');
-        }, 2000);
-    });
-
-    a.on('click', function (e) {
-        e.preventDefault();
-        if (!f.hasClass('open')) return;
-        s.val('');
-        f.addClass('close');
-        f.removeClass('open');
-        f.removeClass('close');
-    })
-
-    f.submit(function (e) {
-        e.preventDefault();
-        m.html('Thanks, high five!').addClass('show');
-        f.addClass('explode');
-        setTimeout(function () {
-            s.val('');
-            f.removeClass('explode');
-            m.removeClass('show');
-        }, 3000);
-    })
-
-*/
     var image = document.getElementById('myImage');
     image.src = "images/nevybronnyi.png";
 
-$('#ch2').click(function () {
+    $('#ch2').click(function () {
         image.src = "images/marina.png";
         $('.souse3').addClass('animated fadeIn');
         setTimeout(function () {
@@ -178,7 +133,6 @@ $('#ch2').click(function () {
         }, 500);
     });
 
-
     var $star_rating = $('.star-rating .fa');
 
     var SetRatingStar = function () {
@@ -197,7 +151,6 @@ $('#ch2').click(function () {
     });
 
     SetRatingStar();
-
 
     $('.munum').click(function () {
         //$('.zen_sidebar').hide("slide", { direction: "left" }, 1000);
@@ -230,9 +183,7 @@ $('#ch2').click(function () {
         $(this).parents('.widthjuz').css({ 'display': 'none' });
     });
 
-
     $('.nplus').click(function () {
-
         var counter = $(this).parents('.numberpm').find('.sumof').val();
         console.log(counter);
         counter++;
@@ -256,38 +207,25 @@ $('#ch2').click(function () {
     $('.mainb2').click(function () {
         $('.nodecor').css({ 'display': 'none' });
         $( ".decor").show( "slide", { direction: "down" }, 500);
-
-        /*$('.nodecor').css({ 'display': 'none' });
-        $('.decor').css({ 'display': 'block' });
-        $('.decor').addClass('animated fadeInUp');
-        setTimeout(function(){
-            $('.decor').removeClass('animated fadeInUp');
-        }, 500);
-        $('.fastorder').animate({
-            scrollTop: $("h1").offset().top
-        }, 500);*/
     });
-
-
-
 
     $('.rectangle2').click(function () {
-       
-         $('.fastorder').removeClass('animated slideOutRight');
-        $('.nodecor').css({ 'display': 'none' });
-        $('.decor2').css({ 'display': 'block' });
-
 
         $('.mainfastorder').css('display', 'block');
-        $('.fastorder').addClass('animated slideInRight');
-        $('.mainfastorder').fadeIn('fast');
+        $('.modalfastorder').css('display', 'block');
+        $('.modalfastorder').animate({
+            backgroundColor: 'rgba(0, 0, 0, 0.14)'
+        }, 200);
+
+        //$('.fastorder').removeClass('animated slideOutRight');
+        $(".fastorder").show( "slide", { direction: "right" }, 500);
+        $('.nodecor').css({ 'display': 'none' });
+        $('.decor2').css({ 'display': 'block' });
         setTimeout(function () {
             $('.fclose').fadeIn('slow');
-        }, 1000);
-
+        }, 500);
 
     });
-
 
     $('.big_zen_card h4, .img').click(function () {
         $('.nodecor').css('display', 'none');
@@ -304,41 +242,7 @@ $('#ch2').click(function () {
             backgroundColor: 'rgba(0, 0, 0, 0.14)'
         }, 500);
 
-
-
-        /*$('.fastorder').removeClass('animated fadeOutRight');
-        $('.nodecor').css({ display: 'none' });
-        $('.decor').css({ display: 'none' });
-        $('.decor3').css({ display: 'block' });
-
-        $('.mainfastorder').css('display', 'block');
-        $('.modalfastorder').css('display', 'block');
-
-        $('.fastorder').addClass('animated fadeInRight');
-
-        setTimeout(function () {
-            $('.commentr').fadeIn();
-        }, 500);
-        setTimeout(function(){
-            $('.fclose').fadeIn('slow');
-        }, 1000);
-        $('.modalfastorder').animate({
-            backgroundColor: 'rgba(0, 0, 0, 0.14)'
-        }, 500);*/
-
     });
-
-    /*$('.fclose, .modalfastorder').click(function () {
-        $('.fastorder').removeClass('animated fadeInRight');
-        $('.fastorder').addClass('animated fadeOutRight');
-
-        $('.fclose').css('display', 'none');
-        setTimeout(function () {
-            $('.nodecor').css('display', 'block');
-            $('.mainfastorder').css('display', 'none');
-        }, 1000);
-    });
-*/
 
     $('.backto').click(function () {
         $('.decor').css({ 'display': 'none' });
@@ -348,7 +252,7 @@ $('#ch2').click(function () {
         $('.fforder').removeClass('animated fadeOutDown');
         $('.fforder').slideDown();
     });
-    //d
+
     $('.ffootclose').click(function () {
         $('.absh2').css({
             marginBottom: '0px'
@@ -362,12 +266,16 @@ $('#ch2').click(function () {
         $('.ffordermain').fadeIn(500);
     });
 
-
      $('.fa-shopping-basket').parents('li').click(function () {
         if ( $('.nodecor').css('display') == 'block' ){
-            
-            $( ".fclose").toggle( "fade", 10);
-            $( ".fastorder").toggle( "slide", { direction: "right" }, 500);
+
+            console.log(1);
+            $('.mainfastorder').css({display: 'block'});
+            $('.modalfastorder').css({display: 'block'});
+            $('.nodecor').show(300);
+             
+            $( ".fclose").hide( "fade", 10);
+            $( ".fastorder").hide( "slide", { direction: "right" }, 500);
             $(".nodecor").fadeOut(400);
 
             $('.modalfastorder').animate({
@@ -376,95 +284,82 @@ $('#ch2').click(function () {
         
          }else{
              if ( $('.decor3').css('display') == 'block' ){
+                 console.log(2);
                  $('.decor3').fadeOut(500);
                  $('.decor').css('display', 'none');
                  $('.nodecor').css('display', 'block');
                  
                  $('.mainfastorder').css('display', 'block');
                  $('.modalfastorder').css('display', 'block');
+                  $(".zen_popup_nav2").hide( "slide", { direction: "right"  }, 500 );
+                    $(".zen_popup_nav").hide( "slide", { direction: "right"  }, 500 );
                   $(".fclose").show();
 
                   $(".fastorder").hide( "slide", { direction: "right" }, 500);
                   setTimeout(function(){
                       $(".nodecor").fadeIn(400);
                       $(".fastorder").show( "slide", { direction: "right" }, 500);
-                  }, 500);
+                  }, 100);
                   $('.modalfastorder').animate({
                         backgroundColor: 'rgba(0, 0, 0, 0.14)'
                     }, 200);
              }else{
-                    $('.decor3').css('display', 'none');
-                    $('.decor').css('display', 'none');
-                    $('.nodecor').css('display', 'block');
-                    $('.mainfastorder').css('display', 'block');
-                    $(".fastorder").toggle( "slide", { direction: "right" }, 500);
-                    $(".zen_popup_nav2").hide( "slide", { direction: "right"  }, 500 );
-                    $(".zen_popup_nav").hide( "slide", { direction: "right"  }, 500 );
+                 if($('.decor2').css('display') == 'block'){
 
-                    $(".fclose").toggle( "fade", 900);
+                     $('.modalfastorder').css('display', 'block');
+                     $('.mainfastorder ').css('display', 'block');
+                     $('.fclose').fadeIn(1200);
+                     console.log(88);
+                     $('.decor2').fadeOut(500);
+                     $(".fastorder").hide( "slide", { direction: "right" }, 500);
+                     setTimeout(function(){
+                         $(".fastorder").show( "slide", { direction: "right" }, 500);
+                     }, 500);
 
-                    $('.modalfastorder').animate({
-                        backgroundColor: 'rgba(0, 0, 0, 0.14)'
-                    }, 200);
-                    $('.decor2').css('display', 'none');
+                     $('.decor3').css('display', 'none');
+                     $('.decor').css('display', 'none');
+                     $('.nodecor').fadeIn(500);
+
+                     $(".zen_popup_nav2").hide( "slide", { direction: "right"  }, 500 );
+                     $(".zen_popup_nav").hide( "slide", { direction: "right"  }, 500 );
+
+                     $('.modalfastorder').animate({
+                         backgroundColor: 'rgba(0, 0, 0, 0.14)'
+                     }, 200);
+
+                 }else{
+
+                     console.log(3);
+                     $('.decor3').css('display', 'none');
+                     $('.decor').css('display', 'none');
+                     $('.nodecor').css('display', 'block');
+                     $('.modalfastorder').css('display', 'block');
+                     $('.mainfastorder').css('display', 'block');
+                     $(".fastorder").show( "slide", { direction: "right" }, 500);
+                     $(".zen_popup_nav2").hide( "slide", { direction: "right"  }, 500 );
+                     $(".zen_popup_nav").hide( "slide", { direction: "right"  }, 500 );
+
+                     setTimeout(function(){
+                         $(".fclose").fadeIn(200);
+                     }, 500);
+
+
+                     $('.modalfastorder').animate({
+                         backgroundColor: 'rgba(0, 0, 0, 0.14)'
+                     }, 200);
+                     $('.decor2').css('display', 'none');
+                 }
+
              }
          }
-
-
-
-
-         // old
-        /*if ( $('.nodecor ').css('display') == 'block' ){
-            $('.fastorder').removeClass('animated fadeInRight');
-            $('.fastorder').addClass('animated fadeOutRight');
-            
-            $('.fclose').hide();
-            setTimeout(function(){
-                $('.mainfastorder').fadeOut(320);
-                $('.nodecor ').css({display: 'none'});
-            }, 650);
-            
-
-        }else{
-            $('.fastorder').css('display', 'none');
-            $('.fclose').hide();
-            $('.fastorder').removeClass('animated fadeOutRight');
-            $('.zen_popup_nav').removeClass('animated fadeInRight');
-            $('.zen_popup_nav').addClass('animated fadeOutRight');
-            $('.zen_popup_nav2').removeClass('animated fadeInRight');
-            $('.zen_popup_nav2').addClass('animated fadeOutRight');
-            $('.zen_popup_bg').fadeOut(300);
-            $('.mainfastorder').css('display', 'block');
-            $('.modalfastorder').css('display', 'block');
-            setTimeout(function () {
-                $('.fastorder').css('display', 'block');
-                $('.zen_popup_nav').css('display', 'none');
-                $('.zen_popup_nav2').css('display', 'none');
-                $('.decor3').css('display', 'none');
-                $('.decor').css('display', 'none');
-                $('.nodecor').css('display', 'block');
-                $('.fastorder').addClass('animated fadeInRight');
-                $('.zen_popup_bg').css('display', 'none');
-            }, 100);
-            $('.modalfastorder').animate({
-                backgroundColor: 'rgba(0, 0, 0, 0.14)'
-            }, 500);
-            setTimeout(function () {
-                $('.fclose').fadeIn(600);
-            }, 1100);
-
-        }
-
-        $('.decor2').css('display', 'none');*/
     });
-
-
 
 
     $('.fclose, .modalfastorder').click(function () {
         $('.zen_popup_bg').fadeOut(100);
         $(".fastorder").hide( "slide", { direction: "right"  }, 500 );
         $('.fclose').hide();
+        $('.nodecor').fadeOut(200);
 
         setTimeout(function () {
             //$('.decor3').css({ display: 'none'});
@@ -476,8 +371,6 @@ $('#ch2').click(function () {
         $('.modalfastorder').animate({
             backgroundColor: 'transparent'
         }, 500);
-     
-        
     });
 
 
@@ -546,53 +439,6 @@ $('#ch2').click(function () {
             }, 220);
         });
     });
-    /*animation*/
-
-
-    // http://stackoverflow.com/a/11381730/989439
-    /*function mobilecheck() {
-        var check = false;
-        (function (a) {
-            if (/(android|ipad|playbook|silk|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4)))check = true
-        })(navigator.userAgent || navigator.vendor || window.opera);
-        return check;
-    }
-
-    var support = {animations: Modernizr.cssanimations},
-        animEndEventNames = {
-            'WebkitAnimation': 'webkitAnimationEnd',
-            'OAnimation': 'oAnimationEnd',
-            'msAnimation': 'MSAnimationEnd',
-            'animation': 'animationend'
-        },
-        animEndEventName = animEndEventNames[Modernizr.prefixed('animation')],
-        onEndAnimation = function (el, callback) {
-            var onEndCallbackFn = function (ev) {
-                if (support.animations) {
-                    if (ev.target != this) return;
-                    this.removeEventListener(animEndEventName, onEndCallbackFn);
-                }
-                if (callback && typeof callback === 'function') {
-                    callback.call();
-                }
-            };
-            if (support.animations) {
-                el.addEventListener(animEndEventName, onEndCallbackFn);
-            }
-            else {
-                onEndCallbackFn();
-            }
-        },
-        eventtype = mobilecheck() ? 'touchstart' : 'click';
-
-    [].slice.call(document.querySelectorAll('.cbutton')).forEach(function (el) {
-        el.addEventListener(eventtype, function (ev) {
-            classie.add(el, 'cbutton--click');
-            onEndAnimation(classie.has(el, 'cbutton--complex') ? el.querySelector('.cbutton__helper') : el, function () {
-                classie.remove(el, 'cbutton--click');
-            });
-        });
-    });*/
 
     // анимация при добавлении товара в корзину
     $(document.body).on('click', '.bplus', function () {
@@ -623,12 +469,6 @@ $('#ch2').click(function () {
         }, 800);
     });
 
-
-
-
-
-
-
     var checkbox_index = 0;
     $('.checkbox').click(function () {
         $(this).children('ul').slideToggle('fast');
@@ -651,110 +491,50 @@ $('#ch2').click(function () {
         $(this).addClass('li_active');
     });
 
-    /*$('.zen_nav_feedback').click(function () {
-     $('.zen_popup_nav').removeClass('animated fadeOutRight');
-     $('.zen_popup_nav').css('display', 'block');
-     $('.zen_popup_nav').addClass('animated fadeInRight');
-     $('.zen_popup_bg').fadeIn('fast');
-     });*/
-
     /*Жду звонка*/
     $('.zen_nav_feedback li:first-child').click(function(){
         if ( $('.zen_popup_nav').css('display') == 'block' ){
             $('.zen_popup_bg').fadeOut('fast');
-            $(".zen_popup_nav").toggle( "slide", { direction: "right" }, 500);
+            $(".zen_popup_nav").hide( "slide", { direction: "right" }, 500);
             $(".zclose").toggle( "fade", 400);
          }else{
-             $('.fclose').hide();
-             $('.modalfastorder').hide(400); 
-             $('.mainfastorder').hide(400);
-             $(".fastorder").hide( "slide", { direction: "right" }, 400 );
             $('.nodecor').css('display', 'none');
             $('.zen_popup_bg').fadeIn('fast');
-            $(".zen_popup_nav").toggle( "slide", { direction: "right" }, 500);
+            $(".zen_popup_nav").show( "slide", { direction: "right" }, 500);
             $(".zen_popup_nav2").hide( "slide", { direction: "right" }, 500 );
-            
+            $(".fastorder").hide( "slide", { direction: "right" }, 400 );
+             setTimeout(function(){
+                $('.mainfastorder').hide();
+                $('.modalfastorder').hide();
+            }, 500);
+            $('.fclose').hide();
             $(".zclose").fadeIn();
          }
-
-
-       /* if($('.zen_popup_nav').css('display') == 'block') {
-            $('.zen_popup_nav').css({display: 'none'});
-            $('.zen_popup_bg').fadeOut(400);
-        }else{
-            $('.nodecor').css('display', 'none');
-            $('.zen_popup_nav').addClass('animated fadeOutRight');
-            $('.zen_popup_nav2').addClass('animated fadeOutRight');
-
-            $('.fastorder').removeClass('animated fadeInRight');
-            $('.fastorder').addClass('animated fadeOutRight');
-
-            $('.fclose').css('display', 'none');
-            $('.modalfastorder').css('display', 'none');
-            setTimeout(function () {
-                $('.zen_popup_nav').removeClass('animated fadeOutRight');
-                $('.zen_popup_nav').css('display', 'block');
-                $('.zen_popup_nav').addClass('animated fadeInRight');
-                $('.zen_popup_bg').fadeIn('fast');
-                $('.zen_popup_nav2').css('display', 'none');
-            }, 500);
-        }*/
     });
 
     $('.zen_nav_feedback li:last-child').click(function(){
          if ( $('.zen_popup_nav2').css('display') == 'block' ){
             $('.zen_popup_bg').fadeOut('fast');
-            $(".zen_popup_nav2").toggle( "slide", { direction: "right" }, 500);
+            $(".zen_popup_nav2").hide( "slide", { direction: "right" }, 500);
             $('.marina_img2').fadeOut(500);
             $(".zclose2").toggle( "fade", 400);
          }else{
             $('.nodecor').css('display', 'none');
             $('.zen_popup_bg').fadeIn('fast');
-            $(".zen_popup_nav2").toggle( "slide", { direction: "right" }, 500);
+            $(".zen_popup_nav2").show( "slide", { direction: "right" }, 500);
             $(".zen_popup_nav").hide( "slide", { direction: "right"  }, 500 );
             $(".fastorder").hide( "slide", { direction: "right"  }, 500 );
             setTimeout(function(){
                 $('.mainfastorder').hide();
                 $('.modalfastorder').hide();
-                
             }, 500);
             $('.fclose').hide();
             $('.marina_img2').fadeIn(500);
             $(".zclose2").show();
          }
 
-
-
-        /*if($('.zen_popup_nav2').css('display') == 'block'){
-            $('.zen_popup_nav2').addClass('animated fadeOutRight');
-            setTimeout(function(){
-                $('.zen_popup_nav2').css({display: 'none'});
-                $('.zen_popup_nav2').removeClass('animated fadeOutRight');
-            }, 500);
-            $('.zen_popup_bg').fadeOut(500);
-        }else{
-            $('.nodecor').css('display', 'none');
-            $('.zen_popup_nav').addClass('animated fadeOutRight');
-
-            $('.zen_popup_nav2').addClass('animated fadeOutRight');
-            $('.fastorder').removeClass('animated fadeInRight');
-            $('.fastorder').addClass('animated fadeOutRight');
-
-            $('.fclose').css('display', 'none');
-            $('.modalfastorder').css('display', 'none');
-            setTimeout(function (){
-                $('.marina_img2').fadeIn(500);
-                $('.zen_popup_nav2').removeClass('animated fadeOutRight');
-                $('.zen_popup_nav2').css('display', 'block');
-                $('.zen_popup_nav2').addClass('animated fadeInRight');
-                $('.zen_popup_nav').css('display', 'none');
-                $('.zen_popup_bg').fadeIn('fast');
-                $('.zclose2').fadeIn(400);
-
-            },10);
-        }*/
     });
-    /*Жду звонка*/
+    /*/Жду звонка*/
 
     $('.zen_popup_bg, .zclose, .zclose2').click(function () {
         $('.zen_popup_bg').fadeOut('fast');
@@ -813,16 +593,6 @@ $('#ch2').click(function () {
             }, 1000);
         }
     }
-
-
-
-
-
-
-
-
-
-
 
 });
 
