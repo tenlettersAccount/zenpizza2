@@ -282,7 +282,12 @@ $(function () {
             return sum;
         }
     };
-
+    /* set empty cookie if the aint exist */
+    if (!cart.getCookie('usersCart')){
+        cart.setCookie('usersCart', cart.productsObj);
+        cart.setCookie('usersTheProductsPrices', cart.theProductsPrices);
+        cart.setCookie('usersTheAmountOfProduct', cart.theAmountOfProduct);
+    }
 
     // click event | add new product
     $(".bplus, .big_zen_card .zen_button").click(function () {
