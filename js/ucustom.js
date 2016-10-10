@@ -268,13 +268,14 @@ $(document).ready(function () {
 
      $('.fa-shopping-basket').parents('li').click(function () {
         if ( $('.nodecor').css('display') == 'block' ){
+
             console.log(1);
             $('.mainfastorder').css({display: 'block'});
             $('.modalfastorder').css({display: 'block'});
             $('.nodecor').show(300);
              
-            $( ".fclose").toggle( "fade", 10);
-            $( ".fastorder").toggle( "slide", { direction: "right" }, 500);
+            $( ".fclose").hide( "fade", 10);
+            $( ".fastorder").hide( "slide", { direction: "right" }, 500);
             $(".nodecor").fadeOut(400);
 
             $('.modalfastorder').animate({
@@ -327,17 +328,21 @@ $(document).ready(function () {
                      }, 200);
 
                  }else{
+
                      console.log(3);
                      $('.decor3').css('display', 'none');
                      $('.decor').css('display', 'none');
                      $('.nodecor').css('display', 'block');
                      $('.modalfastorder').css('display', 'block');
                      $('.mainfastorder').css('display', 'block');
-                     $(".fastorder").toggle( "slide", { direction: "right" }, 500);
+                     $(".fastorder").show( "slide", { direction: "right" }, 500);
                      $(".zen_popup_nav2").hide( "slide", { direction: "right"  }, 500 );
                      $(".zen_popup_nav").hide( "slide", { direction: "right"  }, 500 );
 
-                     $(".fclose").toggle( "fade", 900);
+                     setTimeout(function(){
+                         $(".fclose").fadeIn(200);
+                     }, 500);
+
 
                      $('.modalfastorder').animate({
                          backgroundColor: 'rgba(0, 0, 0, 0.14)'
@@ -490,12 +495,12 @@ $(document).ready(function () {
     $('.zen_nav_feedback li:first-child').click(function(){
         if ( $('.zen_popup_nav').css('display') == 'block' ){
             $('.zen_popup_bg').fadeOut('fast');
-            $(".zen_popup_nav").toggle( "slide", { direction: "right" }, 500);
+            $(".zen_popup_nav").hide( "slide", { direction: "right" }, 500);
             $(".zclose").toggle( "fade", 400);
          }else{
             $('.nodecor').css('display', 'none');
             $('.zen_popup_bg').fadeIn('fast');
-            $(".zen_popup_nav").toggle( "slide", { direction: "right" }, 500);
+            $(".zen_popup_nav").show( "slide", { direction: "right" }, 500);
             $(".zen_popup_nav2").hide( "slide", { direction: "right" }, 500 );
             $(".fastorder").hide( "slide", { direction: "right" }, 400 );
              setTimeout(function(){
@@ -510,13 +515,13 @@ $(document).ready(function () {
     $('.zen_nav_feedback li:last-child').click(function(){
          if ( $('.zen_popup_nav2').css('display') == 'block' ){
             $('.zen_popup_bg').fadeOut('fast');
-            $(".zen_popup_nav2").toggle( "slide", { direction: "right" }, 500);
+            $(".zen_popup_nav2").hide( "slide", { direction: "right" }, 500);
             $('.marina_img2').fadeOut(500);
             $(".zclose2").toggle( "fade", 400);
          }else{
             $('.nodecor').css('display', 'none');
             $('.zen_popup_bg').fadeIn('fast');
-            $(".zen_popup_nav2").toggle( "slide", { direction: "right" }, 500);
+            $(".zen_popup_nav2").show( "slide", { direction: "right" }, 500);
             $(".zen_popup_nav").hide( "slide", { direction: "right"  }, 500 );
             $(".fastorder").hide( "slide", { direction: "right"  }, 500 );
             setTimeout(function(){
