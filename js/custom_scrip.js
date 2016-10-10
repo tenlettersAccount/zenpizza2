@@ -1,18 +1,8 @@
 $(function () {
 
-    /*$('.menulia').mouseenter(function(){
-        $(this).find('a').animate({
-           color: '#e73f3e'
-        }, 20);
-    });
-    $('.menulia').mouseleave(function(){
-        $(this).find('a').animate({
-            color: '#5f323a'
-        }, 20);
-    });*/
 
     /* add top slider swiper if not desktop */
-
+/*
         if(window.innerWidth <= 780){
             $("#myCarousel2 .addc .carousel-inner").addClass('swiper-wrapper');
             var sliderItem = $("#myCarousel2 .addc .item");
@@ -28,8 +18,7 @@ $(function () {
                 $(this).removeClass('swiper-slide');
             });
         }
-    
-
+    */
 
     var w = window.innerWidth;
     console.log(w);
@@ -63,7 +52,6 @@ $(function () {
             }
         });
     }
-
 
     if (w >= 1440 && w <= 1860) {
         sliderCardsChanger(4);
@@ -726,12 +714,12 @@ $(function () {
 
 
     /* Анимация сворачивания меню в левом сайдбаре */
-    $('.zen_sidebar_ul li:first-child>img').css({
+    $('.zen_sidebar_ul .icccc').css({
         '-moz-transform': 'rotate(180deg)',
         '-ms-transform': 'rotate(180deg)',
         '-webkit-transform': 'rotate(180deg)',
         '-o-transform': 'rotate(180deg)',
-        'transform': 'rotate(180deg)',
+        'transform': 'rotate(180deg)'
     });
     $('.m-f-e').click(function(){
         if( $('.zen_sidebar_ul ul').css('display') == 'none' ){
@@ -791,16 +779,9 @@ $(function () {
     });
 
 
-
-
-
     $('.altyburyw button').click(function(){
         $(this).html('В корзине');
     });
-
-
-
-
 
 
   
