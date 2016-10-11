@@ -6656,10 +6656,16 @@ ul{
     left: 10px;
 
 }
+.logo a:hover{
+    border-bottom: 3px solid transparent !important;
+}
 .asdfghjk{
     display: inline-block;
 }
-
+.asdfghjk .menulia:first-child{
+    margin-left: 15px;
+    margin-right: 0;
+}
 
 .rotateclose{
     display: none;
