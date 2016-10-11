@@ -5938,8 +5938,8 @@ input[type="submit"] {
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-
 
 
 
@@ -6775,3 +6775,101 @@ ul{
 .selectblog a{
     color: #b72504;
 }
+
+
+
+
+
+
+/* -------------------------- */
+/* Push */
+/* -------------------------- */
+.block_2 {
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.intro-effect-push {
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    -webkit-transition-duration: 1.2s;
+    transition-duration: 1.2s;
+}
+
+.intro-effect-push {
+    top: 10px;
+    position: absolute;
+    z-index: 10;
+}
+
+.block_2 {
+    -webkit-transform: translateY(400px);
+    transform: translateY(400px);
+    opacity: 0;
+}
+
+.block_2 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.intro-effect-push.modify {
+    opacity: 0;
+    -webkit-transform: translateY(-100%) scale(0.9);
+    transform: translateY(-100%) scale(0.9);
+}
+
+/* Delays */
+.block_2 {
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+/* -------------------------- */
+/* / Push */
+/* -------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
