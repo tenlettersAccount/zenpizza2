@@ -37,6 +37,17 @@ $(document).ready(function () {
         $(this).hide();
     });
 
+
+
+    $(".selectblog h4").hover(function(){
+        $(this).css("background-color", "#f6f6f6");
+        $(this).find('.fa-shopping-basket').css("color", "#6D444C");
+    }, function(){
+        $(this).css("background-color", "#fff");
+        $(this).find('.fa-shopping-basket').css("color", "#DDDDDD");
+    });
+
+
     //span joiady selected elemntti
 
 

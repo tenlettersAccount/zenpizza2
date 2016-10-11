@@ -6714,7 +6714,12 @@ ul{
     top:50px;
     z-index: 103;
 }
-
+.selectblog .fa-shopping-basket{
+    color: #DDDDDD;
+    font-size: 20px;
+    position: relative;
+    top: -2px;
+}
 .selectblog h5{
     font-family: 'PTSans';
     font-size: 13px;
@@ -6778,6 +6783,16 @@ ul{
     margin-top: 1px;
     cursor: pointer;
 }
+.h4turatyn{
+    padding: 0;
+}
+.h4turatyn h4{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.selectblog h4:hover .sbheadfff{
+    background-color: #f6f6f6;
+}
 .tokstyle{
     width: 110px;
     text-align: left;
@@ -6818,6 +6833,7 @@ ul{
 }
 .selectblog h4 span{
     float: right;
+    margin-left: 27px;
 }
 .selectblog .fa-search{
     color: #666666;
