@@ -709,6 +709,7 @@ h3 {
     -moz-transition: 0.30s;
     -ms-transition: 0.30s;
     -o-transition: 0.30s;
+    outline: none;
 
 }
 .zen_nav_ul li a:hover {
