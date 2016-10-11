@@ -780,6 +780,7 @@ $(function () {
 
     $('.altyburyw button').click(function(){
         $(this).html('В корзине');
-    })
+    });
+
 
 });
