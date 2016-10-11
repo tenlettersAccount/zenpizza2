@@ -778,38 +778,8 @@ $(function () {
         }
     });
 
-
     $('.altyburyw button').click(function(){
         $(this).html('В корзине');
-    });
-
-
-
-
-    // scroll effect
-    /*$(window).bind('mousewheel', function(event) {
-        console.log($(window).scrollTop());
-        if (event.originalEvent.wheelDelta <= 0) {
-            if ( $(window).scrollTop() <= 55) {
-                $('body').animate({
-                    scrollTop: $(".block_2").offset().top
-                }, 800);
-                $('.block_1').animate({
-                    backgroundColor: "#F88F6F"
-                }, 500);
-                setTimeout(function(){
-                    $('.block_1').animate({
-                        backgroundColor: "none"
-                    },500);
-                }, 550);
-            }
-        }
-    });*/
-
-
-
-
-
-
+    })
 
 });
