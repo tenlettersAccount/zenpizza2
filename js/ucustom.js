@@ -1,9 +1,53 @@
 $(document).ready(function () {
 
+    // searchtegi elementti div ke engizedi
+    $('.selectblog h4').click(function () {
+        var element = $(this);//convert string to JQuery element
+        //var elementspan= element.find("span").html();
+        element.find("span").remove();//remove span elements
+        var newString = element.text();
+
+
+
+        $('.usin').append("<div class='tokstyle' contenteditable='false'>"+"<p>"+ newString +"</p>"+"<div id='oyaspan'><img src='./images/fffclose.png' alt=''></div></div>");
+
+
+
+    });
+
+    $(document.body).on('click', '#oyaspan', function() {
+        console.log('asd');
+        $(this).closest('.tokstyle').remove();
+        /*
+        //mnau kaita joip kaita ornyna koiw uwin
+        var nstr2 = $(this).closest('.tokstyle');
+        nstr2.find("span").remove();
+        var newString323 = nstr2.html();
+
+        var nstr2span = $(this).closest('.tokstyle').find('span').text();
+
+
+        $('.h4turatyn').append("<h4>" + newString323 +"<span>"+ nstr2span +"</span>"+"</h4>" +"</h4>")
+        */
+    });
+
+    //elementtin ozin joiad
+
+    $('.selectblog h4').click(function () {
+        $(this).hide();
+    });
+
+    //span joiady selected elemntti
+
+
+
+
+
     $('.ufa-search').click(function () {
+        $('.fa-search').css({display:'none'});
         $('.asdfghjk').removeClass('animated fadeInRight');
         $('.asdfghjk').addClass('animated fadeOut');
-        $('.usin').css({ border:'2px solid  #dddddd',width:'460px', padding: '8px 30px 8px 8px'});
+        $('.usin').css({ border:'2px solid  #dddddd',width:'460px', padding: '6px 30px 8px 8px'});
         $('.usearch').css({width:'485px'});
 
 
@@ -19,12 +63,14 @@ $(document).ready(function () {
     });
     $('.rotateclose').click(function () {
         $('.darkback').css({display:'none'});
+        $('.tokstyle').css({display:'none'});
         $('.darkback').css({display:'none'});
 
         $('.selectblog').removeClass('animated fadeIn');
         $('.selectblog').addClass('animated fadeOut');
 
-        $('.fa-search').css({opacity:'1'});
+        $('.fa-search').css({display:'block'});
+        $('.fa-search').addClass('animated fadeIn');
         $('.rotateclose').css({display:'none'});
 
         $('.rotateclose').removeClass('animated fadeIn');
@@ -79,10 +125,49 @@ $(document).ready(function () {
 
     $('footer').parents('.zen_content_wrapper').css('overflow', 'hidden');
 
+
+
+
+/*
+    var s = $('.search-container input'),
+        f = $('.search-container'),
+        a = $('.after'),
+        m = $('h4');
+
+    s.focus(function () {
+        if (f.hasClass('open')) return;
+        f.addClass('in');
+        setTimeout(function () {
+            f.addClass('open');
+            f.removeClass('in');
+        }, 2000);
+    });
+
+    a.on('click', function (e) {
+        e.preventDefault();
+        if (!f.hasClass('open')) return;
+        s.val('');
+        f.addClass('close');
+        f.removeClass('open');
+        f.removeClass('close');
+    })
+
+    f.submit(function (e) {
+        e.preventDefault();
+        m.html('Thanks, high five!').addClass('show');
+        f.addClass('explode');
+        setTimeout(function () {
+            s.val('');
+            f.removeClass('explode');
+            m.removeClass('show');
+        }, 3000);
+    })
+
+*/
     var image = document.getElementById('myImage');
     image.src = "images/nevybronnyi.png";
 
-    $('#ch2').click(function () {
+$('#ch2').click(function () {
         image.src = "images/marina.png";
         $('.souse3').addClass('animated fadeIn');
         setTimeout(function () {
@@ -273,7 +358,7 @@ $(document).ready(function () {
             $('.mainfastorder').css({display: 'block'});
             $('.modalfastorder').css({display: 'block'});
             $('.nodecor').show(300);
-             
+
             $( ".fclose").hide( "fade", 10);
             $( ".fastorder").hide( "slide", { direction: "right" }, 500);
 
@@ -283,7 +368,7 @@ $(document).ready(function () {
             setTimeout(function(){
                 $(".nodecor").css({ display: 'none' });
             }, 400);
-        
+
          }else{
              if ( $('.decor3').css('display') == 'block' ){
                  console.log(2);
