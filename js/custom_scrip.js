@@ -1,30 +1,10 @@
 $(function () {
 
-
-    /* add top slider swiper if not desktop */
-/*
-        if(window.innerWidth <= 780){
-            $("#myCarousel2 .addc .carousel-inner").addClass('swiper-wrapper');
-            var sliderItem = $("#myCarousel2 .addc .item");
-            sliderItem.each(function(){
-                $(this).addClass('swiper-slide');
-            });
-            var my_wiper = new Swiper('#myCarousel2');
-        }
-        if(window.innerWidth > 780){
-            $("#myCarousel2 .addc .carousel-inner").removeClass('swiper-wrapper');
-            var sliderItem = $("#myCarousel2 .addc .inblock1");
-            sliderItem.each(function(){
-                $(this).removeClass('swiper-slide');
-            });
-        }
-    */
-
     var w = window.innerWidth;
     console.log(w);
 
     $('.carousel').carousel({
-         interval: scaleDelayInterval
+        interval: scaleDelayInterval
     });
 
 //************************************************************************************************
@@ -55,20 +35,14 @@ $(function () {
 
     if (w >= 1440 && w <= 1860) {
         sliderCardsChanger(4);
-        //$(".carousel-control.right").css({right: '-110px'});
-        //$(".carousel-control.left").css({left: '-90px'});
     }
-
     if (w > 1136 && w < 1440) {
         sliderCardsChanger(3);
     }
-
     if (w > 1049 && w <= 1136) {
         sliderCardsChanger(2);
     }
-
     if (w >= 1000 && w <= 1058) {
-
         sliderCardsChanger(2);
     }
 
@@ -78,14 +52,12 @@ $(function () {
         $(".carousel-control.left").css({left: '10px'});
         $(".block_2 h2").css({margin: 0});
     }
-
     if (w <= 680) {
         sliderCardsChanger(1);
         $(".zen_content_wrapper").css({paddingTop: '0px'});
         $(".carousel-control.right").css({right: '-10px'});
         $(".carousel-control.left").css({left: '-10px'});
     }
-
     $('.carousel-inner .item:first-child').addClass('active');
 
     /*=======================================================================================
@@ -165,9 +137,6 @@ $(function () {
 
 //*************************************************************************************
 
-
-    //********************************************************
-
     /*===========================================
      Cart
      ===========================================*/
@@ -180,19 +149,19 @@ $(function () {
             var cartHtml = $('.nodecort .absh');
             cartHtml.html('');
             cartHtml.append(
-                "<div class='widthjuz'>"+
-                    "<div class='tovary1'>"+
-                    "<p class='tovhead'>Товары</p>"+
-                    "</div>"+
-                    "<div class='kolichestvo1'>"+
-                    "<p class='tovhead'>Количество</p>"+
-                    "</div>"+
-                    "<div class='sena1'>"+
-                    "<p class='tovhead'>Цена</p>"+
-                    "</div>"+
-                    "<div class='owiru1'>"+
-                    "</div>"+
-                    "<div class='clearfix'></div>"+
+                "<div class='widthjuz'>" +
+                "<div class='tovary1'>" +
+                "<p class='tovhead'>Товары</p>" +
+                "</div>" +
+                "<div class='kolichestvo1'>" +
+                "<p class='tovhead'>Количество</p>" +
+                "</div>" +
+                "<div class='sena1'>" +
+                "<p class='tovhead'>Цена</p>" +
+                "</div>" +
+                "<div class='owiru1'>" +
+                "</div>" +
+                "<div class='clearfix'></div>" +
                 "</div>"
             );
             // add products to user cart
@@ -271,7 +240,7 @@ $(function () {
         }
     };
     /* set empty cookie if the aint exist */
-    if (!cart.getCookie('usersCart')){
+    if (!cart.getCookie('usersCart')) {
         cart.setCookie('usersCart', cart.productsObj);
         cart.setCookie('usersTheProductsPrices', cart.theProductsPrices);
         cart.setCookie('usersTheAmountOfProduct', cart.theAmountOfProduct);
@@ -639,13 +608,13 @@ $(function () {
     var newCardInput = $('.typespm input');
     var newCardInputVal = 0;
     $(document.body).on('click', '.nminus, .minusts', function () {
-         var input = $(this).siblings('input');
+        var input = $(this).siblings('input');
         input.animate({
             paddingTop: '20px',
             color: 'white'
-        }, 150, function(){
-                input.css({paddingTop: 0, paddingBottom: '20px'});
-            });
+        }, 150, function () {
+            input.css({paddingTop: 0, paddingBottom: '20px'});
+        });
         // delete then
         newCardInputVal--;
         newCardInput.val(newCardInputVal);
@@ -661,9 +630,9 @@ $(function () {
         input.animate({
             paddingBottom: '23px',
             color: 'white'
-        }, 150, function(){
-                input.css({paddingBottom: 0, paddingTop: '20px'});
-            });
+        }, 150, function () {
+            input.css({paddingBottom: 0, paddingTop: '20px'});
+        });
         // delete then
         newCardInputVal++;
         newCardInput.val(newCardInputVal);
@@ -675,43 +644,42 @@ $(function () {
     });
 
     /* Кнопка заказать анимация */
-    $(document.body).on('click', '.orderred', function(){
+    $(document.body).on('click', '.orderred', function () {
         $('.tx_for_order_block').css({display: 'block'});
-        $( ".order_waiting_for_answer").show( "slide", { direction: "down" }, 500);
+        $(".order_waiting_for_answer").show("slide", {direction: "down"}, 500);
 
-        setTimeout(function(){
-            $( ".order_waiting_for_answer").hide( "slide", { direction: "down" }, 500);
+        setTimeout(function () {
+            $(".order_waiting_for_answer").hide("slide", {direction: "down"}, 500);
 
-            setTimeout(function(){
-                $( ".order_trouble_with_connection").show( "slide", { direction: "down" }, 500);
+            setTimeout(function () {
+                $(".order_trouble_with_connection").show("slide", {direction: "down"}, 500);
+            }, 500);
+        }, 100000);
+
+    });
+
+    $('.order_trouble_with_connection button').click(function () {
+        $(".order_trouble_with_connection").hide("slide", {direction: "down"}, 500);
+
+        $(".order_waiting_for_answer").show("slide", {direction: "down"}, 500);
+        setTimeout(function () {
+            $(".order_waiting_for_answer").hide("slide", {direction: "down"}, 500);
+            setTimeout(function () {
+                $(".order_trouble_with_connection").show("slide", {direction: "down"}, 500);
             }, 500);
         }, 100000);
     });
 
+    $('.order_waiting_for_answer_close_btn').click(function () {
 
-    $('.order_trouble_with_connection button').click(function(){
-        $( ".order_trouble_with_connection").hide( "slide", { direction: "down" }, 500);
+        $(".order_waiting_for_answer").hide("slide", {direction: "down"}, 500);
+        $(".order_trouble_with_connection").hide("slide", {direction: "down"}, 500);
 
-        $( ".order_waiting_for_answer").show( "slide", { direction: "down" }, 500);
-        setTimeout(function(){
-            $( ".order_waiting_for_answer").hide( "slide", { direction: "down" }, 500);
-            setTimeout(function(){
-                $( ".order_trouble_with_connection").show( "slide", { direction: "down" }, 500);
-            }, 500);
-        }, 100000);
-    });
-
-    $('.order_waiting_for_answer_close_btn').click(function(){
-    
-        $( ".order_waiting_for_answer").hide( "slide", { direction: "down" }, 500);
-        $( ".order_trouble_with_connection").hide( "slide", { direction: "down" }, 500);
-
-        setTimeout(function(){
+        setTimeout(function () {
             $('.order_waiting_for_answer').css({display: 'none'});
             $('.order_trouble_with_connection').css({display: 'none'});
         }, 500);
     });
-
 
     /* Анимация сворачивания меню в левом сайдбаре */
     $('.zen_sidebar_ul .icccc').css({
@@ -721,8 +689,8 @@ $(function () {
         '-o-transform': 'rotate(180deg)',
         'transform': 'rotate(180deg)'
     });
-    $('.m-f-e').click(function(){
-        if( $('.zen_sidebar_ul ul').css('display') == 'none' ){
+    $('.m-f-e').click(function () {
+        if ($('.zen_sidebar_ul ul').css('display') == 'none') {
             $('.zen_sidebar_ul ul').slideDown(600);
             $('.m-f-e img').css({
                 '-moz-transform': 'rotate(15deg)',
@@ -732,7 +700,7 @@ $(function () {
                 'transform': 'rotate(180deg)',
                 transition: '0.80s'
             });
-        }else{
+        } else {
             $('.zen_sidebar_ul ul').slideUp(600);
 
             $('.m-f-e img').css({
@@ -754,8 +722,8 @@ $(function () {
         '-o-transform': 'rotate(0deg)',
         'transform': 'rotate(0deg)'
     });
-    $('.menusecond').click(function(){
-        if( $('.zen_sidebar_ul ul ul').css('display') == 'none' ){
+    $('.menusecond').click(function () {
+        if ($('.zen_sidebar_ul ul ul').css('display') == 'none') {
             $('.zen_sidebar_ul ul ul').slideDown(500);
             $('.menusecond #menuihh').css({
                 '-moz-transform': 'rotate(15deg)',
@@ -765,7 +733,7 @@ $(function () {
                 'transform': 'rotate(0deg)',
                 transition: '0.50s'
             });
-        }else{
+        } else {
             $('.zen_sidebar_ul ul ul').slideUp(500);
             $('.menusecond #menuihh').css({
                 '-moz-transform': 'rotate(180deg)',
@@ -778,9 +746,38 @@ $(function () {
         }
     });
 
-    $('.altyburyw button').click(function(){
+    /*==============================
+     search box
+    ==============================*/
+    // close search block
+    $('.altyburyw button').click(function () {
         $(this).html('В корзине');
     });
+
+    // enter redirect
+    document.onkeyup = function (e) {
+        e = e || window.event;
+        if (e.keyCode === 13) {
+            if ($('.selectblog').css('display') == 'block') {
+                window.location = 'aboutus.html';
+            }
+        }
+        return false;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
