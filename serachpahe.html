@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="@yield('google')" />
+
+
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>поиск</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate_css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <!-- fonts -->
+    <!--Swiper-->
+    <link href='./swiper/swiper.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<div class="darkback"></div>
+<div class="selectblog">
+    <table>
+        <div class="sbheadfff">
+            <h5>Похожие категории</h5>
+            <h3>Серия «Три игры мужей»</h3>
+            <p>10 товаров</p>
+        </div>
+        <div class="sbheadgrey">
+            <h3>Декоративные тарелки, Б. Доржиев</h3>
+            <p>1 товаров</p>
+        </div>
+
+        <div class="hrhrhr"></div><!-- grey hr -->
+
+        <div class="sbheadfff">
+            <h5>Рекомендуем попробовать</h5>
+        </div>
+        <div class="sbheadfff h4turatyn">
+            <h4>Декоративные тарелки, Б. Доржиев <span><i class="fa fa-shopping-basket" aria-hidden="true"></i></span><span>200 р</span></h4>
+            <h4>Пицца <span><i class="fa fa-shopping-basket" aria-hidden="true"></i></span><span>200 р</span></h4>
+            <h4>Десерт<span><i class="fa fa-shopping-basket" aria-hidden="true"></i></span><span>200 р</span></h4>
+        </div>
+
+        <div class="hrhrhr"></div>
+        <div class="sbheadfff">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <p>Найдено еще <a href="#">23 товара.</a> Посмотрите их в <a href="#">результатах поиска</a></p>
+        </div>
+
+
+
+    </table>
+
+</div>
+
+<div class="preloaderContainer">
+    <div class="loader">
+        <span class="dot dot_1"></span>
+        <span class="dot dot_2"></span>
+        <span class="dot dot_3"></span>
+        <span class="dot dot_4"></span>
+    </div>
+</div>
+
+
+<div class="mainfastorder ">
+    <div class="modalfastorder">
+    </div>
+    <div class="fclose">
+        <img src="./images/close.png" alt="X" />
+    </div>
+    <div class="fastorder">
+
+        <div class="nodecor">
+            <div class="nodecort">
+
+                <h2>Корзина</h2>
+                <div class="absh">
+                    <div class="widthjuz">
+                        <div class="tovary1">
+                            <p class="tovhead">Товары</p>
+                        </div>
+                        <div class="kolichestvo1">
+                            <p class="tovhead">Количество</p>
+                        </div>
+                        <div class="sena1">
+                            <p class="tovhead">Цена</p>
+                        </div>
+                        <div class="owiru1">
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <!--
+            <div class="widthjuz">
+                <div class="tovary11 tovimg1"></div>
+
+                <div class="tovary21">
+                    <p class="p1">Чикен карри</p>
+                    <p class="p2">450 р</p>
+                </div>
+                <div class="kolichestvo1">
+                    <div class="numberpm">
+                       <div class="nbutton nminus"></div>
+                       <input type="text" name="" value="1" class="sumof">
+                       <div class="nbutton nplus"></div>
+                   </div>
+
+                </div>
+                <div class="sena1">
+                    <p class="pricefo">900 p</p>
+
+                </div>
+                <div class="owiru1">
+
+                    <div class="closelight"></div>
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="widthjuz">
+                <div class="tovary11 tovimg2"></div>
+
+                <div class="tovary21">
+                    <p class="p1">Морс брусничный…</p>
+                    <p class="p2">450 р</p>
+                </div>
+                <div class="kolichestvo1">
+                    <div class="numberpm">
+                       <div class="nbutton nminus"></div>
+                       <input type="text" name="" value="1" class="sumof">
+                       <div class="nbutton nplus"></div>
+                   </div>
+
+                </div>
+                <div class="sena1">
+                    <p class="pricefo">900 p</p>
+
+                </div>
+                <div class="owiru1">
+
+                    <div class="closelight"></div>
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+               -->
+
+
+                </div>
+                <div class="hrhr">
+                    <img src="images/present.png">
+                </div>
+
+                <!-- tr start -->
+
+
+                <div class="absh2">
+
+                    <div class="widthjuz">
+                        <div class="tovary11 souseimg1"></div>
+
+                        <div class="tovary21">
+                            <p class="p1">Соус Heinz Барбекю</p>
+                        </div>
+                        <div class="kolichestvo1">
+                            <button class="chbutton">Изменить</button>
+
+                        </div>
+                        <div class="sena1">
+                            <p class="pricefo">900 p</p>
+
+                        </div>
+                        <div class="owiru1">
+
+                            <div class="closelight"></div>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="widthjuz">
+                        <div class="tovary11 souseimg1"></div>
+
+                        <div class="tovary21">
+                            <p class="p1">Соус Heinz Барбекю</p>
+                        </div>
+                        <div class="kolichestvo1">
+                            <button class="chbutton">Изменить</button>
+
+                        </div>
+                        <div class="sena1">
+                            <p class="pricefo">900 p</p>
+
+                        </div>
+                        <div class="owiru1">
+
+                            <div class="closelight"></div>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                </div>
+
+                <div class="getpresent">
+                    <img src="images/presentbig.png">
+                    <p class="sumofpresent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</p>
+                    <p class="chosse">Выбрать подарок</p>
+                </div>
+
+                <div class="gett">
+                    <div class="getcontenthide">
+                        <img src="images/arrowdown.png">
+                    </div>
+                    <div class="getpcontent">
+
+                        <ul class="nav nav-pills">
+                            <li class="active">
+                                <a data-toggle="pill" href="#home">
+                                    <div class="circlered">1</div>
+                                    подарок</a>
+                            </li>
+                            <li>
+                                <a data-toggle="pill" href="#menu1">
+                                    <div class="circlegray">2</div>
+                                    подарок</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane souce fade in active">
+                                <p class="chsouse">Выберите соус:</p>
+
+                                <ul class="radio">
+                                    <div class="souse1">
+
+
+                                        <li id="ch2">Барбекю</li>
+                                        <li id="ch3">Кисло-сладкий</li>
+                                        <li id="ch4">Чесночный</li>
+                                        <li id="ch5">Горчичный</li>
+
+                                        <li id="ch6" class="souse2">Сырный</li>
+                                        <li id="ch7" class="souse2">Карри</li>
+                                        <li id="ch8" class="souse2">Томатный</li>
+
+                                    </div>
+                                </ul>
+                                <div class="souse3">
+                                    <img src="images/nevybronnyi.png" id="myImage">
+                                </div>
+
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                    ea commodo consequat.</p>
+                            </div>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--  table end  -->
+            <div class="ffordermain">
+                <button class="mainb mainb1">Быстрый заказ</button>
+                <button class="mainb mainb2">Оформление</button>
+            </div>
+
+            <div class="footorder">
+                <div class="fforder ">
+                    <button class="ffootclose"></button>
+                    <h1>Быстрый заказ </h1>
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <p>Номер телефона</p>
+                            <input type="text" name="" class="ffin ftel" placeholder="+7 (xxx)-xxx-xx-xx">
+
+
+                        </div>
+                        <div class="col-md-2">
+                            <p>Персон</p>
+                            <input type="text" name="" class="ffin fperson">
+                        </div>
+                        <div class="col-md-4">
+                            <button class="orderbutton">Заказать</button>
+
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--nodecor-->
+        <div class="decor3">
+            <div class="decor3head">
+                <h1>Чикен карри</h1>
+                <div class="otkizetin">
+                    <div class="strelakalar">
+                        <div class="strelkain ongab"></div>
+                    </div>
+                    <div class="strelakalar">
+                        <div class="strelkain solgab"></div>
+                    </div>
+
+                </div>
+                <p>Пицца соус, сыр моцарелла, курица в соусе карри, ананас, орегано</p>
+                <button class="osrtoe"><span><img src="images/alau.png" alt=""></span>Острое</button>
+                <button class="vizbrannoe"><span><img src="images/jurek.png" alt=""></span>В избранное</button>
+                <div class="clearfix"></div>
+            </div>
+            <div class="dbody3">
+
+                <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
+                    <div class='carousel-outer'>
+                        <!-- Wrapper for slides -->
+                        <div class='carousel-inner'>
+                            <div class='item active'>
+                                <img src='images/pizza.png' alt='' />
+                            </div>
+                            <div class='item'>
+                                <img src='images/pizza.png' alt='' />
+                            </div>
+                            <div class='item'>
+                                <img src='images/pizza.png' alt='' />
+                            </div>
+
+
+                        </div>
+
+                        <!-- Controls -->
+                        <a class='left carousel-control' href='#carousel-custom' data-slide='prev'>
+                            <span class='glyphicon glyphicon-chevron-left'></span>
+                        </a>
+                        <a class='right carousel-control' href='#carousel-custom' data-slide='next'>
+                            <span class='glyphicon glyphicon-chevron-right'></span>
+                        </a>
+                    </div>
+
+                    <!-- Indicators -->
+                    <ol class='carousel-indicators mCustomScrollbar'>
+                        <li data-target='#carousel-custom' data-slide-to='0' class='active'><img src='images/pizzalittle.png' alt='' /></li>
+                        <li data-target='#carousel-custom' data-slide-to='1'><img src='images/pizzalittle.png' alt='' /></li>
+                        <li data-target='#carousel-custom' data-slide-to='2'><img src='images/pizzalittle.png' alt='' /></li>
+
+
+                    </ol>
+                </div>
+            </div>
+            <div class="d3body3">
+
+                <div class=" part123 part1">
+                    <p>Размер, см</p>
+                    <ul class="text_radio">
+                        <li class="li_active">41</li>
+                        <li>42</li>
+                        <li>43</li>
+                    </ul>
+                </div>
+                <div class=" part123 ">
+                    <p>Тесто</p>
+                    <ul class="text_radio">
+                        <li class="li_active">тонкое</li>
+                        <li>толстое</li>
+                    </ul>
+                </div>
+                <div class=" part123 ">
+                    <p>Вес:</p>
+                    <h5>200 гр</h5>
+                </div>
+
+                <div class=" part123">
+                    <p>Цена</p>
+                    <h1 class="redh1p">1 420 Р</h1>
+                    <h1 class="syzylgan">
+                        <del>1420 Р</del>
+                    </h1>
+                </div>
+                <div class=" part123">
+                    <p>Количество</p>
+                    <div class="numberpm">
+                        <div class="nbutton nminus"></div>
+                        <input type="text" name="" value="1" class="sumof">
+                        <div class="nbutton nplus"></div>
+                    </div>
+
+                </div>
+                <div class=" part123">
+                    <section id="btn-click">
+                        <span></span>
+                        <button class="btn btn-7 btn-7b icon-envelope">В корзину</button>
+                    </section>
+
+                </div>
+
+
+                <div class="clearfix"></div>
+
+            </div>
+            <div class="icons2 shareto">
+                <p>Поделись с друзьями</p>
+                <ul>
+                    <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa" aria-hidden="true"><img src="images/yandexicon.png" alt=""></i></a>
+                    <a href=""><i class="fa" aria-hidden="true"><img src="images/classmates.png" alt=""></i></a>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="dbody4">
+                <div class="eluprecent">
+                    <h4>Калорийность</h4>
+                    <table>
+                        <tr>
+                            <td>Белки</td>
+                            <td>80 г.</td>
+                        </tr>
+                        <tr>
+                            <td>Жиры</td>
+                            <td>120 г.</td>
+                        </tr>
+                        <tr>
+                            <td>Углеводы</td>
+                            <td>450 г.</td>
+                        </tr>
+                        <tr>
+                            <td>Калорийность</td>
+                            <td>3200 ккал</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="eluprecent">
+                    <h4>Ингредиенты</h4>
+                    <ul>
+                        <li>Свинина</li>
+                        <li>Колбаски «Пепперони»</li>
+                        <li>Соус сливочно-чесночный</li>
+                        <li>Шампиньоны</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="dbody41">
+                    <h4>Сопутствующие товары</h4>
+                    <div class="ppart1">
+                        <div class="ppartimg pimg1"></div>
+                        <p>Чикен карри</p>
+                    </div>
+                    <div class="ppart1">
+                        <div class="ppartimg pimg1"></div>
+                        <p>Чикен карри</p>
+                    </div>
+                    <div class="ppart1">
+                        <div class="ppartimg pimg1"></div>
+                        <p>Чикен карри</p>
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+
+
+            </div>
+            <div class="dbody5">
+                <p class="comm">Оставить отзыв</p>
+                <textarea class="ff2" placeholder="Текст отзыва"></textarea>
+                <div class="iconss">
+                    <button class="razmestit rightr">Написать</button>
+                    <div class="icons2">
+                        <p>Авторизируйтесь</p>
+                        <ul>
+                            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa" aria-hidden="true"><img src="images/yandexicon.png"
+                                                                             alt=""></i></a>
+                            <a href=""><i class="fa" aria-hidden="true"><img src="images/classmates.png"
+                                                                             alt=""></i></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <p class="jazylmagan">Отзывы клиентов</p>
+
+                <div class="hrhr"></div>
+
+
+                <div class="commentr">
+                    <div class="personimg pri1">
+
+                    </div>
+                    <div class="personaltext">
+                        <h3>Владос</h3>
+                        <h4>24 июня 2016</h4>
+                        <p>Когда речь заходит за структурирование сложных интерфейсов, Vue следует подходу близкому с React:
+                            её компоненты везде и всюду. Давайте сделаем из нашего примера компонент, который можно повторно
+                            использовать
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="commentr">
+                    <div class="personimg pri1">
+
+                    </div>
+                    <div class="personaltext">
+                        <h3>Владос</h3>
+                        <h4>24 июня 2016</h4>
+                        <p>Когда речь заходит за структурирование сложных интерфейсов, Vue следует подходу близкому с React:
+                            её компоненты везде и всюду. Давайте сделаем из нашего примера компонент, который можно повторно
+                            использовать
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="decor">
+            <br>
+            <br>
+            <h1>Оформление заказа</h1>
+            <p class="backto"><span><img src="images/arrow.png"></span>Вернуться в корзину</p>
+            <div class="col-md-12">
+                <div class="col-md-6">
+
+                    <p class="intext">Имя</p>
+                    <input type="text" name="" class="ffin decorin ">
+                </div>
+                <div class="col-md-6">
+                    <p class="intext">Телефон</p>
+                    <input type="text" name="" class="ffin decorin ftel" placeholder="+7(xxx)-xxx-xx-xx">
+                </div>
+
+            </div>
+            <br>
+            <div class="col-md-12">
+                <div class="col-md-4 col-xs-6">
+                    <p class="decortype">Тип доставки</p>
+                    <ul class="radio">
+                        <li>Курьером</li>
+                        <li>Самовывоз</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <p class="decortype">Оплата</p>
+
+                    <ul class="radio">
+                        <li>Наличными</li>
+                        <li>Картой</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <p class="decortype">Время</p>
+                    <ul class="radio">
+                        <li>В течении часа</li>
+                        <li>Назначить время</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-12 col-xs-12">
+                <div class="inputs">
+                    <input type="text" name="" placeholder="Купюра" class="kupiura">
+                    <input type="text" name="" placeholder="14" class="domkv">
+                    <p>:</p>
+                    <input type="text" name="" placeholder="30" class="domkv">
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+                <div class="hrhr">
+                </div>
+                <p class="decortype addresso">Адрес доставки </p>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-12 col-xs-12">
+                <div class="fleft">
+                    <p class="intext">Улица</p>
+                    <input type="text" name="" class="ffin ulisa">
+                </div>
+
+                <div class="fleft">
+                    <p class="intext">Дом</p>
+                    <input type="text" name="" class="ffin dom">
+                </div>
+                <div class="fleft flast">
+                    <p class="intext">Кв/Офис</p>
+                    <input type="text" name="" class="ffin dom">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-12 col-xs-12 col-xs-12 mt">
+                <p class="intext ">Комментарий к заказу</p>
+                <textarea class="ffin fullprecent"></textarea>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-12 col-xs-12 mt">
+                <p class="intext karta">Бонусная карта</p>
+                <input type="text" name="" class="ffin wthn" placeholder="00000">
+                <p class="senatext">Итого: <span class="senasena">0 руб.</span></p>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-12 col-xs-12 order-last-block-qwas">
+                <p class="bonus">Бонусов 200 руб</p>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-12 col-xs-12">
+                <button class="orderred">Заказать</button>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="tx_for_order_block">
+                <div class="order_waiting_for_answer">
+                    <div class="order_waiting_for_answer_close_btn"></div>
+                    <img src="images/marina.png" alt="">
+                    <h3>В течении <span>100</span> секунд</h3>
+                    <h5>Ждем пока оператор поднимет трубку,<br>
+                        чтобы соеденить с вами</h5>
+                </div>
+                <div class="order_trouble_with_connection">
+                    <div class="order_waiting_for_answer_close_btn"></div>
+                    <img src="images/marina.png" alt="">
+                    <h5>Возникли проблемы со связью, попробуйте еще раз</h5>
+                    <button>Соединить еще раз</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!--decor-->
+    </div>
+    <!--fastorder-->
+
+</div>
+
+
+<!-- nav -->
+<div class="container-fluid zen_nav_containter">
+    <div class="row">
+        <nav class="zen_nav">
+            <ul class="zen_nav_ul">
+
+                <li class="logo">
+                    <a href="#">
+                        <img src="https://cdn.zeplin.io/57aaa205fb003dc5144303d4/assets/9542F241-4D5E-4729-91CE-DFC317D45A5A.png" alt="">
+                    </a>
+                </li>
+
+                <li class="usearch search-container">
+                    <i class="fa fa-search ufa-search" aria-hidden="true"></i>
+                    <div contenteditable="true" class="usin" id="input-field-id"></div><span><img class="rotateclose" src="images/group-12.png" alt=""></span>
+
+                    <!--
+                    <form>
+                        <input type="text" />
+                        <div class="after"></div>
+                        <input type="submit" />
+                    </form>
+                    -->
+                </li>
+                <div class="asdfghjk">
+                    <li class="menulia"><a href="aboutus.html">О нас</a></li>
+                    <li class="menulia"><a href="delivery.html">Доставка и оплата</a></li>
+                    <li class="menulia"><a href="discount.html">Акции и бонусы</a></li>
+                    <li class="menulia"><a href="faq.html">FAQ</a></li>
+                    <li class="menulia"><a href="blog.html">Блог</a></li>
+                </div>
+
+            </ul>
+
+            <ul class="zen_nav_feedback">
+                <li><a><i class="fa fa-phone" aria-hidden="true"></i> 506 516</a></li>
+                <li class="recall"><a>Перезвоните мне</a></li>
+            </ul>
+
+            <ul class="zen_nav_right">
+                <li data-toggle="site-sidebar" class="cbutton cbutton--effect-radomir">
+                    <a>
+                        <i class="fa fa-shopping-basket" aria-hidden="true">
+                            <div class="kyzyluved"><p></p></div>
+                        </i>
+                    </a>
+                </li>
+                <li class="cbutton cbutton--effect-radomir"><a><i class="fa fa-heart" aria-hidden="true">
+                    <div class="redtoheart"><p>2</p></div>
+                </i></a></li>
+                <li class="cbutton cbutton--effect-radomir"><a><i class="fa fa-user" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="munum">
+                <li>
+                    <img src="images/menu.png">
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- nav -->
+
+<!-- sidebar -->
+<div class="zen_sidebar">
+    <div class="zen_sidebar_wrapper">
+        <ul class="zen_sidebar_ul">
+            <li class="m-f-e"><a href="#">Меню <span><img  class="icccc"  src="https://d2yvv6a7kcdl71.cloudfront.net/57aaa205fb003dc5144303d4/assets/F539AFBD-0D82-487E-B8D9-BCD52A48CC2B.png" alt=""></span></a> </li>
+            <ul>
+                <li><a class="left_menu_active_item"  href="main/index.html">Введение</a></li>
+                <li><a href="interfaces/index.html">Интерфейс</a></li>
+                <li><a href="customization/index.html">Кастомизация</a></li>
+                <li><a href="colors/index.html">Цвета</a></li>
+                <li><a href="../examples/index.html">Примеры</a></li>
+            </ul>
+        </ul>
+
+        <ul class="zen_sidebar_social">
+            <span>Мы в соц сетях</span>
+            <p></p>
+            <li>
+                <div class="sq"><img src="https://d2yvv6a7kcdl71.cloudfront.net/57aaa205fb003dc5144303d4/assets/601C29E8-2F57-4088-A624-4E372C2DDBA7.png"
+                                     alt=""></div>
+            </li>
+            <li>
+                <div class="sq"><img src="https://d2yvv6a7kcdl71.cloudfront.net/57aaa205fb003dc5144303d4/assets/E0A2A8D0-F6ED-4872-8D56-EAAEAE44C6C9.png"
+                                     alt=""></div>
+            </li>
+            <li>
+                <div class="sq"><img src="https://d2yvv6a7kcdl71.cloudfront.net/57aaa205fb003dc5144303d4/assets/843154F8-52BF-4385-AAF6-E72D3298A066.png"
+                                     alt=""></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- sidebar -->
+
+<!-- wrapper -->
+
+
+<style>
+    /*radio button*/
+
+    .radio_circle_in_active {
+        margin: 4px !important;
+    }
+
+    .radio_circle {
+        border: 1px solid #E73F3E !important;
+    }
+</style>
+<style>
+    .block_3 h2 {
+        margin-top: 0 !important;
+        margin-bottom: 45px;
+        text-align: left;
+        vertical-align: bottom;
+    }
+
+    .block_3 h2 span {
+        color: #E7504F;
+        font-size: 24px;
+    }
+
+    .block_3 > ul {
+        margin-left: 0;
+        margin-top: 0;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .nepokornyi {
+        display: inline-block;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .nepokornyi {
+        display: inline-block;
+        margin-left: 10px;
+        cursor: pointer;
+        padding-bottom: 7px;
+    }
+    h2{
+        text-align: center;
+    }
+</style>
+<div class="fortypx"></div>
+<div class="zen_content_wrapper blocktps  animated fadeIn ">
+
+    <p class="resultsearch">РЕЗУЛЬТАТ ПОИСКА</p>
+
+    <div id="div_center_zend_cards">
+        <div class="zen_card big_zen_card">
+            <div class="img">
+                <div class="elementyzsi zhasyl"></div>
+                <div class="elementyzsi sary"></div>
+                <div class="elementyzsi izdeuu"></div>
+            </div>
+            <div class="padding">
+                <h4>Пицца соле мио с пеперони и беконом 1</h4>
+                <div class="big_zen_card_text">
+                    Пицца соус, ветчина, пепперони, шампиньоны, пармезан, моцарелла, ветчина, пепперони, шампиньоны, пармезан.
+                </div>
+                <div class="control_panel look_target">
+                    <div class="asd">
+                        <p>Размер, см</p>
+                        <ul class="text_radio">
+                            <li class="li_active">41</li>
+                            <li>42</li>
+                            <li>43</li>
+                        </ul>
+                        <div class="checkbox bora">
+                            <div class="checkbox_result">Тесто</div>
+                            <div class="checkbox_arrow"></div>
+                            <ul>
+                                <li>Тонкое</li>
+                                <li>Среднее</li>
+                                <li>Толстое</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="asd asdasd" style="text-align:right;">
+                        <p>&nbsp;</p>
+                        <span class="price">1 420 P</span>
+                        <br>
+                        <span class="old_price">1 420 Р</span>
+                        <span class="vess">Вес 200 гр</span>
+                    </div>
+                </div>
+            </div>
+            <button class="zen_button">
+                Заказать
+            </button>
+            <div class="zencardfooter">
+                <button class="bcommon bminus"></button>
+                <button class="bcommon bplus"></button>
+                <button class="bnoth"></button>
+                <div class="zeneq">
+                    <p class="zenval">0</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="zen_card big_zen_card">
+            <div class="img">
+                <div class="elementbb"></div>
+            </div>
+            <div class="padding">
+                <h4>Пицца соле мио с пеперони и беконом 2</h4>
+                <div class="big_zen_card_text">
+                    Пицца соус, ветчина, пепперони, шампиньоны, пармезан, моцарелла, ветчина, пепперони, шампиньоны, пармезан.
+                </div>
+                <div class="control_panel look_target">
+                    <div class="asd">
+                        <p>Размер, см</p>
+                        <ul class="text_radio">
+                            <li class="li_active">41</li>
+                            <li>42</li>
+                            <li>43</li>
+                        </ul>
+                        <div class="checkbox bora">
+                            <div class="checkbox_result">Тесто</div>
+                            <div class="checkbox_arrow"></div>
+                            <ul>
+                                <li>Тонкое</li>
+                                <li>Среднее</li>
+                                <li>Толстое</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="asd asdasd" style="text-align:right;">
+                        <p>&nbsp;</p>
+                        <span class="price">1 420 P</span>
+                        <br>
+                        <span class="old_price">1 420 Р</span>
+                        <span class="vess">Вес 200 гр</span>
+                    </div>
+                </div>
+            </div>
+            <button class="zen_button">
+                Заказать
+            </button>
+            <div class="zencardfooter">
+                <button class="bcommon bminus"></button>
+                <button class="bcommon bplus"></button>
+                <button class="bnoth"></button>
+                <div class="zeneq">
+                    <p class="zenval">0</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--delete below box than-->
+        <!--
+                <div class="zen_card big_zen_card">
+                    <div class="img"></div>
+                    <div class="padding">
+                        <h4>Пицца соле мио с пеперони и беконом</h4>
+                        <div class="big_zen_card_text">
+                            Пицца соус, ветчина, пепперони, шампиньоны, пармезан, моцарелла, ветчина, пепперони, шампиньоны, пармезан.
+                        </div>
+                        <div class="control_panel look_target">
+                            <div class="asd">
+                                <p>Размер, см</p>
+                                <ul class="text_radio">
+                                    <li class="li_active">41</li>
+                                    <li>42</li>
+                                    <li>43</li>
+                                </ul>
+                                <div class="checkbox bora">
+                                    <div class="checkbox_result">Тесто</div>
+                                    <div class="checkbox_arrow"></div>
+                                    <ul>
+                                        <li>Тонкое</li>
+                                        <li>Среднее</li>
+                                        <li>Толстое</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="asd" style="text-align:right;">
+                                <p>&nbsp;</p>
+                                <span class="price">1 420 P</span>
+                                <br>
+                                <span class="old_price">1 420 Р</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="zen_button">
+                        Заказать
+                    </button>
+                    <div class="zencardfooter">
+                        <button class="bcommon bminus">-</button>
+                        <button class="bcommon bplus">+</button>
+                        <button class="bnoth"></button>
+                        <div class="zeneq">
+                            <p class="zenval">0</p>
+                        </div>
+
+                    </div>
+                </div>
+    -->
+        <!--
+<div class="zen_card big_zen_card">
+    <div class="img"></div>
+    <div class="padding">
+        <h4>Пицца соле мио с пеперони и беконом</h4>
+        <div class="big_zen_card_text">
+            Пицца соус, ветчина, пепперони, шампиньоны, пармезан, моцарелла, ветчина, пепперони, шампиньоны, пармезан.
+        </div>
+        <div class="control_panel look_target">
+            <div class="asd">
+                <p>Размер, см</p>
+                <ul class="text_radio">
+                    <li class="li_active">41</li>
+                    <li>42</li>
+                    <li>43</li>
+                </ul>
+                <div class="checkbox bora">
+                    <div class="checkbox_result">Тесто</div>
+                    <div class="checkbox_arrow"></div>
+                    <ul>
+                        <li>Тонкое</li>
+                        <li>Среднее</li>
+                        <li>Толстое</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="asd" style="text-align:right;">
+                <p>&nbsp;</p>
+                <span class="price">1 420 P</span>
+                <br>
+                <span class="old_price">1 420 Р</span>
+            </div>
+        </div>
+    </div>
+    <button class="zen_button">
+        Заказать
+    </button>
+    <div class="zencardfooter">
+        <button class="bcommon bminus">-</button>
+        <button class="bcommon bplus">+</button>
+        <button class="bnoth"></button>
+        <div class="zeneq">
+            <p class="zenval">0</p>
+        </div>
+
+    </div>
+</div>
+-->
+
+        <div class="zen_card big_zen_card">
+            <div class="img">
+                <div class="elementjazu withoutmeat">
+                    <p>Без мяса</p>
+                </div>
+                <div class="elementjazu spicy">
+                    <p>Острая</p>
+                </div>
+            </div>
+            <div class="padding">
+                <h4>Пицца соле мио с пеперони и беконом 3</h4>
+                <div class="big_zen_card_text">
+                    Пицца соус, ветчина, пепперони, шампиньоны, пармезан, моцарелла, ветчина, пепперони, шампиньоны, пармезан.
+                </div>
+                <div class="control_panel look_target">
+                    <div class="asd">
+                        <p>Размер, см</p>
+                        <ul class="text_radio">
+                            <li class="li_active">41</li>
+                            <li>42</li>
+                            <li>43</li>
+                        </ul>
+                        <div class="checkbox bora">
+                            <div class="checkbox_result">Тесто</div>
+                            <div class="checkbox_arrow"></div>
+                            <ul>
+                                <li>Тонкое</li>
+                                <li>Среднее</li>
+                                <li>Толстое</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="asd asdasd" style="text-align:right;">
+                        <p>&nbsp;</p>
+                        <span class="price">1 420 P</span>
+                        <br>
+                        <span class="old_price">1 420 Р</span>
+                        <span class="vess">Вес 200 гр</span>
+                    </div>
+                </div>
+            </div>
+            <button class="zen_button">
+                Заказать
+            </button>
+            <div class="zencardfooter">
+                <button class="bcommon bminus"></button>
+                <button class="bcommon bplus"></button>
+                <button class="bnoth"></button>
+                <div class="zeneq">
+                    <p class="zenval">0</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="zen_card big_zen_card">
+            <div class="img"></div>
+            <div class="padding">
+                <h4>Пицца соле мио с пеперони и беконом 5</h4>
+                <div class="big_zen_card_text">
+                    Пицца соус, ветчина, пепперони, шампиньоны, пармезан, моцарелла, ветчина, пепперони, шампиньоны, пармезан.
+                </div>
+                <div class="control_panel look_target">
+                    <div class="asd">
+                        <p>Размер, см</p>
+                        <ul class="text_radio">
+                            <li class="li_active">41</li>
+                            <li>42</li>
+                            <li>43</li>
+                        </ul>
+                        <div class="checkbox bora">
+                            <div class="checkbox_result">Тесто</div>
+                            <div class="checkbox_arrow"></div>
+                            <ul>
+                                <li>Тонкое</li>
+                                <li>Среднее</li>
+                                <li>Толстое</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="asd asdasd" style="text-align:right;">
+                        <p>&nbsp;</p>
+                        <span class="price">1 420 P</span>
+                        <br>
+                        <span class="old_price">1 420 Р</span>
+                        <span class="vess">Вес 200 гр</span>
+                    </div>
+                </div>
+            </div>
+            <button class="zen_button">
+                Заказать
+            </button>
+            <div class="zencardfooter">
+                <button class="bcommon bminus"></button>
+                <button class="bcommon bplus"></button>
+                <button class="bnoth"></button>
+                <div class="zeneq">
+                    <p class="zenval">0</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="zen_card big_zen_card">
+            <div class="img"></div>
+            <div class="padding">
+                <h4>Пицца соле мио с пеперони и беконом 6</h4>
+                <div class="big_zen_card_text">
+                    Пицца соус, ветчина, пепперони, шампиньоны, пармезан, моцарелла, ветчина, пепперони, шампиньоны, пармезан.
+                </div>
+                <div class="control_panel look_target">
+                    <div class="asd">
+                        <p>Размер, см</p>
+                        <ul class="text_radio">
+                            <li class="li_active">41</li>
+                            <li>42</li>
+                            <li>43</li>
+                        </ul>
+                        <div class="checkbox bora">
+                            <div class="checkbox_result">Тесто</div>
+                            <div class="checkbox_arrow"></div>
+                            <ul>
+                                <li>Тонкое</li>
+                                <li>Среднее</li>
+                                <li>Толстое</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="asd asdasd" style="text-align:right;">
+                        <p>&nbsp;</p>
+                        <span class="price">1 420 P</span>
+                        <br>
+                        <span class="old_price">1 420 Р</span>
+                        <span class="vess">Вес 200 гр</span>
+                    </div>
+                </div>
+            </div>
+            <button class="zen_button">
+                Заказать
+            </button>
+            <div class="zencardfooter">
+                <button class="bcommon bminus"></button>
+                <button class="bcommon bplus"></button>
+                <button class="bnoth"></button>
+                <div class="zeneq">
+                    <p class="zenval">0</p>
+                </div>
+
+            </div>
+        </div>
+        <!--  card end  -->
+
+        <!--  card start  -->
+        <div class="zen_card big_zen_card higherheight">
+            <div class="img"></div>
+            <div class="padding">
+                <h4>Пицца соле мио с пеперони и беконом 6</h4>
+                <div class="big_zen_card_text">
+                    Пицца соус, ветчина, пепперони, шампиньоны, пармезан, моцарелла, ветчина, пепперони, шампиньоны, пармезан.
+                </div>
+                <div class="control_panel look_target">
+                    <div class="halfpr">
+                        <p>Размер, см</p>
+                        <ul class="radio">
+                            <li>25 см, 500 гр</li>
+                            <li>35 см, 750 гр</li>
+                            <li>45 см, 1500 гр</li>
+                        </ul>
+                    </div>
+                    <div class="halfpr">
+                        <p>Тесто</p>
+                        <ul class="radio">
+                            <li>Классическое</li>
+                            <li>Тонкое</li>
+                        </ul>
+                    </div>
+                    <div class="pmsumm">
+                        <div class="bbbbbbb">
+                            <div class="halfpr">
+                                <span class="price">1 420 P</span>
+                                <br>
+                                <span class="old_price">1 420 Р</span>
+                            </div>
+                            <div class="halfpr">
+                                <button class="orderredb">Заказать</button>
+                                <div class="typespm">
+                                    <div class="plusts"></div>
+                                    <input type="text" value="2">
+                                    <div class="minusts"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <!--div_center_zend_cards-->
+
+</div>
+
+<div class="zen_content_wrapper animated fadeIn">
+    <footer class="animated slideInUp">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <img src="https://d2yvv6a7kcdl71.cloudfront.net/57aaa205fb003dc5144303d4/assets/E61F328A-3F32-4412-8430-EEB387B47C4A.png"
+                         alt="">
+                    <br> Настоящая пицца в Улан-Удэ
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <ul class="footer_center_ul">
+                        <li><a href="">Пицца</a></li>
+                        <li><a href="">Кальцоне</a></li>
+                        <li><a href="">Салаты</a></li>
+                        <li><a href="">Сэндвичи</a></li>
+                    </ul>
+                    <ul class="footer_center_ul">
+                        <li><a href="">Пицца</a></li>
+                        <li><a href="">Кальцоне</a></li>
+                        <li><a href="">Салаты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="footer_date_and_phone">
+                        <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i> 506 516</a></li>
+                        <li><a><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 - 21:00</a></li>
+                    </ul>
+                    <span class="footer_text">Ежедневно с 10:00 до 0:00 Улан-Удэ,
+                   Ключевская 41. info@dzdepizza.ru
+                   </span>
+                    <br>
+                    <span class="footer_adress">
+                       <a href="">Адрес на карте</a>
+                   </span>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <span class="footer_text">Разработка решения <br> "Гарант Парк"</span>
+                        <br>
+                        <img src="https://d2yvv6a7kcdl71.cloudfront.net/57aaa205fb003dc5144303d4/assets/3EB36913-84E4-47A7-AEA6-9B011C7C4EF2.png"
+                             alt="">
+                        <br>
+                        <a class="zen_about_us">О решении</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+<!-- wrapper -->
+
+<style>
+    .zen_popup_bg {
+        display: none;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.14);
+        width: 100%;
+        height: 100%;
+        z-index: 97;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+    }
+
+    .zen_popup_nav {
+        display: none;
+        position: fixed;
+        width: 320px;
+        height: 100%;
+        z-index: 98;
+        right: 0;
+        top: 0;
+        background-color: #F8F9FA;
+    }
+
+    .marina_img {
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        margin-top: -220px;
+        left: 50%;
+        margin-left: -100px;
+    }
+
+    .zen_popup_nav_input {
+        padding: 5px;
+        width: 200px;
+        border-radius: 5px;
+        border: 1px solid #cacaca;
+        font-size: 14px;
+    }
+
+    .zen_popup_nav_input:focus {
+        outline: none;
+    }
+
+    .zen_button {
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .zen_button:focus {
+        outline;
+    }
+
+    .zen_popup_nav_button {
+        width: 200px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        color: white;
+        background-color: #E73F3E;
+        font-family: 'Roboto Slab';
+    }
+
+    .zen_call_timer {
+        display: none;
+    }
+
+    .zen_call_timer h2 {
+        font-weight: 500;
+        font-family: 'Century Gothic', sans-serif;
+        font-size: 35px;
+    }
+
+    .zen_call_timer button {
+        color: #E73F3E;
+        font-family: 'Roboto Slab';
+        border: none;
+        outline: none;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        width: 200px;
+        background-color: transparent;
+        box-shadow: 0 0 10px #8f8f8f;
+    }
+</style>
+
+<div class="zen_popup_bg">
+
+</div>
+<div class="zen_popup_nav">
+    <div class="zclose"><img src="./images/close.png" alt="X"> </div>
+    <div class="marina_img">
+
+        <center>
+            <img src="images/marina.png" alt="">
+            <div class="zen_nav_popup_text zen_call_form">
+                <h3>Меня зовут Марина</h3>
+                <p>введите номер и я перезвоню вам за 59 секунд</p>
+                <input class="zen_popup_nav_input ftel" type="text" placeholder=" +7 (xxx)-xxx-xx-xx">
+
+                <button class="zen_button zen_popup_nav_button">
+                    Жду звонка
+                </button>
+            </div>
+
+            <div class="zen_nav_popup_text zen_call_timer">
+                <h2>
+                    00.59,59
+                </h2>
+                <p>Ждем пока Марина поднимает трубку, что бы соединиться с вами</p>
+                <button>
+                    Перезвонить
+                </button>
+            </div>
+        </center>
+    </div>
+</div>
+<div class="zen_popup_nav2">
+    <div class="zclose2"><img src="./images/close.png" alt="X"> </div>
+    <div class="marina_img2">
+        <center>
+            <img src="images/marina.png" alt="">
+            <div class="zen_nav_popup_text zen_call_form">
+                <h3>Меня зовут Марина 2</h3>
+                <p>введите номер и я перезвоню вам за 59 секунд</p>
+                <input class="zen_popup_nav_input ftel" type="text" placeholder=" +7 (xxx)-xxx-xx-xx">
+
+                <button class="zen_button zen_popup_nav_button">
+                    Жду звонка
+                </button>
+            </div>
+
+            <div class="zen_nav_popup_text zen_call_timer">
+                <h2>
+                    00.59,59
+                </h2>
+                <p>Ждем пока Марина поднимает трубку, что бы соединиться с вами</p>
+                <button>
+                    Перезвонить
+                </button>
+            </div>
+        </center>
+    </div>
+</div>
+
+</body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+
+<script src="js/jquery/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./swiper/swiper.js"></script>
+<script src="js/config.js"></script>
+<script src="js/custom_scrip.js"></script>
+<script src="js/cards&filters.js"></script>
+<script src="js/ucustom.js"></script>
+<script src="js/mask.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+<script>
+
+
+
+    $(function(){
+        $('.preloaderContainer').fadeOut(500);
+    })
+    document.querySelector('.btn-7i').addEventListener('click', function () {
+        classie.add(document.querySelector('#trash-effect'), 'trash-effect-active');
+    }, false);
+
+
+
+</script>
+
+
+</html>
