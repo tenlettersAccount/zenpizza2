@@ -6797,6 +6797,7 @@ ul{
     width: 110px;
     text-align: left;
     overflow: hidden;
+
     height: 24px;
     border-radius: 14px;
     background-color: #e73f3e;
@@ -6852,3 +6853,13 @@ ul{
     cursor: pointer;
 }
 
+.resultsearch{
+    font-family: 'RobotoSlab';
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-left: 60px;
+}
