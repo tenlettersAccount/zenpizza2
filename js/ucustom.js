@@ -521,6 +521,12 @@ $(document).ready(function () {
             $('.fa-shopping-basket').parents('li').removeClass('cbutton--click');
         }, 500);
     });
+    $('.sbheadfff h4 span .fa').click(function(){
+        $('.fa-shopping-basket').parents('li').addClass('cbutton--click');
+        setTimeout(function () {
+            $('.fa-shopping-basket').parents('li').removeClass('cbutton--click');
+        }, 500);
+    });
     // анимация при добавлении товара в избранное
     $(document.body).on('click', '.vizbrannoe', function () {
         $('.fa-heart').parents('li').addClass('cbutton--click');
@@ -678,7 +684,7 @@ $(document).ready(function () {
         });
     });
 
-  
+
 
 
 });

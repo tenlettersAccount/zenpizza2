@@ -6752,7 +6752,7 @@ ul{
 }
 .sbheadgrey{
     padding:1px 8px;
-    background-color: #f6f6f6;
+    /*background-color: #f6f6f6;*/
 }
 .hrhrhr{
     height: 1px;
@@ -6847,4 +6847,8 @@ ul{
     color: #b72504;
 }
 
+.hovereffect-search-h5:hover{
+    background-color: #f6f6f6;
+    cursor: pointer;
+}
 
