@@ -759,7 +759,7 @@ $(function () {
         e = e || window.event;
         if (e.keyCode === 13) {
             if ($('.selectblog').css('display') == 'block') {
-                window.location = 'aboutus.html';
+                window.location = 'serachpahe.html';
             }
         }
         return false;
