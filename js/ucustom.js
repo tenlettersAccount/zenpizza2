@@ -4,10 +4,11 @@ $(document).ready(function () {
     $('.selectblog h4').click(function () {
         var element = $(this);//convert string to JQuery element
         //var elementspan= element.find("span").html();
-        element.find("span").remove();//remove span elements
+        //element.find("span").remove();//remove span elements
         var newString = element.text();
 
-        $('.usin').append("<div class='tokstyle' contenteditable='false'>" + "<p>" + newString + "</p>" + "<div id='oyaspan'><img src='./images/fffclose.png' alt=''></div></div>");
+        //$('.usin').append("<div class='tokstyle' contenteditable='false'>" + "<p>" + newString + "</p>" + "<div id='oyaspan'><img src='./images/fffclose.png' alt=''></div></div>");
+        $('.usin').append(newString+' ');
 
     });
 
@@ -27,11 +28,6 @@ $(document).ready(function () {
          */
     });
 
-    //elementtin ozin joiad
-
-    $('.selectblog h4').click(function () {
-        $(this).hide();
-    });
 
     $(".selectblog h4").hover(function () {
         $(this).css("background-color", "#f6f6f6");
@@ -44,22 +40,31 @@ $(document).ready(function () {
     //span joiady selected elemntti
 
     $('.ufa-search').click(function () {
-        $('.fa-search').css({display: 'none'});
         $('.asdfghjk').removeClass('animated fadeInRight');
-        $('.asdfghjk').addClass('animated fadeOut');
-        $('.usin').css({border: '2px solid  #dddddd', width: '460px', padding: '6px 30px 8px 8px'});
-        $('.usearch').css({width: '485px'});
+        $('.asdfghjk').css({opacity: 1});
+        $('.fa-search').css({display: 'none'});
+        $('.asdfghjk').animate({
+            color: 'black',
+            opacity: 0
+        }, 400, function(){
+            $('.usin').css({border: '2px solid  #dddddd', width: '460px', padding: '6px 30px 8px 8px'});
+            $('.usearch').css({width: '485px'});
 
-        $('.fa-search').css({opacity: '0'});
-        $('.asdfghjk').css({display: 'none'});
+            $('.fa-search').css({opacity: '0'});
+            $('.asdfghjk').css({display: 'none'});
 
-        setTimeout(function () {
             $('.rotateclose').css({display: 'inherit'});
             $('.rotateclose').removeClass('animated fadeOut');
             $('.rotateclose').addClass('animated fadeIn');
-        }, 500);
+        });
+
+        //$('.asdfghjk').removeClass('animated fadeInRight');
+        //$('.asdfghjk').addClass('animated fadeOut');
+
     });
     $('.rotateclose').click(function () {
+        $('.selectblog').removeClass('animated fadeIn');
+
         $('.darkback').css({display: 'none'});
         $('.tokstyle').css({display: 'none'});
         $('.darkback').css({display: 'none'});
@@ -83,7 +88,35 @@ $(document).ready(function () {
             $('.asdfghjk').addClass('animated fadeInRight');
             $('.asdfghjk').css({display: 'inline-block'});
         }, 600);
+        // remove all tags from search input
+        $('#input-field-id').html('');
     });
+
+    $('.darkback').click(function(){
+        $('.selectblog').slideUp(400, function(){
+            $('.darkback').fadeOut(200);
+            var allSearchInputText = $('.usin').html();
+            var allSearchInputTextObj = allSearchInputText.split(" ");
+            $('.usin').html('');
+            for(var item in allSearchInputTextObj) {
+                if(allSearchInputTextObj[item] != '' ){
+                    $('.usin').append(
+                        "<div class='tokstyle' contenteditable='false'>" +
+                        "<p>" +
+                        allSearchInputTextObj[item] +
+                        "<div id='oyaspan'>" +
+                        "<img src='./images/fffclose.png' alt=''>" +
+                        "</div>" +
+                        "</p>" +
+
+                        "</div>"
+                    );
+                }
+            }
+        });;
+
+    });
+
 
     $('.usin').click(function () {
         $('.darkback').css({display: 'block'});
@@ -676,13 +709,6 @@ $(document).ready(function () {
         }
     }
 
-    // close search block
-    $('.darkback').click(function () {
-        $('.selectblog').removeClass('animated fadeIn');
-        $('.selectblog').slideUp(400, function(){
-            $('.darkback').fadeOut(200);
-        });
-    });
 
 
 

@@ -6754,6 +6754,14 @@ ul{
     padding:1px 8px;
     /*background-color: #f6f6f6;*/
 }
+.sbheadgrey:hover{
+    background-color: #f6f6f6;
+    cursor: pointer;
+}
+.sbheadfff:hover{
+    background-color: #f6f6f6;
+    cursor: pointer;
+}
 .hrhrhr{
     height: 1px;
     background-color: #dddddd;
@@ -6794,17 +6802,15 @@ ul{
     background-color: #f6f6f6;
 }
 .tokstyle{
-    width: 110px;
     text-align: left;
     overflow: hidden;
-
     height: 24px;
     border-radius: 14px;
     background-color: #e73f3e;
     padding: 3px 6px;
     margin-right: 5px;
+    position: relative;
     display: inline-block;
-
 }
 .tokstyle p{
     font-family: 'OpenSans';
@@ -6816,20 +6822,23 @@ ul{
     font-stretch: normal;
     color: #ffffff;
     text-overflow: ellipsis;
-    width:75px ;
+    width: auto;
+    margin-right: 6px;
+    padding-right: 18px;
 }
 #oyaspan{
     width: 20px;
     float: right;
-    border-left:1px solid rgba(0,0,0,0.2);
+    border-left: 1px solid rgba(0,0,0,0.2);
     padding-left: 6px;
     padding-right: 3px;
     cursor: pointer;
     position: absolute;
-    top: 6px;
+    top: 0px;
     margin-left: 82px;
     background-color: #e73f3e;
     border-radius: 0 10px 10px 0;
+    right: 2px;
 }
 .selectblog h4 span{
     float: right;
