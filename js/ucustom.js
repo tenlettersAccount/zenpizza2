@@ -95,27 +95,6 @@ $(document).ready(function () {
     });
 
     $('.darkback').click(function(){
-        $('.selectblog').slideUp(400, function(){
-            $('.darkback').fadeOut(200);
-            var allSearchInputText = $('.usin').html();
-            var allSearchInputTextObj = allSearchInputText.split(" ");
-            $('.usin').html('');
-            for(var item in allSearchInputTextObj) {
-                if(allSearchInputTextObj[item] != '' ){
-                    $('.usin').append(
-                        "<div class='tokstyle' contenteditable='false'>" +
-                        "<p>" +
-                        allSearchInputTextObj[item] +
-                        "<div id='oyaspan'>" +
-                        "<img src='./images/fffclose.png' alt=''>" +
-                        "</div>" +
-                        "</p>" +
-
-                        "</div>"
-                    );
-                }
-            }
-        });;
 
     });
 
