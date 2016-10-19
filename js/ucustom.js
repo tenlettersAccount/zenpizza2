@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    $('#tokenfield').tokenfield({});
+
     // searchtegi elementti div ke engizedi
     $('.selectblog h4').click(function () {
         var element = $(this);//convert string to JQuery element
@@ -28,11 +30,6 @@ $(document).ready(function () {
          */
     });
 
-    //elementtin ozin joiad
-
-    $('.selectblog h4').click(function () {
-        $(this).hide();
-    });
 
     $(".selectblog h4").hover(function () {
         $(this).css("background-color", "#f6f6f6");
@@ -53,7 +50,7 @@ $(document).ready(function () {
             opacity: 0
         }, 400, function(){
             $('.usin').css({border: '2px solid  #dddddd', width: '460px', padding: '6px 30px 8px 8px'});
-            $('.usearch').css({width: '485px'});
+            $('.usearch').css({width: '460px'});
 
             $('.fa-search').css({opacity: '0'});
             $('.asdfghjk').css({display: 'none'});
@@ -71,7 +68,8 @@ $(document).ready(function () {
         $('.selectblog').removeClass('animated fadeIn');
 
         $('.darkback').css({display: 'none'});
-        $('.tokstyle').css({display: 'none'});
+        $('.tokenfield').css({display: 'none'});
+        $('.token').css({display: 'none'});
         $('.darkback').css({display: 'none'});
 
         $('.selectblog').removeClass('animated fadeIn');
@@ -84,7 +82,6 @@ $(document).ready(function () {
         $('.rotateclose').removeClass('animated fadeIn');
         $('.rotateclose').addClass('animated fadeOut');
 
-        $('.usin').css({border: 'none', width: '0px', padding: '0'});
 
         setTimeout(function () {
             $('.selectblog').css({display: 'none'});
@@ -123,7 +120,7 @@ $(document).ready(function () {
     });
 
 
-    $('.usin').click(function () {
+    $('.tokenfield').click(function () {
         $('.darkback').css({display: 'block'});
         $('.selectblog').css({display: 'block'});
         $('.selectblog').removeClass('animated fadeOut');
@@ -739,6 +736,7 @@ $(document).ready(function () {
 
         $('.ufa-search').click(function () {
             $('.fa-search').css({display: 'none'});
+            $('.tokenfield').css({display: 'block'});
             $('.asdfghjk').removeClass('animated fadeInRight');
             $('.asdfghjk').addClass('animated fadeOut');
             $('.usin').css({border: '2px solid  #dddddd', width: '100%', padding: '6px 30px 8px 8px'});
