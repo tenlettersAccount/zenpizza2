@@ -654,7 +654,7 @@ h3 {
     padding: 3px 10px 0 10px;
     background-color: white;
     box-shadow: 0 0 10px grey;
-    height: 50px;
+    height: 48px;
 }
 
 .zen_nav_ul {
@@ -6639,9 +6639,7 @@ ul{
     top:-10px;
     height: 40px;
     outline: none;
-
-
-
+    overflow: hidden;
 }
 .usearch .fa-search{
     color: #96342E;
@@ -6654,7 +6652,7 @@ ul{
     cursor: pointer;
     position: relative;
     left: 10px;
-
+    top: -25px
 }
 .logo a:hover{
     border-bottom: 3px solid transparent !important;
@@ -6810,7 +6808,7 @@ ul{
     padding: 3px 6px;
     margin-right: 5px;
     position: relative;
-    display: inline-block;
+    display: inline-flex;
 }
 .tokstyle p{
     font-family: 'OpenSans';
@@ -6823,7 +6821,7 @@ ul{
     color: #ffffff;
     text-overflow: ellipsis;
     width: auto;
-    margin-right: 6px;
+    margin-right: -6px;
     padding-right: 18px;
 }
 #oyaspan{

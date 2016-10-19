@@ -1,7 +1,6 @@
 $(function () {
 
     var w = window.innerWidth;
-    console.log(w);
 
     $('.carousel').carousel({
         interval: scaleDelayInterval
@@ -753,42 +752,6 @@ $(function () {
     $('.altyburyw button').click(function () {
         $(this).html('В корзине');
     });
-
-    // enter redirect
-    document.onkeyup = function (e) {
-        e = e || window.event;
-        if (e.keyCode === 13) {
-            $('.usin').html().replace('\n', '');
-            $('.usin').attr('contenteditable', 'false');
-            if ($('.selectblog').css('display') == 'block') {
-                // fill in search input with selected tags
-                var allSearchInputText = $('.usin').html();
-                var allSearchInputTextObj = allSearchInputText.split(" ");
-                $('.usin').html('');
-                if($('.usin').html() != ''){
-                    for(var item in allSearchInputTextObj) {
-                        if(allSearchInputTextObj[item] != '' ){
-                            $('.usin').append(
-                                "<div class='tokstyle' contenteditable='false'>" +
-                                "<p>" +
-                                allSearchInputTextObj[item] +
-                                "<div id='oyaspan'>" +
-                                "<img src='./images/fffclose.png' alt=''>" +
-                                "</div>" +
-                                "</p>" +
-                                "</div>"
-                            );
-                        }
-                    }
-                }
-                window.location = 'serachpahe.html';
-            }
-        }
-        return false;
-    }
-
-
-
 
 
 

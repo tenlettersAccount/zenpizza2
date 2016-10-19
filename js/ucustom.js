@@ -1,32 +1,102 @@
 $(document).ready(function () {
 
+    function placeCaretAtEnd(el) {
+        el.focus();
+        if (typeof window.getSelection != "undefined"
+            && typeof document.createRange != "undefined") {
+            var range = document.createRange();
+            range.selectNodeContents(el);
+            range.collapse(false);
+            var sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+        } else if (typeof document.body.createTextRange != "undefined") {
+            var textRange = document.body.createTextRange();
+            textRange.moveToElementText(el);
+            textRange.collapse(false);
+            textRange.select();
+        }
+    }
+
+    var searchInputValues = {};
     // searchtegi elementti div ke engizedi
     $('.selectblog h4').click(function () {
         var element = $(this);//convert string to JQuery element
-        //var elementspan= element.find("span").html();
-        //element.find("span").remove();//remove span elements
         var newString = element.text();
-
-        //$('.usin').append("<div class='tokstyle' contenteditable='false'>" + "<p>" + newString + "</p>" + "<div id='oyaspan'><img src='./images/fffclose.png' alt=''></div></div>");
-        $('.usin').append(newString+' ');
-
     });
 
     $(document.body).on('click', '#oyaspan', function () {
-        console.log('asd');
+        var tagVal = $(this).parents('.tokstyle').find('p:first-child').html();
         $(this).closest('.tokstyle').remove();
-        /*
-         //mnau kaita joip kaita ornyna koiw uwin
-         var nstr2 = $(this).closest('.tokstyle');
-         nstr2.find("span").remove();
-         var newString323 = nstr2.html();
-
-         var nstr2span = $(this).closest('.tokstyle').find('span').text();
-
-
-         $('.h4turatyn').append("<h4>" + newString323 +"<span>"+ nstr2span +"</span>"+"</h4>" +"</h4>")
-         */
+        console.log(searchInputValues);
     });
+
+
+    $('.darkback').click(function () {
+        $('.selectblog').slideUp(400, function () {
+            $('.darkback').fadeOut(200);
+
+            var allSearchInputText = searchInputValues;
+            var inputSearch = $('.usin').text();
+            inputSearch = inputSearch.split(' ');
+
+            $('.usin').html('');
+            for (var item in inputSearch) {
+                if (inputSearch[item] != '') {
+                    $('.usin').append(
+                        "<div class='tokstyle' contenteditable='false'>" +
+                        "<p>" +
+                        inputSearch[item] +
+                        "<div id='oyaspan'>" +
+                        "<img src='./images/fffclose.png' alt=''>" +
+                        "</div>" +
+                        " </p>" +
+                        "</div>"
+                    );
+                }
+            }
+
+            var inputSearchWidth = 420;
+            var totalTagsWidth = 0;
+            var spareArray = [];
+
+            $('.tokstyle').each(function () {
+                var w = parseInt($(this).css('width'));
+                totalTagsWidth += w;
+            });
+        });
+    });
+
+    // enter redirect
+    document.onkeyup = function (e) {
+        e = e || window.event;
+        if (e.keyCode === 13) {
+            if ($('.selectblog').css('display') == 'block') {
+                var inputSearch = $('.usin').text();
+                inputSearch = inputSearch.split(' ');
+
+                $('.usin').html('');
+                for (var item in inputSearch) {
+                    console.log(inputSearch[item]);
+                    if (inputSearch[item] != '') {
+                        $('.usin').append(
+                            "<div class='tokstyle' contenteditable='false'>" +
+                            "<p>" +
+                            inputSearch[item] +
+                            "<div id='oyaspan'>" +
+                            "<img src='./images/fffclose.png' alt=''>" +
+                            "</div>" +
+                            " </p>" +
+                            "</div>"
+                        );
+                    }
+                }
+                $('.tokstyle').css({marginTop: '13px'});
+                window.location = 'serachpahe.html';
+            }
+        }
+        return false;
+    };
 
 
     $(".selectblog h4").hover(function () {
@@ -46,8 +116,8 @@ $(document).ready(function () {
         $('.asdfghjk').animate({
             color: 'black',
             opacity: 0
-        }, 400, function(){
-            $('.usin').css({border: '2px solid  #dddddd', width: '460px', padding: '6px 30px 8px 8px'});
+        }, 400, function () {
+            $('.usin').css({border: '2px solid  #dddddd', width: '460px', padding: '7px 7px 8px 8px'});
             $('.usearch').css({width: '485px'});
 
             $('.fa-search').css({opacity: '0'});
@@ -63,6 +133,8 @@ $(document).ready(function () {
 
     });
     $('.rotateclose').click(function () {
+        $('.usearch .fa-search').css({top: 0});
+
         $('.selectblog').removeClass('animated fadeIn');
 
         $('.darkback').css({display: 'none'});
@@ -92,37 +164,23 @@ $(document).ready(function () {
         $('#input-field-id').html('');
     });
 
-    $('.darkback').click(function(){
-        $('.selectblog').slideUp(400, function(){
-            $('.darkback').fadeOut(200);
-            var allSearchInputText = $('.usin').html();
-            var allSearchInputTextObj = allSearchInputText.split(" ");
-            $('.usin').html('');
-            for(var item in allSearchInputTextObj) {
-                if(allSearchInputTextObj[item] != '' ){
-                    $('.usin').append(
-                        "<div class='tokstyle' contenteditable='false'>" +
-                        "<p>" +
-                        allSearchInputTextObj[item] +
-                        "<div id='oyaspan'>" +
-                        "<img src='./images/fffclose.png' alt=''>" +
-                        "</div>" +
-                        "</p>" +
-
-                        "</div>"
-                    );
-                }
-            }
-        });;
-
-    });
-
-
     $('.usin').click(function () {
         $('.darkback').css({display: 'block'});
         $('.selectblog').css({display: 'block'});
         $('.selectblog').removeClass('animated fadeOut');
         $('.selectblog').addClass('animated fadeIn');
+
+
+        var searchInput = document.getElementById('input-field-id');
+
+        placeCaretAtEnd(searchInput);
+
+        /*if($('#input-field-id').text().length > 0){
+            var usinDiv = document.getElementById('input-field-id');
+            var usinTxtLength = $('#input-field-id').text().length;
+            setCursorPosition(usinDiv, usinTxtLength, usinTxtLength);
+
+        }*/
 
         setTimeout(function () {
 
@@ -554,7 +612,7 @@ $(document).ready(function () {
             $('.fa-shopping-basket').parents('li').removeClass('cbutton--click');
         }, 500);
     });
-    $('.sbheadfff h4 span .fa').click(function(){
+    $('.sbheadfff h4 span .fa').click(function () {
         $('.fa-shopping-basket').parents('li').addClass('cbutton--click');
         setTimeout(function () {
             $('.fa-shopping-basket').parents('li').removeClass('cbutton--click');
@@ -709,8 +767,10 @@ $(document).ready(function () {
         }
     }
 
-
-
+    /* detect mact os to fix search icon position */
+    if(navigator.platform.toUpperCase().indexOf('MAC')>=0){
+        $('.fa-search').css({top: '-3px'});
+    }
 
 
 });
